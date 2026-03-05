@@ -6,6 +6,7 @@ from pydantic import BaseModel
 class Opening(BaseModel):
     """Schema for a single research opening."""
     institute: str
+    network: str = ""
     title: str
     position_type: str
     deadline: str = ""

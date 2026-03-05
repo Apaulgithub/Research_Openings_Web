@@ -92,6 +92,7 @@ class IITMadrasScraper(BaseScraper):
 
             records.append({
                 "institute": "IIT Madras",
+                "network": "IIT",
                 "title": title,
                 "position_type": normalize_position_type(title),
                 "deadline": deadline,

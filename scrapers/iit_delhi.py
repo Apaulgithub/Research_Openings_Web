@@ -72,6 +72,7 @@ class IITDelhiScraper(BaseScraper):
 
         return {
             "institute": "IIT Delhi",
+            "network": "IIT",
             "title": title,
             "position_type": normalize_position_type(title),
             "deadline": deadline,
@@ -105,6 +106,7 @@ class IITDelhiScraper(BaseScraper):
 
         return {
             "institute": "IIT Delhi",
+            "network": "IIT",
             "title": title,
             "position_type": normalize_position_type(title),
             "deadline": deadline,

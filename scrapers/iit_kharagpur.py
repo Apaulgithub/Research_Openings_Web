@@ -66,6 +66,7 @@ class IITKharagpurScraper(BaseScraper):
 
         return {
             "institute": "IIT Kharagpur",
+            "network": "IIT",
             "title": title,
             "position_type": normalize_position_type(title),
             "deadline": deadline,

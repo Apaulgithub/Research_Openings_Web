@@ -76,6 +76,7 @@ class IISERPuneScraper(BaseScraper):
 
         return {
             "institute": "IISER Pune",
+            "network": "IISER",
             "title": title,
             "position_type": normalize_position_type(title),
             "deadline": deadline,

@@ -71,6 +71,7 @@ def root():
 @app.get("/api/openings", response_model=OpeningResponse)
 def list_openings(
     institute: Optional[str] = Query(None, description="Filter by institute name (partial match)."),
+    network: Optional[str] = Query(None, description="Filter by network (IIT, NIT, IIIT, IISER, ISI)."),
     position_type: Optional[str] = Query(None, description="Filter by position type (jrf, srf, project_associate, etc.)."),
     keyword: Optional[str] = Query(None, description="Search keyword in title or raw text."),
     page: int = Query(1, ge=1, description="Page number."),
@@ -83,6 +84,12 @@ def list_openings(
         institute_lower = institute.lower()
         openings = [
             o for o in openings if institute_lower in o.get("institute", "").lower()
+        ]
+
+    if network:
+        net_lower = network.lower()
+        openings = [
+            o for o in openings if o.get("network", "").lower() == net_lower
         ]
 
     if position_type:
@@ -126,3 +133,11 @@ def list_position_types():
     openings = _load_openings()
     types = sorted({o.get("position_type", "") for o in openings if o.get("position_type")})
     return {"position_types": types}
+
+
+@app.get("/api/networks")
+def list_networks():
+    """Return the distinct network types found in the data (IIT, NIT, IIIT, IISER, ISI)."""
+    openings = _load_openings()
+    networks = sorted({o.get("network", "") for o in openings if o.get("network")})
+    return {"networks": networks}

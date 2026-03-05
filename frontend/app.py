@@ -63,12 +63,20 @@ def main():
         return
 
     df = pd.DataFrame(data)
-    display_cols = ["institute", "title", "position_type", "deadline", "detail_url"]
+    display_cols = ["institute", "network", "title", "position_type", "deadline", "detail_url"]
     for col in display_cols:
         if col not in df.columns:
             df[col] = ""
 
     st.sidebar.header("Filters")
+
+    # Network filter (IIT / NIT / IIIT / IISER / ISI)
+    networks = sorted(df["network"].dropna().unique().tolist()) if "network" in df.columns else []
+    selected_networks = st.sidebar.multiselect(
+        "Network",
+        options=networks,
+        default=[],
+    )
 
     institutes = sorted(df["institute"].dropna().unique().tolist())
     selected_institutes = st.sidebar.multiselect(
@@ -87,6 +95,9 @@ def main():
     keyword = st.sidebar.text_input("Keyword search")
 
     filtered = df.copy()
+
+    if selected_networks:
+        filtered = filtered[filtered["network"].isin(selected_networks)]
 
     if selected_institutes:
         filtered = filtered[filtered["institute"].isin(selected_institutes)]
@@ -123,6 +134,7 @@ def main():
     st.sidebar.markdown("**Stats**")
     st.sidebar.metric("Total Openings", len(df))
     st.sidebar.metric("Institutes", df["institute"].nunique())
+    st.sidebar.metric("Networks", df["network"].nunique() if "network" in df.columns else 0)
     st.sidebar.metric("Shown", len(filtered))
 
 

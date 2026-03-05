@@ -79,6 +79,7 @@ class IITKanpurScraper(BaseScraper):
 
         return {
             "institute": "IIT Kanpur",
+            "network": "IIT",
             "title": title,
             "position_type": normalize_position_type(title),
             "deadline": deadline,
@@ -107,6 +108,7 @@ class IITKanpurScraper(BaseScraper):
 
         return {
             "institute": "IIT Kanpur",
+            "network": "IIT",
             "title": title,
             "position_type": normalize_position_type(title),
             "deadline": deadline,
