@@ -7,6 +7,7 @@ from datetime import datetime
 
 import pandas as pd
 import streamlit as st
+import streamlit.components.v1 as components
 
 logging.basicConfig(
     level=logging.INFO,
@@ -165,76 +166,72 @@ def main():
     display_cols = ["institute", "department", "title", "position_type", "deadline", "detail_url"]
     show_df = filtered[display_cols].reset_index(drop=True)
 
-    # ── Render as an HTML table so links open in a real new browser tab ──────
+    # ── Render via components.html so target=_blank links actually open ───────
+    # st.markdown strips/intercepts anchor clicks at the React layer;
+    # components.html() renders in a fully isolated iframe that respects
+    # standard browser link behaviour.
     def _make_link(url):
         if url and str(url).startswith("http"):
             return f'<a href="{url}" target="_blank" rel="noopener noreferrer">Open ↗</a>'
-        return ""
+        return "—"
 
     html_rows = ""
     for i, row in enumerate(show_df.itertuples(index=False), start=1):
         link_cell = _make_link(row.detail_url)
-        dept = row.department or ""
+        dept = str(row.department) if row.department else ""
+        title_escaped = str(row.title).replace("<", "&lt;").replace(">", "&gt;")
         html_rows += (
             f"<tr>"
-            f"<td>{i}</td>"
-            f"<td>{row.institute}</td>"
-            f"<td>{dept}</td>"
-            f"<td>{row.title}</td>"
-            f"<td>{row.position_type}</td>"
-            f"<td>{row.deadline}</td>"
-            f"<td>{link_cell}</td>"
+            f"<td class='num'>{i}</td>"
+            f"<td class='inst'>{row.institute}</td>"
+            f"<td class='dept'>{dept}</td>"
+            f"<td class='title'>{title_escaped}</td>"
+            f"<td class='type'>{row.position_type}</td>"
+            f"<td class='dl'>{row.deadline or '—'}</td>"
+            f"<td class='link'>{link_cell}</td>"
             f"</tr>\n"
         )
 
-    html_table = f"""
+    # Estimate height: 38px per row + 80px header/padding, cap at 700px
+    table_height = min(80 + len(show_df) * 38, 700)
+
+    html_page = f"""<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
 <style>
-  .opening-table {{
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.85rem;
+  * {{ box-sizing: border-box; margin: 0; padding: 0; }}
+  body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+          font-size: 13px; background: #fff; }}
+  .wrap {{ overflow-x: auto; }}
+  table {{ width: 100%; border-collapse: collapse; }}
+  thead th {{
+      background: #1f4e79; color: #fff;
+      padding: 8px 10px; text-align: left;
+      position: sticky; top: 0; z-index: 2;
+      white-space: nowrap;
   }}
-  .opening-table th {{
-      background: #1f4e79;
-      color: white;
-      padding: 8px 10px;
-      text-align: left;
-      position: sticky;
-      top: 0;
-      z-index: 1;
-  }}
-  .opening-table td {{
-      padding: 6px 10px;
-      border-bottom: 1px solid #ddd;
-      vertical-align: top;
-      word-break: break-word;
-  }}
-  .opening-table tr:nth-child(even) {{ background: #f7f9fc; }}
-  .opening-table tr:hover {{ background: #e8f0fe; }}
-  .opening-table a {{
-      color: #1a73e8;
-      font-weight: 600;
-      text-decoration: none;
-  }}
-  .opening-table a:hover {{ text-decoration: underline; }}
-  .table-wrap {{
-      max-height: 620px;
-      overflow-y: auto;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-  }}
+  tbody td {{ padding: 6px 10px; border-bottom: 1px solid #e0e0e0; vertical-align: top; }}
+  tbody tr:nth-child(even) {{ background: #f5f8ff; }}
+  tbody tr:hover {{ background: #dde8ff; }}
+  td.num  {{ width: 40px; color: #888; text-align: right; }}
+  td.inst {{ width: 130px; font-weight: 600; color: #1f4e79; }}
+  td.dept {{ width: 160px; font-size: 12px; color: #555; }}
+  td.title{{ width: 280px; }}
+  td.type {{ width: 110px; }}
+  td.dl   {{ width: 100px; white-space: nowrap; }}
+  td.link {{ width: 70px; text-align: center; }}
+  a {{ color: #1a73e8; font-weight: 700; text-decoration: none; }}
+  a:hover {{ text-decoration: underline; color: #0d47a1; }}
 </style>
-<div class="table-wrap">
-<table class="opening-table">
+</head>
+<body>
+<div class="wrap">
+<table>
   <thead>
     <tr>
-      <th>#</th>
-      <th>Institute</th>
-      <th>Department</th>
-      <th>Title</th>
-      <th>Type</th>
-      <th>Deadline</th>
-      <th>Link</th>
+      <th>#</th><th>Institute</th><th>Department</th>
+      <th>Title</th><th>Type</th><th>Deadline</th><th>Link</th>
     </tr>
   </thead>
   <tbody>
@@ -242,8 +239,10 @@ def main():
   </tbody>
 </table>
 </div>
-"""
-    st.markdown(html_table, unsafe_allow_html=True)
+</body>
+</html>"""
+
+    components.html(html_page, height=table_height, scrolling=True)
 
     st.sidebar.metric("Shown", len(filtered))
 
