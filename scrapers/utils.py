@@ -174,17 +174,48 @@ def clean_text(text):
 
 
 def extract_dates(text):
-    """Extract date-like strings from text."""
+    """Extract date-like strings from text.
+
+    Handles formats:
+      - DD/MM/YYYY, DD-MM-YYYY, DD.MM.YYYY
+      - YYYY-MM-DD
+      - 12 Dec 2024 / 12th Dec 2024 / 12-Dec-2024
+      - Dec 12, 2024 / December 12 2024
+    Returns a list of matched date strings (may contain duplicates).
+    """
     patterns = [
-        r"\d{1,2}[-/.]\d{1,2}[-/.]\d{2,4}",
-        r"\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{4}",
-        r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},?\s+\d{4}",
-        r"\d{4}[-/.]\d{1,2}[-/.]\d{1,2}",
+        # DD/MM/YYYY or DD-MM-YYYY or DD.MM.YYYY
+        r"\b\d{1,2}[-/.]\d{1,2}[-/.]\d{2,4}\b",
+        # YYYY-MM-DD
+        r"\b\d{4}[-/.]\d{1,2}[-/.]\d{1,2}\b",
+        # 12th Dec 2024  /  12 Dec 2024  /  12-Dec-2024
+        r"\b\d{1,2}(?:st|nd|rd|th)?[-/.\s]+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*[-/.\s]+\d{4}\b",
+        # Dec 12, 2024  /  December 12 2024
+        r"\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},?\s+\d{4}\b",
     ]
     dates = []
     for pattern in patterns:
         dates.extend(re.findall(pattern, text, re.IGNORECASE))
     return dates
+
+
+def extract_department(text):
+    """Try to extract a department name from raw_text.
+
+    Looks for common patterns like:
+      'Department of ...'  /  'Dept. of ...'  /  'School of ...'
+    Returns the matched string or empty string.
+    """
+    patterns = [
+        r"(?:Department|Dept\.?)\s+of\s+[A-Z][A-Za-z &/()-]{3,60}",
+        r"School\s+of\s+[A-Z][A-Za-z &/()-]{3,50}",
+        r"Centre\s+(?:for|of)\s+[A-Z][A-Za-z &/()-]{3,50}",
+    ]
+    for pattern in patterns:
+        m = re.search(pattern, text)
+        if m:
+            return clean_text(m.group(0))
+    return ""
 
 
 def extract_salary(text):

@@ -4,20 +4,6 @@ This module provides a configurable scraper that can be instantiated for any
 institute whose page follows a standard table-or-link layout.  For institutes
 that require highly customised parsing, a dedicated scraper module should be
 created instead.
-"""
-import logging
-from typing import Optional
-
-from scrapers.utils import BaseScraper, clean_text, extract_dates, normalize_position_type
-
-logger = logging.getLogger(__name__)
-
-"""Generic scraper that handles multiple institutes from the URLs registry.
-
-This module provides a configurable scraper that can be instantiated for any
-institute whose page follows a standard table-or-link layout.  For institutes
-that require highly customised parsing, a dedicated scraper module should be
-created instead.
 
 INSTITUTE_REGISTRY contains every institute listed in support/URLs.md.
 Each entry carries:
@@ -30,9 +16,31 @@ Each entry carries:
 """
 import logging
 
-from scrapers.utils import BaseScraper, clean_text, extract_dates, normalize_position_type
+from scrapers.utils import (
+    BaseScraper, clean_text, extract_dates, extract_department,
+    normalize_position_type,
+)
 
 logger = logging.getLogger(__name__)
+
+# Titles that are clearly navigation / menu items, not actual job postings.
+_JUNK_TITLES = {
+    "home", "about", "about us", "contact", "contact us", "careers",
+    "recruitment", "recruitments", "jobs", "news", "notices", "notice board",
+    "announcements", "advertisement", "advertisements", "vacancies",
+    "faculty", "staff", "students", "alumni", "research", "academics",
+    "administration", "sitemap", "login", "intranet", "portal",
+    "back", "next", "previous", "more", "view all", "read more",
+    "introduction", "vision", "mission", "leadership", "gallery",
+    "downloads", "forms", "tenders", "projects", "publications",
+    "telephone directory", "dashboard", "library", "hostel", "placements",
+    "notices & circulars", "job opportunities", "project positions",
+    "temporary positions", "number of vacancies", "last date of application",
+    "s.no", "sl.no", "sl no", "#", "sno",
+    "title", "position", "post", "name",
+    "department", "posting date", "last date",
+    "pi name", "details", "date", "action",
+}
 
 INSTITUTE_REGISTRY = [
     # ------------------------------------------------------------------ IITs
@@ -178,13 +186,10 @@ class GenericInstituteScraper(BaseScraper):
             return None
 
         title = clean_text(cells[0].get_text())
-        if not title or title.lower() in (
-            "s.no", "sl.no", "sl no", "#", "sno",
-            "title", "position", "post", "name",
-            "department", "posting date", "last date",
-            "pi name", "details", "date", "action",
-            "advertisement", "advertisement no",
-        ):
+        if not title or title.lower() in _JUNK_TITLES:
+            return None
+        # Drop very short strings (likely index numbers or single letters)
+        if len(title) < 6:
             return None
 
         link_tag = row.find("a")
@@ -195,10 +200,12 @@ class GenericInstituteScraper(BaseScraper):
         raw_text = clean_text(row.get_text())
         dates = extract_dates(raw_text)
         deadline = dates[-1] if dates else ""
+        department = extract_department(raw_text)
 
         return {
             "institute": self.institute_name,
             "network": self.network,
+            "department": department,
             "title": title,
             "position_type": normalize_position_type(title),
             "deadline": deadline,
@@ -216,6 +223,8 @@ class GenericInstituteScraper(BaseScraper):
         title = clean_text(link_tag.get_text())
         if not title or len(title) < 8:
             return None
+        if title.lower() in _JUNK_TITLES:
+            return None
 
         detail_url = ""
         if link_tag.get("href"):
@@ -224,10 +233,12 @@ class GenericInstituteScraper(BaseScraper):
         raw_text = clean_text(element.get_text())
         dates = extract_dates(raw_text)
         deadline = dates[-1] if dates else ""
+        department = extract_department(raw_text)
 
         return {
             "institute": self.institute_name,
             "network": self.network,
+            "department": department,
             "title": title,
             "position_type": normalize_position_type(title),
             "deadline": deadline,

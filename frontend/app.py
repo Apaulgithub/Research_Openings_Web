@@ -3,6 +3,7 @@ import json
 import glob
 import os
 import logging
+from datetime import datetime
 
 import pandas as pd
 import streamlit as st
@@ -47,11 +48,33 @@ def load_data():
     return all_data
 
 
+def _parse_deadline_for_sort(deadline_str):
+    """Convert a deadline string to a sortable date. Returns pd.NaT if unparseable."""
+    if not deadline_str or not deadline_str.strip():
+        return pd.NaT
+    for fmt in (
+        "%d/%m/%Y", "%d-%m-%Y", "%d.%m.%Y",
+        "%Y-%m-%d", "%Y/%m/%d",
+        "%d %b %Y", "%d %B %Y",
+        "%b %d, %Y", "%B %d, %Y",
+        "%d %b. %Y",
+    ):
+        try:
+            return pd.Timestamp(datetime.strptime(deadline_str.strip(), fmt))
+        except ValueError:
+            continue
+    # Try pandas flexible parser as last resort
+    try:
+        return pd.Timestamp(deadline_str.strip())
+    except Exception:
+        return pd.NaT
+
+
 def main():
     st.title("Research Opportunity Aggregator (India)")
     st.markdown(
         "Browse the latest **Research Associate / Research Assistant / "
-        "Project Associate** openings from IITs, IISERs, ISI and NITs."
+        "Project Associate** openings from IITs, IISERs, ISI, NITs and IIITs."
     )
 
     data = load_data()
@@ -63,41 +86,34 @@ def main():
         return
 
     df = pd.DataFrame(data)
-    display_cols = ["institute", "network", "title", "position_type", "deadline", "detail_url"]
-    for col in display_cols:
+
+    # Ensure all expected columns exist
+    for col in ["institute", "department", "title", "position_type", "deadline", "detail_url", "raw_text"]:
         if col not in df.columns:
             df[col] = ""
 
+    # Build a parsed-date column for sorting (hidden from display)
+    df["_deadline_dt"] = df["deadline"].apply(_parse_deadline_for_sort)
+
+    # ── Sidebar filters ──────────────────────────────────────────────────────
     st.sidebar.header("Filters")
 
-    # Network filter (IIT / NIT / IIIT / IISER / ISI)
-    networks = sorted(df["network"].dropna().unique().tolist()) if "network" in df.columns else []
-    selected_networks = st.sidebar.multiselect(
-        "Network",
-        options=networks,
-        default=[],
-    )
-
     institutes = sorted(df["institute"].dropna().unique().tolist())
-    selected_institutes = st.sidebar.multiselect(
-        "Institute",
-        options=institutes,
-        default=[],
-    )
+    selected_institutes = st.sidebar.multiselect("Institute", options=institutes, default=[])
 
     position_types = sorted(df["position_type"].dropna().unique().tolist())
-    selected_positions = st.sidebar.multiselect(
-        "Position Type",
-        options=position_types,
-        default=[],
-    )
+    selected_positions = st.sidebar.multiselect("Position Type", options=position_types, default=[])
 
     keyword = st.sidebar.text_input("Keyword search")
 
-    filtered = df.copy()
+    st.sidebar.markdown("---")
+    st.sidebar.markdown("**Stats**")
+    st.sidebar.metric("Total Openings", len(df))
+    st.sidebar.metric("Institutes", df["institute"].nunique())
+    # will be updated after filtering
 
-    if selected_networks:
-        filtered = filtered[filtered["network"].isin(selected_networks)]
+    # ── Apply filters ─────────────────────────────────────────────────────────
+    filtered = df.copy()
 
     if selected_institutes:
         filtered = filtered[filtered["institute"].isin(selected_institutes)]
@@ -110,15 +126,43 @@ def main():
         mask = (
             filtered["title"].str.lower().str.contains(kw_lower, na=False)
             | filtered["raw_text"].str.lower().str.contains(kw_lower, na=False)
+            | filtered["department"].str.lower().str.contains(kw_lower, na=False)
         )
         filtered = filtered[mask]
 
+    # ── Sorting controls ──────────────────────────────────────────────────────
     st.subheader("Results ({} openings)".format(len(filtered)))
+
+    col1, col2 = st.columns([2, 1])
+    with col1:
+        sort_by = st.selectbox(
+            "Sort by",
+            options=["Deadline (soonest first)", "Deadline (latest first)", "Institute (A→Z)", "Institute (Z→A)", "Position Type"],
+            index=0,
+        )
+    with col2:
+        hide_no_deadline = st.checkbox("Hide entries with no deadline", value=False)
+
+    if hide_no_deadline:
+        filtered = filtered[filtered["_deadline_dt"].notna()]
+
+    if sort_by == "Deadline (soonest first)":
+        # Put NaT (no deadline) at the end
+        filtered = filtered.sort_values("_deadline_dt", ascending=True, na_position="last")
+    elif sort_by == "Deadline (latest first)":
+        filtered = filtered.sort_values("_deadline_dt", ascending=False, na_position="last")
+    elif sort_by == "Institute (A→Z)":
+        filtered = filtered.sort_values("institute", ascending=True)
+    elif sort_by == "Institute (Z→A)":
+        filtered = filtered.sort_values("institute", ascending=False)
+    elif sort_by == "Position Type":
+        filtered = filtered.sort_values("position_type", ascending=True)
 
     if filtered.empty:
         st.info("No openings match the selected filters.")
         return
 
+    display_cols = ["institute", "department", "title", "position_type", "deadline", "detail_url"]
     show_df = filtered[display_cols].reset_index(drop=True)
     show_df.index = show_df.index + 1
 
@@ -126,15 +170,16 @@ def main():
         show_df,
         use_container_width=True,
         column_config={
-            "detail_url": st.column_config.LinkColumn("Link", display_text="Open"),
+            "institute":      st.column_config.TextColumn("Institute"),
+            "department":     st.column_config.TextColumn("Department"),
+            "title":          st.column_config.TextColumn("Title"),
+            "position_type":  st.column_config.TextColumn("Type"),
+            "deadline":       st.column_config.TextColumn("Deadline"),
+            "detail_url":     st.column_config.LinkColumn("Link", display_text="Open ↗"),
         },
+        height=600,
     )
 
-    st.sidebar.markdown("---")
-    st.sidebar.markdown("**Stats**")
-    st.sidebar.metric("Total Openings", len(df))
-    st.sidebar.metric("Institutes", df["institute"].nunique())
-    st.sidebar.metric("Networks", df["network"].nunique() if "network" in df.columns else 0)
     st.sidebar.metric("Shown", len(filtered))
 
 

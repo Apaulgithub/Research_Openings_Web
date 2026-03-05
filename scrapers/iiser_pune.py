@@ -1,6 +1,6 @@
 import logging
 
-from scrapers.utils import BaseScraper, clean_text, extract_dates, normalize_position_type
+from scrapers.utils import BaseScraper, clean_text, extract_dates, extract_department, normalize_position_type
 
 logger = logging.getLogger(__name__)
 
@@ -73,10 +73,12 @@ class IISERPuneScraper(BaseScraper):
         raw_text = clean_text(element.get_text())
         dates = extract_dates(raw_text)
         deadline = dates[-1] if dates else ""
+        department = extract_department(raw_text)
 
         return {
             "institute": "IISER Pune",
             "network": "IISER",
+            "department": department,
             "title": title,
             "position_type": normalize_position_type(title),
             "deadline": deadline,
