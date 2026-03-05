@@ -164,21 +164,86 @@ def main():
 
     display_cols = ["institute", "department", "title", "position_type", "deadline", "detail_url"]
     show_df = filtered[display_cols].reset_index(drop=True)
-    show_df.index = show_df.index + 1
 
-    st.dataframe(
-        show_df,
-        use_container_width=True,
-        column_config={
-            "institute":      st.column_config.TextColumn("Institute"),
-            "department":     st.column_config.TextColumn("Department"),
-            "title":          st.column_config.TextColumn("Title"),
-            "position_type":  st.column_config.TextColumn("Type"),
-            "deadline":       st.column_config.TextColumn("Deadline"),
-            "detail_url":     st.column_config.LinkColumn("Link", display_text="Open ↗"),
-        },
-        height=600,
-    )
+    # ── Render as an HTML table so links open in a real new browser tab ──────
+    def _make_link(url):
+        if url and str(url).startswith("http"):
+            return f'<a href="{url}" target="_blank" rel="noopener noreferrer">Open ↗</a>'
+        return ""
+
+    html_rows = ""
+    for i, row in enumerate(show_df.itertuples(index=False), start=1):
+        link_cell = _make_link(row.detail_url)
+        dept = row.department or ""
+        html_rows += (
+            f"<tr>"
+            f"<td>{i}</td>"
+            f"<td>{row.institute}</td>"
+            f"<td>{dept}</td>"
+            f"<td>{row.title}</td>"
+            f"<td>{row.position_type}</td>"
+            f"<td>{row.deadline}</td>"
+            f"<td>{link_cell}</td>"
+            f"</tr>\n"
+        )
+
+    html_table = f"""
+<style>
+  .opening-table {{
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+  }}
+  .opening-table th {{
+      background: #1f4e79;
+      color: white;
+      padding: 8px 10px;
+      text-align: left;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+  }}
+  .opening-table td {{
+      padding: 6px 10px;
+      border-bottom: 1px solid #ddd;
+      vertical-align: top;
+      word-break: break-word;
+  }}
+  .opening-table tr:nth-child(even) {{ background: #f7f9fc; }}
+  .opening-table tr:hover {{ background: #e8f0fe; }}
+  .opening-table a {{
+      color: #1a73e8;
+      font-weight: 600;
+      text-decoration: none;
+  }}
+  .opening-table a:hover {{ text-decoration: underline; }}
+  .table-wrap {{
+      max-height: 620px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+  }}
+</style>
+<div class="table-wrap">
+<table class="opening-table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Institute</th>
+      <th>Department</th>
+      <th>Title</th>
+      <th>Type</th>
+      <th>Deadline</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+{html_rows}
+  </tbody>
+</table>
+</div>
+"""
+    st.markdown(html_table, unsafe_allow_html=True)
 
     st.sidebar.metric("Shown", len(filtered))
 
