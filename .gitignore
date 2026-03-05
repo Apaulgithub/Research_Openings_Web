@@ -1,0 +1,28 @@
+# Virtual environment
+bin/
+lib/
+lib64
+include/
+pyvenv.cfg
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Data cache (keep .gitkeep)
+data/*.json
+
+# Environment
+.env
