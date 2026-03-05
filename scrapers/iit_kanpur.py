@@ -57,7 +57,11 @@ class IITKanpurScraper(BaseScraper):
             return None
 
         title = clean_text(cells[0].get_text())
-        if not title or title.lower() in ("s.no", "sl.no", "#"):
+        if not title or title.lower() in (
+            "s.no", "sl.no", "#", "post", "title",
+            "department", "posting date", "last date",
+            "pi name", "details", "action",
+        ):
             return None
 
         link_tag = row.find("a")

@@ -1,98 +1,105 @@
 import logging
+import re
 
 from scrapers.utils import BaseScraper, clean_text, extract_dates, normalize_position_type
 
 logger = logging.getLogger(__name__)
 
+BASE_URL = "https://icsrstaff.iitm.ac.in/careers"
+MAX_PAGES = 5
+
 
 class IITMadrasScraper(BaseScraper):
-    """Scraper for IIT Madras IC&SR current openings."""
+    """Scraper for IIT Madras IC&SR current openings.
+
+    The portal uses a card/div layout with h5 headings for each
+    announcement and paginates via ?page=N query params.
+    """
 
     def __init__(self):
         super().__init__(
             institute_name="IIT Madras",
-            url="https://icsrstaff.iitm.ac.in/careers/current_openings.php",
+            url=BASE_URL + "/current_openings.php",
             use_selenium=False,
         )
 
     def scrape(self):
-        """Scrape project staff openings from IIT Madras IC&SR portal."""
-        html = self.fetch_page()
-        if html is None:
-            self.logger.error("Failed to fetch IIT Madras page.")
-            return []
-
-        soup = self.parse_html(html)
-        if soup is None:
-            return []
-
+        """Scrape project staff openings across all pages."""
         openings = []
-        tables = soup.find_all("table")
-        for table in tables:
-            body = table.find("tbody")
-            rows = body.find_all("tr") if body else table.find_all("tr")
-            for row in rows:
-                record = self._parse_row(row)
-                if record:
-                    openings.append(record)
+        for page_num in range(1, MAX_PAGES + 1):
+            page_url = "{}?page={}".format(self.url, page_num)
+            html = self.fetch_page(url=page_url)
+            if html is None:
+                self.logger.warning("No response for page %d, stopping.", page_num)
+                break
 
-        if not tables:
-            links = soup.find_all("a", href=True)
-            for link in links:
-                text = clean_text(link.get_text())
-                if not text or len(text) < 10:
-                    continue
-                href = str(link["href"])
-                if href.startswith("/"):
-                    href = "https://icsrstaff.iitm.ac.in" + href
-                dates = extract_dates(text)
-                deadline = dates[-1] if dates else ""
-                openings.append({
-                    "institute": "IIT Madras",
-                    "title": text,
-                    "position_type": normalize_position_type(text),
-                    "deadline": deadline,
-                    "detail_url": href,
-                    "raw_text": text,
-                    "hash": self.generate_hash(text + href),
-                })
+            soup = self.parse_html(html)
+            if soup is None:
+                break
+
+            page_records = self._extract_cards(soup)
+            if not page_records:
+                self.logger.info("No records on page %d, stopping.", page_num)
+                break
+
+            openings.extend(page_records)
+            self.logger.info("Page %d: %d records.", page_num, len(page_records))
 
         self.logger.info("Scraped %d openings from IIT Madras.", len(openings))
         self.save_to_json(openings)
         return openings
 
-    def _parse_row(self, row):
-        """Extract fields from a single table row."""
-        cells = row.find_all("td")
-        if len(cells) < 2:
-            return None
+    def _extract_cards(self, soup):
+        """Parse announcement cards from the page.
 
-        title = clean_text(cells[0].get_text())
-        if not title or title.lower() in ("s.no", "sl.no", "sl no", "#", "sno"):
-            return None
+        Each card has an h5 containing the announcement title and
+        sibling elements with Last Date, location, and PDF link.
+        """
+        records = []
+        headings = soup.find_all("h5")
+        for heading in headings:
+            text = clean_text(heading.get_text())
+            if not text or len(text) < 10:
+                continue
+            if "announcement" not in text.lower() and "post" not in text.lower():
+                continue
 
-        link_tag = row.find("a")
-        detail_url = ""
-        if link_tag and link_tag.get("href"):
-            href = link_tag["href"]
-            if href.startswith("/"):
-                detail_url = "https://icsrstaff.iitm.ac.in" + href
-            elif href.startswith("http"):
-                detail_url = href
+            parent = heading.find_parent(["div", "li", "section"])
+            if parent is None:
+                parent = heading.parent
 
-        raw_text = clean_text(row.get_text())
-        dates = extract_dates(raw_text)
-        deadline = dates[-1] if dates else ""
+            raw_text = clean_text(parent.get_text()) if parent else text
+            dates = extract_dates(raw_text)
+            deadline = dates[-1] if dates else ""
 
-        return {
-            "institute": "IIT Madras",
-            "title": title,
-            "position_type": normalize_position_type(title),
-            "deadline": deadline,
-            "detail_url": detail_url,
-            "raw_text": raw_text,
-            "hash": self.generate_hash(title + detail_url),
-        }
+            link_tag = parent.find("a", href=True) if parent else None
+            detail_url = ""
+            if link_tag:
+                href = str(link_tag["href"])
+                if href.startswith("/"):
+                    detail_url = BASE_URL + "/" + href.lstrip("/")
+                elif href.startswith("http"):
+                    detail_url = href
+
+            title = re.sub(
+                r"^announcement\s+for\s+the\s+post\s+of\s+",
+                "",
+                text,
+                flags=re.IGNORECASE,
+            ).strip()
+            if not title:
+                title = text
+
+            records.append({
+                "institute": "IIT Madras",
+                "title": title,
+                "position_type": normalize_position_type(title),
+                "deadline": deadline,
+                "detail_url": detail_url,
+                "raw_text": raw_text,
+                "hash": self.generate_hash(title + detail_url),
+            })
+        return records
 
 
 if __name__ == "__main__":

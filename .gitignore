@@ -4,6 +4,8 @@ lib/
 lib64
 include/
 pyvenv.cfg
+etc/
+share/
 
 # Python
 __pycache__/

@@ -125,6 +125,9 @@ class GenericInstituteScraper(BaseScraper):
         if not title or title.lower() in (
             "s.no", "sl.no", "sl no", "#", "sno",
             "title", "position", "post", "name",
+            "department", "posting date", "last date",
+            "pi name", "details", "date", "action",
+            "advertisement", "advertisement no",
         ):
             return None
 

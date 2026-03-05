@@ -64,14 +64,28 @@ class BaseScraper(ABC):
             self.driver.set_page_load_timeout(30)
             self.logger.info("Selenium WebDriver initialized.")
         except Exception as exc:
-            self.logger.error("Failed to initialize WebDriver: %s", exc)
+            self.logger.warning("Failed to initialize WebDriver: %s", exc)
+            self.logger.warning("Selenium unavailable, will fall back to requests.")
+            self.driver = None
             raise
 
     def fetch_page(self, url=None, timeout=15):
-        """Fetch page content using requests (static) or Selenium (dynamic)."""
+        """Fetch page content using requests (static) or Selenium (dynamic).
+
+        When use_selenium is True but Chrome is not installed the method
+        automatically falls back to a plain requests fetch so the pipeline
+        does not crash.
+        """
         target_url = url or self.url
         if self.use_selenium:
-            return self._fetch_with_selenium(target_url)
+            try:
+                return self._fetch_with_selenium(target_url)
+            except Exception:
+                self.logger.warning(
+                    "Selenium failed for %s, falling back to requests.",
+                    target_url,
+                )
+                return self._fetch_with_requests(target_url, timeout)
         return self._fetch_with_requests(target_url, timeout)
 
     def _fetch_with_requests(self, url, timeout=15):
