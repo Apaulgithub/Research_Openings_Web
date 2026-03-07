@@ -218,6 +218,51 @@ def extract_department(text):
     return ""
 
 
+def extract_eligibility(text):
+    """Extract eligibility / qualification criteria from raw text.
+
+    Looks for common patterns such as:
+      - "Essential Qualification: M.Tech / B.Tech ..."
+      - "Eligibility: Ph.D. in ..."
+      - Standalone degree keywords (B.Tech, M.Tech, Ph.D, M.Sc, M.E., MBA ...)
+    Returns a short human-readable string, or "" if nothing found.
+    """
+    if not text:
+        return ""
+
+    # 1. Try to grab a full labelled sentence: "Essential Qual...: <content>"
+    labelled = re.search(
+        r"(?:Essential\s+Qualifications?|Eligibility(?:\s+Criteria)?|"
+        r"Required\s+Qualifications?|Minimum\s+Qualifications?)"
+        r"[:/\s]+([^\.]{10,200})",
+        text,
+        re.IGNORECASE,
+    )
+    if labelled:
+        return clean_text(labelled.group(1))
+
+    # 2. Collect individual degree mentions
+    degree_pattern = re.compile(
+        r"\b(?:Ph\.?D\.?|M\.?Tech\.?|B\.?Tech\.?|M\.?Sc\.?|B\.?Sc\.?|"
+        r"M\.?E\.?|B\.?E\.?|M\.?Phil\.?|MBA|MCA|B\.?Pharm\.?|M\.?Pharm\.?|"
+        r"Post\s*Doctoral|Post-Doctoral|Graduate|Post\s*Graduate)\b",
+        re.IGNORECASE,
+    )
+    degrees = degree_pattern.findall(text)
+    if degrees:
+        # Deduplicate while preserving order
+        seen = set()
+        unique_degrees = []
+        for d in degrees:
+            norm = d.upper().replace(".", "").replace(" ", "")
+            if norm not in seen:
+                seen.add(norm)
+                unique_degrees.append(d)
+        return " / ".join(unique_degrees[:4])  # cap at 4 to keep it brief
+
+    return ""
+
+
 def extract_salary(text):
     """Extract salary/stipend amounts from text."""
     patterns = [

@@ -17,6 +17,88 @@ logger = logging.getLogger(__name__)
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 
+# ── Fallback URLs per institute (from support/URLs.md + dedicated scrapers) ──
+# Used when a scraped record has no detail_url of its own.
+INSTITUTE_FALLBACK_URL = {
+    # IITs – dedicated scrapers
+    "IIT Delhi":         "https://ird.iitd.ac.in/current-openings",
+    "IIT Madras":        "https://icsrstaff.iitm.ac.in/careers/current_openings.php",
+    "IIT Bombay":        "https://rnd.iitb.ac.in/jobs",
+    "IIT Kharagpur":     "https://erp.iitkgp.ac.in/SRICStaffRecruitment/Advertise.jsp",
+    "IIT Kanpur":        "https://www.iitk.ac.in/dord/project-vacancies",
+    # IITs – generic scraper
+    "IIT Roorkee":       "https://iitr.ac.in/Careers/Project%20Jobs.html",
+    "IIT Guwahati":      "https://iitg.ac.in/rndproj/recruitment/",
+    "IIT Hyderabad":     "https://iith.ac.in/careers/",
+    "IIT Jodhpur":       "https://erponline.iitj.ac.in/RnDOutside/projectTemporaryAppointment.htm",
+    "IIT Indore":        "https://www.iiti.ac.in/recruitments/project-positions",
+    "IIT BHU Varanasi":  "https://iitbhu.ac.in/dean/dord/recruitment",
+    "IIT ISM Dhanbad":   "https://people.iitism.ac.in/~research/",
+    "IIT Bhubaneswar":   "https://www.iitbbs.ac.in/index.php/home/jobs/research-jobs/",
+    "IIT Gandhinagar":   "https://iitgn.ac.in/careers/staff",
+    "IIT Patna":         "https://www.iitp.ac.in/?option=com_content&view=article&id=1758:notice-board-list",
+    "IIT Mandi":         "https://www.iitmandi.ac.in/recruitments/project",
+    "IIT Tirupati":      "https://www.iittp.ac.in/Project_Positions",
+    "IIT Palakkad":      "https://iitpkd.ac.in/resstaffrect",
+    "IIT Bhilai":        "https://www.iitbhilai.ac.in/index.php?pid=rnd_staff_rec",
+    "IIT Goa":           "https://iitgoa.ac.in/project-position/",
+    "IIT Jammu":         "https://iitjammu.ac.in/postlist/Jobs",
+    "IIT Dharwad":       "https://www.iitdh.ac.in/other-recruitments",
+    # NITs
+    "NIT Trichy":        "https://www.nitt.edu/other/jobs",
+    "NIT Surathkal":     "https://www.nitk.ac.in/announcements",
+    "NIT Rourkela":      "https://www.nitrkl.ac.in/Home/FacultyStaff/SRICCECareerNotices",
+    "NIT Durgapur":      "https://nitdgp.ac.in/p/careers",
+    "NIT Warangal":      "https://nitw.ac.in/staffrecruit",
+    "NIT Calicut":       "https://nitc.ac.in/contract-adhoc-recruitment-project-staff",
+    "NIT Hamirpur":      "https://nith.ac.in/advertisement-recruitments",
+    "NIT Kurukshetra":   "https://nitkkr.ac.in/jobs-nit-kkr/",
+    "NIT Jamshedpur":    "https://www.nitjsr.ac.in/Recruitments",
+    "NIT Silchar":       "https://www.nits.ac.in/recruitment-view-all",
+    "MNNIT Allahabad":   "https://www.mnnit.ac.in/index.php/project-position",
+    # IIITs
+    "IIIT Allahabad":    "https://www.iiita.ac.in/announcements.php",
+    "IIITM Gwalior":     "https://www.iiitm.ac.in/index.php/en/careers",
+    "IIITDM Jabalpur":   "https://www.iiitdmj.ac.in/pv.php",
+    "IIITDM Kancheepuram": "https://www.iiitdm.ac.in/recruitment/project-positions",
+    "IIITDM Kurnool":    "https://iiitk.ac.in/Project-Recruitments/page",
+    "IIIT Sri City":     "https://iiits.ac.in/ticker/upcoming-events-announcements/",
+    "IIIT Guwahati":     "https://www.iiitg.ac.in/iitg_reqr?ct=RzNJNURKa005enFYa3RJWWtvM2cvQT09",
+    "IIIT Kalyani":      "https://iiitkalyani.ac.in/career",
+    "IIIT Lucknow":      "https://iiitl.ac.in/index.php/project-vacancy/",
+    "IIIT Dharwad":      "https://iiitdwd.ac.in/careers/",
+    "IIIT Manipur":      "https://iiitmanipur.ac.in/pages/recruitment/recruit.php",
+    "IIIT Nagpur":       "https://www.iiitn.ac.in/recruitments",
+    "IIIT Pune":         "https://iiitp.ac.in/careers",
+    "IIIT Ranchi":       "https://iiitranchi.ac.in/Recruitments.aspx",
+    "IIIT Surat":        "https://iiitsurat.ac.in/career",
+    "IIIT Bhopal":       "https://iiitbhopal.ac.in/",
+    "IIIT Bhagalpur":    "https://www.iiitbh.ac.in/recruitment-2024",
+    "IIIT Agartala":     "https://iiitagartala.ac.in/recruitment.html",
+    "IIIT Naya Raipur":  "https://www.iiitnr.ac.in/employment-data",
+    "IIIT Una":          "https://iiitu.ac.in/recruitment",
+    "IIIT Tiruchirappalli": "https://iiitt.ac.in/",
+    "IIIT Vadodara":     "https://iiitvadodara.ac.in/staff_positions.php",
+    "IIIT Kota":         "https://iiitkota.ac.in/recruitment",
+    "IIIT Sonepat":      "https://iiitsonepat.ac.in/",
+    "IIIT Raichur":      "https://iiitr.ac.in/careers",
+    "IIIT Kottayam":     "https://www.iiitkottayam.ac.in/#!career",
+    # IISERs
+    "IISER Pune":        "https://www.iiserpune.ac.in/opportunities/openings",
+    "IISER Kolkata":     "https://www.iiserkol.ac.in/old/en/announcements/advertisement/",
+    "IISER Mohali":      "https://www.iisermohali.ac.in/project-positions",
+    "IISER Bhopal":      "https://iiserb.ac.in/join_iiserb",
+    "IISER TVM":         "https://www.iisertvm.ac.in/openings",
+    "IISER Tirupati":    "https://www.iisertirupati.ac.in/jobs/",
+    "IISER Berhampur":   "https://www.iiserbpr.ac.in/opportunity/contractual",
+    # ISIs
+    "ISI Kolkata":       "https://www.isical.ac.in/public/jobs",
+    "ISI Delhi":         "https://www.isid.ac.in/~statmath/index.php?module=Academics",
+    "ISI Bangalore":     "https://www.isibang.ac.in/~eau/jobopportunities.htm",
+    "ISI Chennai":       "https://isic.isichennai.res.in/assets/Oth/Jobs/",
+    "ISI Tezpur":        "https://www.isine.ac.in/careers.php",
+}
+
 st.set_page_config(
     page_title="Research Opportunity Aggregator",
     page_icon=None,
@@ -89,7 +171,7 @@ def main():
     df = pd.DataFrame(data)
 
     # Ensure all expected columns exist
-    for col in ["institute", "department", "title", "position_type", "deadline", "detail_url", "raw_text"]:
+    for col in ["institute", "department", "eligibility", "title", "position_type", "deadline", "detail_url", "raw_text"]:
         if col not in df.columns:
             df[col] = ""
 
@@ -163,28 +245,30 @@ def main():
         st.info("No openings match the selected filters.")
         return
 
-    display_cols = ["institute", "department", "title", "position_type", "deadline", "detail_url"]
+    display_cols = ["institute", "eligibility", "title", "position_type", "deadline", "detail_url"]
     show_df = filtered[display_cols].reset_index(drop=True)
 
     # ── Render via components.html so target=_blank links actually open ───────
-    # st.markdown strips/intercepts anchor clicks at the React layer;
-    # components.html() renders in a fully isolated iframe that respects
-    # standard browser link behaviour.
-    def _make_link(url):
-        if url and str(url).startswith("http"):
-            return f'<a href="{url}" target="_blank" rel="noopener noreferrer">Open ↗</a>'
-        return "—"
+    def _make_link(url, institute):
+        """Return a link cell. Falls back to the institute's portal URL if blank."""
+        clean_url = str(url).strip() if url else ""
+        if not clean_url or not clean_url.startswith("http"):
+            clean_url = INSTITUTE_FALLBACK_URL.get(str(institute), "")
+            if clean_url:
+                return f'<a href="{clean_url}" target="_blank" rel="noopener noreferrer" class="portal">Portal ↗</a>'
+            return "—"
+        return f'<a href="{clean_url}" target="_blank" rel="noopener noreferrer">Open ↗</a>'
 
     html_rows = ""
     for i, row in enumerate(show_df.itertuples(index=False), start=1):
-        link_cell = _make_link(row.detail_url)
-        dept = str(row.department) if row.department else ""
+        link_cell = _make_link(row.detail_url, row.institute)
+        elig = str(row.eligibility) if row.eligibility else "—"
         title_escaped = str(row.title).replace("<", "&lt;").replace(">", "&gt;")
         html_rows += (
             f"<tr>"
             f"<td class='num'>{i}</td>"
             f"<td class='inst'>{row.institute}</td>"
-            f"<td class='dept'>{dept}</td>"
+            f"<td class='elig'>{elig}</td>"
             f"<td class='title'>{title_escaped}</td>"
             f"<td class='type'>{row.position_type}</td>"
             f"<td class='dl'>{row.deadline or '—'}</td>"
@@ -216,13 +300,14 @@ def main():
   tbody tr:hover {{ background: #dde8ff; }}
   td.num  {{ width: 40px; color: #888; text-align: right; }}
   td.inst {{ width: 130px; font-weight: 600; color: #1f4e79; }}
-  td.dept {{ width: 160px; font-size: 12px; color: #555; }}
-  td.title{{ width: 280px; }}
+  td.elig {{ width: 180px; font-size: 12px; color: #444; }}
+  td.title{{ width: 260px; }}
   td.type {{ width: 110px; }}
   td.dl   {{ width: 100px; white-space: nowrap; }}
   td.link {{ width: 70px; text-align: center; }}
   a {{ color: #1a73e8; font-weight: 700; text-decoration: none; }}
   a:hover {{ text-decoration: underline; color: #0d47a1; }}
+  a.portal {{ color: #6a1e9e; }}
 </style>
 </head>
 <body>
@@ -230,7 +315,7 @@ def main():
 <table>
   <thead>
     <tr>
-      <th>#</th><th>Institute</th><th>Department</th>
+      <th>#</th><th>Institute</th><th>Eligibility</th>
       <th>Title</th><th>Type</th><th>Deadline</th><th>Link</th>
     </tr>
   </thead>

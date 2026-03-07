@@ -1,7 +1,7 @@
 import logging
 import re
 
-from scrapers.utils import BaseScraper, clean_text, extract_dates, extract_department, normalize_position_type
+from scrapers.utils import BaseScraper, clean_text, extract_dates, extract_department, extract_eligibility, normalize_position_type
 
 logger = logging.getLogger(__name__)
 
@@ -72,6 +72,7 @@ class IITMadrasScraper(BaseScraper):
             dates = extract_dates(raw_text)
             deadline = dates[-1] if dates else ""
             department = extract_department(raw_text)
+            eligibility = extract_eligibility(raw_text)
 
             link_tag = parent.find("a", href=True) if parent else None
             detail_url = ""
@@ -95,6 +96,7 @@ class IITMadrasScraper(BaseScraper):
                 "institute": "IIT Madras",
                 "network": "IIT",
                 "department": department,
+                "eligibility": eligibility,
                 "title": title,
                 "position_type": normalize_position_type(title),
                 "deadline": deadline,

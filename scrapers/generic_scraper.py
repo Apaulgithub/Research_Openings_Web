@@ -18,7 +18,7 @@ import logging
 
 from scrapers.utils import (
     BaseScraper, clean_text, extract_dates, extract_department,
-    normalize_position_type,
+    extract_eligibility, normalize_position_type,
 )
 
 logger = logging.getLogger(__name__)
@@ -201,11 +201,13 @@ class GenericInstituteScraper(BaseScraper):
         dates = extract_dates(raw_text)
         deadline = dates[-1] if dates else ""
         department = extract_department(raw_text)
+        eligibility = extract_eligibility(raw_text)
 
         return {
             "institute": self.institute_name,
             "network": self.network,
             "department": department,
+            "eligibility": eligibility,
             "title": title,
             "position_type": normalize_position_type(title),
             "deadline": deadline,
@@ -234,11 +236,13 @@ class GenericInstituteScraper(BaseScraper):
         dates = extract_dates(raw_text)
         deadline = dates[-1] if dates else ""
         department = extract_department(raw_text)
+        eligibility = extract_eligibility(raw_text)
 
         return {
             "institute": self.institute_name,
             "network": self.network,
             "department": department,
+            "eligibility": eligibility,
             "title": title,
             "position_type": normalize_position_type(title),
             "deadline": deadline,

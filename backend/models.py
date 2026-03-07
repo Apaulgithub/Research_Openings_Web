@@ -8,6 +8,7 @@ class Opening(BaseModel):
     institute: str
     network: str = ""
     department: str = ""
+    eligibility: str = ""
     title: str
     position_type: str
     deadline: str = ""
