@@ -23,8 +23,9 @@ build/
 # Logs
 *.log
 
-# Data cache (keep .gitkeep)
+# Data cache – ignore individual institute files, keep the merged snapshot
 data/*.json
+!data/all_openings_latest.json
 
 # Environment
 .env

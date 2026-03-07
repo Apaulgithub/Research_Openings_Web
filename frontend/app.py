@@ -108,7 +108,23 @@ st.set_page_config(
 
 @st.cache_data(ttl=300)
 def load_data():
-    """Load openings from the most recent merged JSON."""
+    """Load openings from the most recent merged JSON.
+
+    Priority:
+      1. data/all_openings_latest.json  (committed snapshot, works on cloud)
+      2. data/all_openings_YYYYMMDD.json  (latest dated file, local scrapes)
+      3. Any other individual *.json files in data/
+    """
+    # 1. Canonical cloud-committed snapshot
+    latest_fixed = os.path.join(DATA_DIR, "all_openings_latest.json")
+    if os.path.exists(latest_fixed):
+        try:
+            with open(latest_fixed, "r", encoding="utf-8") as fh:
+                return json.load(fh)
+        except (json.JSONDecodeError, IOError) as exc:
+            logger.error("Failed to load %s: %s", latest_fixed, exc)
+
+    # 2. Most recent dated merged file
     pattern = os.path.join(DATA_DIR, "all_openings_*.json")
     files = sorted(glob.glob(pattern), reverse=True)
     if files:
@@ -118,6 +134,7 @@ def load_data():
         except (json.JSONDecodeError, IOError) as exc:
             logger.error("Failed to load %s: %s", files[0], exc)
 
+    # 3. Fallback: combine all individual files
     individual = sorted(glob.glob(os.path.join(DATA_DIR, "*.json")), reverse=True)
     all_data = []
     for fpath in individual:
