@@ -171,7 +171,7 @@ def main():
     df = pd.DataFrame(data)
 
     # Ensure all expected columns exist
-    for col in ["institute", "department", "eligibility", "title", "position_type", "deadline", "detail_url", "raw_text"]:
+    for col in ["institute", "title", "position_type", "deadline", "detail_url", "raw_text"]:
         if col not in df.columns:
             df[col] = ""
 
@@ -209,7 +209,6 @@ def main():
         mask = (
             filtered["title"].str.lower().str.contains(kw_lower, na=False)
             | filtered["raw_text"].str.lower().str.contains(kw_lower, na=False)
-            | filtered["department"].str.lower().str.contains(kw_lower, na=False)
         )
         filtered = filtered[mask]
 
@@ -245,7 +244,7 @@ def main():
         st.info("No openings match the selected filters.")
         return
 
-    display_cols = ["institute", "eligibility", "title", "position_type", "deadline", "detail_url"]
+    display_cols = ["institute", "title", "position_type", "deadline", "detail_url"]
     show_df = filtered[display_cols].reset_index(drop=True)
 
     # ── Render via components.html so target=_blank links actually open ───────
@@ -262,13 +261,11 @@ def main():
     html_rows = ""
     for i, row in enumerate(show_df.itertuples(index=False), start=1):
         link_cell = _make_link(row.detail_url, row.institute)
-        elig = str(row.eligibility) if row.eligibility else "—"
         title_escaped = str(row.title).replace("<", "&lt;").replace(">", "&gt;")
         html_rows += (
             f"<tr>"
             f"<td class='num'>{i}</td>"
             f"<td class='inst'>{row.institute}</td>"
-            f"<td class='elig'>{elig}</td>"
             f"<td class='title'>{title_escaped}</td>"
             f"<td class='type'>{row.position_type}</td>"
             f"<td class='dl'>{row.deadline or '—'}</td>"
@@ -299,11 +296,10 @@ def main():
   tbody tr:nth-child(even) {{ background: #f5f8ff; }}
   tbody tr:hover {{ background: #dde8ff; }}
   td.num  {{ width: 40px; color: #888; text-align: right; }}
-  td.inst {{ width: 130px; font-weight: 600; color: #1f4e79; }}
-  td.elig {{ width: 180px; font-size: 12px; color: #444; }}
-  td.title{{ width: 260px; }}
-  td.type {{ width: 110px; }}
-  td.dl   {{ width: 100px; white-space: nowrap; }}
+  td.inst {{ width: 150px; font-weight: 600; color: #1f4e79; }}
+  td.title{{ width: 380px; }}
+  td.type {{ width: 120px; }}
+  td.dl   {{ width: 110px; white-space: nowrap; }}
   td.link {{ width: 70px; text-align: center; }}
   a {{ color: #1a73e8; font-weight: 700; text-decoration: none; }}
   a:hover {{ text-decoration: underline; color: #0d47a1; }}
@@ -315,7 +311,7 @@ def main():
 <table>
   <thead>
     <tr>
-      <th>#</th><th>Institute</th><th>Eligibility</th>
+      <th>#</th><th>Institute</th>
       <th>Title</th><th>Type</th><th>Deadline</th><th>Link</th>
     </tr>
   </thead>
