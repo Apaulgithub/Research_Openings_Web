@@ -3,7 +3,7 @@ import json
 import glob
 import os
 import logging
-from datetime import datetime
+from datetime import datetime, date
 
 import pandas as pd
 import streamlit as st
@@ -158,10 +158,11 @@ def _parse_deadline_for_sort(deadline_str):
         return pd.NaT
     for fmt in (
         "%d/%m/%Y", "%d-%m-%Y", "%d.%m.%Y",
+        "%d/%m/%y",  "%d-%m-%y",  "%d.%m.%y",
         "%Y-%m-%d", "%Y/%m/%d",
         "%d %b %Y", "%d %B %Y",
         "%b %d, %Y", "%B %d, %Y",
-        "%d %b. %Y",
+        "%d %b. %Y", "%d %b %y",
     ):
         try:
             return pd.Timestamp(datetime.strptime(deadline_str.strip(), fmt))
@@ -172,6 +173,20 @@ def _parse_deadline_for_sort(deadline_str):
         return pd.Timestamp(deadline_str.strip())
     except Exception:
         return pd.NaT
+
+
+def _is_expired(deadline_str):
+    """Return True only when the deadline is clearly in the past.
+
+    Conservative: blank or unparseable deadlines are treated as NOT expired
+    so we never incorrectly hide valid openings.
+    """
+    if not deadline_str or not deadline_str.strip():
+        return False
+    ts = _parse_deadline_for_sort(deadline_str)
+    if ts is pd.NaT or pd.isna(ts):
+        return False
+    return ts.date() < date.today()
 
 
 def main():
@@ -198,9 +213,14 @@ def main():
 
     # Build a parsed-date column for sorting (hidden from display)
     df["_deadline_dt"] = df["deadline"].apply(_parse_deadline_for_sort)
+    # Mark expired entries
+    df["_expired"] = df["deadline"].apply(_is_expired)
 
     # ── Sidebar filters ──────────────────────────────────────────────────────
     st.sidebar.header("Filters")
+
+    # Hide expired ON by default — only show current/upcoming openings
+    hide_expired = st.sidebar.checkbox("Hide expired / past openings", value=True)
 
     institutes = sorted(df["institute"].dropna().unique().tolist())
     selected_institutes = st.sidebar.multiselect("Institute", options=institutes, default=[])
@@ -218,6 +238,10 @@ def main():
 
     # ── Apply filters ─────────────────────────────────────────────────────────
     filtered = df.copy()
+
+    # Apply expiry filter first (most impactful)
+    if hide_expired:
+        filtered = filtered[~filtered["_expired"]]
 
     if selected_institutes:
         filtered = filtered[filtered["institute"].isin(selected_institutes)]
@@ -250,7 +274,7 @@ def main():
         filtered = filtered[filtered["_deadline_dt"].notna()]
 
     if sort_by == "Deadline (soonest first)":
-        # Put NaT (no deadline) at the end
+        # Put NaT (no deadline) at the end — these are likely walk-in / ongoing
         filtered = filtered.sort_values("_deadline_dt", ascending=True, na_position="last")
     elif sort_by == "Deadline (latest first)":
         filtered = filtered.sort_values("_deadline_dt", ascending=False, na_position="last")
@@ -264,6 +288,7 @@ def main():
     if filtered.empty:
         st.info("No openings match the selected filters.")
         return
+
 
     display_cols = ["institute", "title", "position_type", "deadline", "detail_url"]
     show_df = filtered[display_cols].reset_index(drop=True)

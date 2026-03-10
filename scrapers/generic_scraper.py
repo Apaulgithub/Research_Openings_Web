@@ -18,7 +18,7 @@ import logging
 
 from scrapers.utils import (
     BaseScraper, clean_text, extract_dates, extract_department,
-    extract_eligibility, normalize_position_type,
+    extract_eligibility, normalize_position_type, is_expired,
 )
 
 logger = logging.getLogger(__name__)
@@ -37,9 +37,18 @@ _JUNK_TITLES = {
     "notices & circulars", "job opportunities", "project positions",
     "temporary positions", "number of vacancies", "last date of application",
     "s.no", "sl.no", "sl no", "#", "sno",
-    "title", "position", "post", "name",
+    "title", "position", "post", "name", "name of the post",
     "department", "posting date", "last date",
     "pi name", "details", "date", "action",
+    "contact person", "advertisement details",
+}
+
+# Heading keywords that signal the start of an "Archives" / "Past" section.
+# When current_section_only=True the scraper stops at the first element whose
+# text matches any of these.
+_ARCHIVE_MARKERS = {
+    "archive", "archives", "archives:", "past openings", "past advertisements",
+    "closed positions", "expired", "previous openings",
 }
 
 INSTITUTE_REGISTRY = [
@@ -101,7 +110,7 @@ INSTITUTE_REGISTRY = [
     {"name": "IIIT Raichur",     "url": "https://iiitr.ac.in/careers",                                                                  "base": "https://iiitr.ac.in",         "network": "IIIT",  "selenium": False},
     {"name": "IIIT Kottayam",    "url": "https://www.iiitkottayam.ac.in/#!career",                                                      "base": "https://www.iiitkottayam.ac.in","network": "IIIT", "selenium": False},
     # ------------------------------------------------------------------ IISERs
-    {"name": "IISER Kolkata",    "url": "https://www.iiserkol.ac.in/old/en/announcements/advertisement/",                               "base": "https://www.iiserkol.ac.in",  "network": "IISER", "selenium": False},
+    {"name": "IISER Kolkata",    "url": "https://www.iiserkol.ac.in/old/en/announcements/advertisement/",                               "base": "https://www.iiserkol.ac.in",  "network": "IISER", "selenium": False, "current_section_only": True},
     {"name": "IISER Mohali",     "url": "https://www.iisermohali.ac.in/project-positions",                                              "base": "https://www.iisermohali.ac.in","network": "IISER","selenium": False},
     {"name": "IISER Bhopal",     "url": "https://iiserb.ac.in/join_iiserb",                                                             "base": "https://iiserb.ac.in",        "network": "IISER", "selenium": False},
     {"name": "IISER TVM",        "url": "https://www.iisertvm.ac.in/openings",                                                          "base": "https://www.iisertvm.ac.in",  "network": "IISER", "selenium": False},
@@ -123,7 +132,8 @@ INSTITUTE_REGISTRY = [
 class GenericInstituteScraper(BaseScraper):
     """A configurable scraper for standard institute pages."""
 
-    def __init__(self, name, url, base_url, use_selenium=False, network=""):
+    def __init__(self, name, url, base_url, use_selenium=False, network="",
+                 current_section_only=False):
         super().__init__(
             institute_name=name,
             url=url,
@@ -131,6 +141,9 @@ class GenericInstituteScraper(BaseScraper):
         )
         self.base_url = base_url
         self.network = network
+        # When True, stop scraping at the first "Archives / Past" heading so
+        # only the current-openings section of the page is captured.
+        self.current_section_only = current_section_only
 
     def scrape(self):
         """Scrape openings from the configured institute URL."""
@@ -145,26 +158,95 @@ class GenericInstituteScraper(BaseScraper):
 
         openings = []
 
-        tables = soup.find_all("table")
-        for table in tables:
-            body = table.find("tbody")
-            rows = body.find_all("tr") if body else table.find_all("tr")
-            for row in rows:
-                record = self._parse_table_row(row)
-                if record:
-                    openings.append(record)
+        if self.current_section_only:
+            # Find the innermost <div> that directly contains both a <table>
+            # and the archive marker as siblings, then walk its children in
+            # order stopping at the archive marker.
+            #
+            # Fallback: if no such container is found, just use the first
+            # table on the page.
 
-        if not openings:
-            containers = soup.select(
-                "div.view-content div.views-row, "
-                "ul li, "
-                "article, "
-                "div.content div.field-items div"
-            )
-            for container in containers:
-                record = self._parse_generic(container)
-                if record:
-                    openings.append(record)
+            def _find_content_div(soup_obj):
+                """Return the <div> whose direct children include a <table>
+                AND a short archive-marker element as siblings."""
+                for div in soup_obj.find_all("div"):
+                    direct_tags = [c for c in div.children
+                                   if hasattr(c, "name") and c.name]
+                    has_table = any(c.name == "table" for c in direct_tags)
+                    if not has_table:
+                        continue
+                    for c in direct_tags:
+                        t = c.get_text(" ", strip=True).lower()
+                        if len(t) < 80 and any(
+                            m in t for m in _ARCHIVE_MARKERS
+                        ):
+                            return div
+                return None
+
+            content_div = _find_content_div(soup)
+
+            if content_div is not None:
+                archive_hit = False
+                for child in content_div.children:
+                    if not hasattr(child, "name") or not child.name:
+                        continue
+                    if archive_hit:
+                        break
+                    # Check for archive boundary
+                    t = child.get_text(" ", strip=True).lower()
+                    if len(t) < 80 and any(
+                        m in t for m in _ARCHIVE_MARKERS
+                    ):
+                        self.logger.info(
+                            "Stopping at archive marker <%s>: '%s'",
+                            child.name, t[:60],
+                        )
+                        archive_hit = True
+                        break
+                    # Harvest tables at this level
+                    if child.name == "table":
+                        rows = child.find_all("tr")
+                        for row in rows:
+                            record = self._parse_table_row(row)
+                            if record:
+                                openings.append(record)
+                    # Also find tables nested one level deep (e.g. inside a div)
+                    elif child.name in ("div", "section"):
+                        for tbl in child.find_all("table", recursive=False):
+                            rows = tbl.find_all("tr")
+                            for row in rows:
+                                record = self._parse_table_row(row)
+                                if record:
+                                    openings.append(record)
+            else:
+                # Fallback: just take the very first table on the page
+                first_table = soup.find("table")
+                if first_table:
+                    rows = first_table.find_all("tr")
+                    for row in rows:
+                        record = self._parse_table_row(row)
+                        if record:
+                            openings.append(record)
+        else:
+            tables = soup.find_all("table")
+            for table in tables:
+                rows = table.find_all("tr")
+                for row in rows:
+                    record = self._parse_table_row(row)
+                    if record:
+                        openings.append(record)
+
+            if not openings:
+                containers = soup.select(
+                    "div.view-content div.views-row, "
+                    "ul li, "
+                    "article, "
+                    "div.content div.field-items div"
+                )
+                for container in containers:
+                    record = self._parse_generic(container)
+                    if record:
+                        openings.append(record)
 
         self.logger.info(
             "Scraped %d openings from %s.", len(openings), self.institute_name
@@ -266,6 +348,7 @@ def scrape_all_generic():
             base_url=entry["base"],
             use_selenium=entry.get("selenium", False),
             network=entry.get("network", ""),
+            current_section_only=entry.get("current_section_only", False),
         )
         try:
             results = scraper.scrape()

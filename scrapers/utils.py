@@ -195,6 +195,7 @@ def extract_dates(text):
       - YYYY-MM-DD
       - 12 Dec 2024 / 12th Dec 2024 / 12-Dec-2024
       - Dec 12, 2024 / December 12 2024
+      - Walk-in-interview on 19.01.2026  (date extracted from surrounding text)
     Returns a list of matched date strings (may contain duplicates).
     """
     patterns = [
@@ -211,6 +212,51 @@ def extract_dates(text):
     for pattern in patterns:
         dates.extend(re.findall(pattern, text, re.IGNORECASE))
     return dates
+
+
+# Date formats tried when parsing a deadline string to a datetime object.
+_DATE_FORMATS = [
+    "%d/%m/%Y", "%d-%m-%Y", "%d.%m.%Y",
+    "%d/%m/%y",  "%d-%m-%y",  "%d.%m.%y",
+    "%Y-%m-%d",  "%Y/%m/%d",
+    "%d %b %Y",  "%d %B %Y",
+    "%b %d, %Y", "%B %d, %Y",
+    "%d %b. %Y",
+    "%d %b %y",
+]
+
+
+def parse_deadline_date(deadline_str: str) -> Optional[datetime]:
+    """Parse a raw deadline string into a datetime, or return None."""
+    if not deadline_str or not deadline_str.strip():
+        return None
+    text = deadline_str.strip()
+    for fmt in _DATE_FORMATS:
+        try:
+            return datetime.strptime(text, fmt)
+        except ValueError:
+            continue
+    # Flexible fallback via pandas (handles many edge cases)
+    try:
+        import pandas as pd
+        ts = pd.Timestamp(text)
+        return ts.to_pydatetime()
+    except Exception:
+        return None
+
+
+def is_expired(deadline_str: str, today: Optional[datetime] = None) -> bool:
+    """Return True only when the deadline is clearly in the past.
+
+    Conservative rule:
+      - If the date cannot be parsed → assume NOT expired (keep it).
+      - If parsed date < today     → expired (hide it).
+    """
+    dt = parse_deadline_date(deadline_str)
+    if dt is None:
+        return False
+    ref = today or datetime.now()
+    return dt.date() < ref.date()
 
 
 def extract_department(text):

@@ -16,6 +16,7 @@ from scrapers.iit_kharagpur import IITKharagpurScraper
 from scrapers.iit_kanpur import IITKanpurScraper
 from scrapers.iiser_pune import IISERPuneScraper
 from scrapers.generic_scraper import scrape_all_generic
+from scrapers.utils import is_expired
 
 logging.basicConfig(
     level=logging.INFO,
@@ -48,6 +49,25 @@ def deduplicate(openings):
     return unique
 
 
+def filter_active(openings):
+    """Remove openings whose deadline has clearly passed.
+
+    Conservative: if deadline is blank or unparseable, the record is KEPT
+    (we can't be sure it's expired).  Only records with a clearly past date
+    are removed.
+    """
+    active = []
+    removed = 0
+    for item in openings:
+        deadline = item.get("deadline", "")
+        if is_expired(deadline):
+            removed += 1
+        else:
+            active.append(item)
+    logger.info("Removed %d expired openings, %d remain.", removed, len(active))
+    return active
+
+
 def run_all():
     """Execute all scrapers and save a merged, deduplicated JSON file."""
     all_openings = []
@@ -71,6 +91,9 @@ def run_all():
 
     all_openings = deduplicate(all_openings)
     logger.info("Total unique openings after dedup: %d", len(all_openings))
+
+    all_openings = filter_active(all_openings)
+    logger.info("Total active openings after expiry filter: %d", len(all_openings))
 
     merged_path = os.path.join(
         DATA_DIR,
