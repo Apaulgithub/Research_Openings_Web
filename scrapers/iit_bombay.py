@@ -12,7 +12,7 @@ class IITBombayScraper(BaseScraper):
         super().__init__(
             institute_name="IIT Bombay",
             url="https://rnd.iitb.ac.in/jobs",
-            use_selenium=True,
+            use_selenium=False,
         )
 
     def scrape(self):

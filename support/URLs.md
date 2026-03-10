@@ -164,3 +164,16 @@
 | --- | --- | --- |
 | ISI Tezpur | <https://www.isine.ac.in/careers.php> | Visiting Scientists, Project Linked Persons <sup>71</sup> |
 | --- | --- | --- |
+
+
+### URLs for additional Research and Project Roles
+
+| **Center** | **Specific Recruitment/Job URL** | **Unit-Specific Focus** |
+| --- | --- | --- |
+| Jadavpur University | <https://jadavpuruniversity.in/notifications/> | Project Research Scientist, Research Assistant <sup>72</sup> |
+| --- | --- | --- |
+| IISC Bangalore | <https://iisc.ac.in/careers/contract-project-staff/> | Project Assistant, Research Associate <sup>73</sup> |
+| --- | --- | --- |
+| --- | --- | --- |
+| IIEST Shibpur | <https://www.iiests.ac.in/IIEST/Notices/?type=Employment> | Research Engineer, Research Associate <sup>74</sup> |
+| --- | --- | --- |

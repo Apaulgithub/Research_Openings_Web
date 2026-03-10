@@ -12,7 +12,7 @@ class IITDelhiScraper(BaseScraper):
         super().__init__(
             institute_name="IIT Delhi",
             url="https://ird.iitd.ac.in/current-openings",
-            use_selenium=True,
+            use_selenium=False,
         )
 
     def scrape(self):

@@ -97,6 +97,10 @@ INSTITUTE_FALLBACK_URL = {
     "ISI Bangalore":     "https://www.isibang.ac.in/~eau/jobopportunities.htm",
     "ISI Chennai":       "https://isic.isichennai.res.in/assets/Oth/Jobs/",
     "ISI Tezpur":        "https://www.isine.ac.in/careers.php",
+    # Other Institutes
+    "IISc Bangalore":    "https://iisc.ac.in/careers/contract-project-staff/",
+    "Jadavpur University": "https://jadavpuruniversity.in/notifications/",
+    "IIEST Shibpur":     "https://www.iiests.ac.in/IIEST/Notices/?type=Employment",
 }
 
 st.set_page_config(

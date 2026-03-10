@@ -47,7 +47,7 @@ INSTITUTE_REGISTRY = [
     {"name": "IIT Roorkee",      "url": "https://iitr.ac.in/Careers/Project%20Jobs.html",                                               "base": "https://iitr.ac.in",          "network": "IIT",   "selenium": False},
     {"name": "IIT Guwahati",     "url": "https://iitg.ac.in/rndproj/recruitment/",                                                      "base": "https://iitg.ac.in",          "network": "IIT",   "selenium": False},
     {"name": "IIT Hyderabad",    "url": "https://iith.ac.in/careers/",                                                                  "base": "https://iith.ac.in",          "network": "IIT",   "selenium": False},
-    {"name": "IIT Jodhpur",      "url": "https://erponline.iitj.ac.in/RnDOutside/projectTemporaryAppointment.htm",                      "base": "https://erponline.iitj.ac.in","network": "IIT",   "selenium": True},
+    {"name": "IIT Jodhpur",      "url": "https://erponline.iitj.ac.in/RnDOutside/projectTemporaryAppointment.htm",                      "base": "https://erponline.iitj.ac.in","network": "IIT",   "selenium": False},
     {"name": "IIT Indore",       "url": "https://www.iiti.ac.in/recruitments/project-positions",                                        "base": "https://www.iiti.ac.in",      "network": "IIT",   "selenium": False},
     {"name": "IIT BHU Varanasi", "url": "https://iitbhu.ac.in/dean/dord/recruitment",                                                   "base": "https://iitbhu.ac.in",        "network": "IIT",   "selenium": False},
     {"name": "IIT ISM Dhanbad",  "url": "https://people.iitism.ac.in/~research/",                                                       "base": "https://people.iitism.ac.in", "network": "IIT",   "selenium": False},
@@ -113,6 +113,10 @@ INSTITUTE_REGISTRY = [
     {"name": "ISI Bangalore",    "url": "https://www.isibang.ac.in/~eau/jobopportunities.htm",                                          "base": "https://www.isibang.ac.in",   "network": "ISI",   "selenium": False},
     {"name": "ISI Chennai",      "url": "https://isic.isichennai.res.in/assets/Oth/Jobs/",                                              "base": "https://isic.isichennai.res.in","network": "ISI",  "selenium": False},
     {"name": "ISI Tezpur",       "url": "https://www.isine.ac.in/careers.php",                                                          "base": "https://www.isine.ac.in",     "network": "ISI",   "selenium": False},
+    # ----------------------------------------------------------- Other Institutes
+    {"name": "IISc Bangalore",   "url": "https://iisc.ac.in/careers/contract-project-staff/",                                           "base": "https://iisc.ac.in",          "network": "Other", "selenium": False},
+    {"name": "Jadavpur University","url": "https://jadavpuruniversity.in/notifications/",                                              "base": "https://jadavpuruniversity.in","network": "Other","selenium": False},
+    {"name": "IIEST Shibpur",    "url": "https://www.iiests.ac.in/IIEST/Notices/?type=Employment",                                      "base": "https://www.iiests.ac.in",    "network": "Other", "selenium": False},
 ]
 
 

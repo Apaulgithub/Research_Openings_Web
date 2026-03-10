@@ -6,6 +6,7 @@ Usage:
 import json
 import logging
 import os
+import shutil
 from datetime import datetime
 
 from scrapers.iit_delhi import IITDelhiScraper
@@ -79,6 +80,11 @@ def run_all():
         with open(merged_path, "w", encoding="utf-8") as fh:
             json.dump(all_openings, fh, ensure_ascii=False, indent=2)
         logger.info("Merged file saved to %s", merged_path)
+
+        # Also copy as the canonical latest snapshot (used by Streamlit Cloud)
+        latest_path = os.path.join(DATA_DIR, "all_openings_latest.json")
+        shutil.copy2(merged_path, latest_path)
+        logger.info("Latest snapshot updated: %s", latest_path)
     except IOError as exc:
         logger.error("Failed to write merged file: %s", exc)
 

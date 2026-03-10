@@ -12,7 +12,7 @@ class IITKharagpurScraper(BaseScraper):
         super().__init__(
             institute_name="IIT Kharagpur",
             url="https://erp.iitkgp.ac.in/SRICStaffRecruitment/Advertise.jsp",
-            use_selenium=True,
+            use_selenium=False,
         )
 
     def scrape(self):

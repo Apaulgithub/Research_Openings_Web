@@ -10,12 +10,18 @@ from typing import Optional
 
 import requests
 from bs4 import BeautifulSoup
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options as ChromeOptions
-from selenium.webdriver.chrome.service import Service as ChromeService
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+
+# Selenium imports – optional; scrapers fall back to requests when unavailable.
+try:
+    from selenium import webdriver
+    from selenium.webdriver.chrome.options import Options as ChromeOptions
+    from selenium.webdriver.chrome.service import Service as ChromeService
+    from selenium.webdriver.common.by import By
+    from selenium.webdriver.support.ui import WebDriverWait
+    from selenium.webdriver.support import expected_conditions as EC
+    SELENIUM_AVAILABLE = True
+except ImportError:
+    SELENIUM_AVAILABLE = False
 
 logging.basicConfig(
     level=logging.INFO,
@@ -48,7 +54,15 @@ class BaseScraper(ABC):
         self.driver = None
 
     def _init_selenium(self):
-        """Initialize a headless Chrome WebDriver."""
+        """Initialize a headless Chrome WebDriver.
+
+        If Selenium is not installed or Chrome / chromedriver is not
+        available, logs a warning and raises so the caller can fall back
+        to a plain requests fetch.
+        """
+        if not SELENIUM_AVAILABLE:
+            raise RuntimeError("Selenium package is not installed.")
+
         try:
             options = ChromeOptions()
             options.add_argument("--headless=new")
