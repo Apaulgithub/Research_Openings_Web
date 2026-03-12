@@ -1,6 +1,6 @@
 import logging
 
-from scrapers.utils import BaseScraper, clean_text, extract_dates, extract_department, extract_eligibility, normalize_position_type
+from scrapers.utils import BaseScraper, clean_text, extract_dates, extract_department, extract_eligibility, normalize_position_type, fetch_detail_deadline
 
 logger = logging.getLogger(__name__)
 
@@ -73,6 +73,8 @@ class IISERPuneScraper(BaseScraper):
         raw_text = clean_text(element.get_text())
         dates = extract_dates(raw_text)
         deadline = dates[-1] if dates else ""
+        if not deadline and detail_url:
+            deadline = fetch_detail_deadline(detail_url, session=self.session)
         department = extract_department(raw_text)
         eligibility = extract_eligibility(raw_text)
 

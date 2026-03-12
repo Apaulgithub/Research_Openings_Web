@@ -1,7 +1,7 @@
 import logging
 import re
 
-from scrapers.utils import BaseScraper, clean_text, extract_dates, extract_department, extract_eligibility, normalize_position_type
+from scrapers.utils import BaseScraper, clean_text, extract_dates, extract_department, extract_eligibility, normalize_position_type, fetch_detail_deadline
 
 logger = logging.getLogger(__name__)
 
@@ -68,12 +68,6 @@ class IITMadrasScraper(BaseScraper):
             if parent is None:
                 parent = heading.parent
 
-            raw_text = clean_text(parent.get_text()) if parent else text
-            dates = extract_dates(raw_text)
-            deadline = dates[-1] if dates else ""
-            department = extract_department(raw_text)
-            eligibility = extract_eligibility(raw_text)
-
             link_tag = parent.find("a", href=True) if parent else None
             detail_url = ""
             if link_tag:
@@ -82,6 +76,14 @@ class IITMadrasScraper(BaseScraper):
                     detail_url = BASE_URL + "/" + href.lstrip("/")
                 elif href.startswith("http"):
                     detail_url = href
+
+            raw_text = clean_text(parent.get_text()) if parent else text
+            dates = extract_dates(raw_text)
+            deadline = dates[-1] if dates else ""
+            if not deadline and detail_url:
+                deadline = fetch_detail_deadline(detail_url, session=self.session)
+            department = extract_department(raw_text)
+            eligibility = extract_eligibility(raw_text)
 
             title = re.sub(
                 r"^announcement\s+for\s+the\s+post\s+of\s+",

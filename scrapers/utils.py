@@ -259,7 +259,146 @@ def is_expired(deadline_str: str, today: Optional[datetime] = None) -> bool:
     return dt.date() < ref.date()
 
 
-def extract_department(text):
+# URL patterns that are definitely not recruitment-specific detail pages.
+# Fetching these would waste time and return wrong dates.
+_JUNK_URL_FRAGMENTS = (
+    "javascript:", "mailto:", "tel:", "google.com/forms", "docs.google",
+    "forms.gle", "mathworks.com", "linkedin.com", "facebook.com",
+)
+
+_JUNK_URL_PATHS = {
+    "/", "/#", "",
+}
+
+# Keywords that appear near deadline text in recruitment notices.
+_DEADLINE_KEYWORDS_RE = re.compile(
+    r"(?:last\s+date|deadline|closing\s+date|last\s+date\s+of\s+application"
+    r"|date\s+of\s+interview|walk.?in|application\s+last\s+date)",
+    re.IGNORECASE,
+)
+
+
+def _is_junk_url(url: str) -> bool:
+    """Return True if a detail URL is unlikely to hold a recruitment notice."""
+    if not url or not url.startswith("http"):
+        return True
+    for frag in _JUNK_URL_FRAGMENTS:
+        if frag in url:
+            return True
+    try:
+        from urllib.parse import urlparse
+        path = urlparse(url).path.rstrip("/")
+        if path in _JUNK_URL_PATHS:
+            return True
+        # Very short generic paths like /about, /home, /contact
+        segments = [s for s in path.split("/") if s]
+        if len(segments) == 1 and segments[0].lower() in (
+            "about", "about-us", "home", "contact", "contact-us",
+            "careers", "recruitment", "jobs", "vacancies",
+            "how-reach", "reach-us", "news", "notices",
+        ):
+            return True
+    except Exception:
+        pass
+    return False
+
+
+def _extract_deadline_from_text(text: str) -> str:
+    """Find the best deadline date in a block of text.
+
+    Strategy:
+      1. Search for a date that immediately follows a deadline-keyword phrase
+         (e.g. "Last Date: 25/03/2026").  Return the first such hit.
+      2. Fall back to the last date found anywhere in the text (common pattern:
+         notices list dates top-to-bottom, last date = deadline).
+    Returns an empty string when nothing parseable is found.
+    """
+    if not text:
+        return ""
+    for m in _DEADLINE_KEYWORDS_RE.finditer(text):
+        # Look in the ~120 chars after the keyword for a date
+        window = text[m.end(): m.end() + 120]
+        candidates = extract_dates(window)
+        for raw_date in candidates:
+            if parse_deadline_date(raw_date) is not None:
+                return raw_date
+    # Fallback: last parseable date anywhere in the text
+    all_dates = extract_dates(text)
+    for raw_date in reversed(all_dates):
+        if parse_deadline_date(raw_date) is not None:
+            return raw_date
+    return ""
+
+
+def fetch_detail_deadline(url: str, session=None, timeout: int = 10) -> str:
+    """Fetch a detail page (HTML or PDF) and extract a deadline date.
+
+    Returns the best deadline string found, or "" if nothing could be parsed.
+    The function is intentionally conservative:
+      - Skips URLs that look like navigation/junk links.
+      - Caps download size to avoid hanging on huge files.
+      - Silently swallows all errors (caller treats "" as "unknown").
+    """
+    if _is_junk_url(url):
+        return ""
+
+    try:
+        import requests as _requests
+        sess = session or _requests.Session()
+        headers = {
+            "User-Agent": (
+                "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            )
+        }
+        resp = sess.get(url, timeout=timeout, headers=headers, stream=True)
+        resp.raise_for_status()
+
+        content_type = resp.headers.get("Content-Type", "").lower()
+        # Download up to 200 KB – enough for a full PDF / HTML notice
+        raw = b""
+        for chunk in resp.iter_content(chunk_size=8192):
+            raw += chunk
+            if len(raw) >= 204800:
+                break
+
+        # ── PDF path ──────────────────────────────────────────────────────────
+        if "pdf" in content_type or url.lower().endswith(".pdf"):
+            try:
+                import io
+                import pypdf
+                reader = pypdf.PdfReader(io.BytesIO(raw))
+                text_parts = []
+                for page in reader.pages[:4]:
+                    text_parts.append(page.extract_text() or "")
+                text = " ".join(text_parts)
+            except Exception:
+                # pypdf failed (encrypted, malformed) – treat as no deadline
+                return ""
+        # ── HTML path ─────────────────────────────────────────────────────────
+        elif "html" in content_type or not url.lower().endswith(
+            (".pdf", ".docx", ".doc", ".xlsx", ".zip")
+        ):
+            try:
+                from bs4 import BeautifulSoup as _BS
+                soup = _BS(raw.decode("utf-8", errors="replace"), "lxml")
+                # Remove script/style noise
+                for tag in soup(["script", "style", "nav", "footer", "header"]):
+                    tag.decompose()
+                text = soup.get_text(" ", strip=True)
+            except Exception:
+                return ""
+        else:
+            # .docx / .doc / other binary – skip
+            return ""
+
+        return _extract_deadline_from_text(clean_text(text))
+
+    except Exception:
+        return ""
+
+
+
     """Try to extract a department name from raw_text.
 
     Looks for common patterns like:
