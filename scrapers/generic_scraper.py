@@ -42,7 +42,33 @@ _JUNK_TITLES = {
     "department", "posting date", "last date",
     "pi name", "details", "date", "action",
     "contact person", "advertisement details",
+    # Additional navigation / page-section headings
+    "vision & mission", "goals", "core values", "about city", "connectivity",
+    "board of governors", "senate members", "committees", "governance",
+    "director", "director's message", "chairman bog", "at a glance",
+    "background", "council", "iisers council", "vision mission",
+    "how to reach", "reach us", "campus", "about campus", "about iit",
+    "about nit", "about iiit", "about iiser", "about iisc",
+    "head of department", "technical", "professional support staff",
+    "directorate", "director's desk", "secretariat", "coordination forum",
+    "nivahika", "directory", "senate", "building and works committee",
+    "journey so far", "rankings", "reports", "acts", "rules", "statutes",
+    "history", "legacy", "overview", "profile", "highlights",
+    "fee structure", "admissions", "academics overview", "research overview",
+    "events", "workshops", "seminars", "conferences", "tenders & quotations",
+    "media", "press", "rti", "grievance", "feedback", "faq",
+    "departments", "schools", "centres", "laboratories", "facilities",
+    "sports", "cultural", "nss", "ncc", "clubs",
+    "international", "collaborations", "industry", "consultancy",
+    "alumni association", "endowment", "donation",
+    "email", "phone", "address", "location", "map",
+    "apply online", "apply now", "click here", "download", "view",
+    "notification", "circular", "order", "memorandum",
 }
+
+# Minimum meaningful raw_text length for a record to be kept.
+# Entries shorter than this are almost certainly nav links, not job postings.
+_MIN_RAW_TEXT_LEN = 30
 
 # Heading keywords that signal the start of an "Archives" / "Past" section.
 # When current_section_only=True the scraper stops at the first element whose
@@ -285,6 +311,8 @@ class GenericInstituteScraper(BaseScraper):
             detail_url = self._resolve_url(link_tag["href"])
 
         raw_text = clean_text(row.get_text())
+        if len(raw_text) < _MIN_RAW_TEXT_LEN:
+            return None
         dates = extract_dates(raw_text)
         deadline = dates[-1] if dates else ""
         if not deadline and detail_url:
@@ -322,6 +350,8 @@ class GenericInstituteScraper(BaseScraper):
             detail_url = self._resolve_url(link_tag["href"])
 
         raw_text = clean_text(element.get_text())
+        if len(raw_text) < _MIN_RAW_TEXT_LEN:
+            return None
         dates = extract_dates(raw_text)
         deadline = dates[-1] if dates else ""
         if not deadline and detail_url:

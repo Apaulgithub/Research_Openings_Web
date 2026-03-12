@@ -336,7 +336,8 @@ def fetch_detail_deadline(url: str, session=None, timeout: int = 10) -> str:
     Returns the best deadline string found, or "" if nothing could be parsed.
     The function is intentionally conservative:
       - Skips URLs that look like navigation/junk links.
-      - Caps download size to avoid hanging on huge files.
+      - PDFs are downloaded in full (truncation corrupts the structure).
+      - HTML pages are capped at 256 KB to avoid hanging on large sites.
       - Silently swallows all errors (caller treats "" as "unknown").
     """
     if _is_junk_url(url):
@@ -351,22 +352,34 @@ def fetch_detail_deadline(url: str, session=None, timeout: int = 10) -> str:
                 "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
             )
         }
-        resp = sess.get(url, timeout=timeout, headers=headers, stream=True)
-        resp.raise_for_status()
 
-        content_type = resp.headers.get("Content-Type", "").lower()
-        # Download up to 200 KB – enough for a full PDF / HTML notice
-        raw = b""
-        for chunk in resp.iter_content(chunk_size=8192):
-            raw += chunk
-            if len(raw) >= 204800:
-                break
+        is_pdf = url.lower().endswith(".pdf")
+
+        if is_pdf:
+            # Download full PDF — truncation corrupts the xref table
+            resp = sess.get(url, timeout=timeout, headers=headers)
+            resp.raise_for_status()
+            raw = resp.content
+            content_type = resp.headers.get("Content-Type", "").lower()
+        else:
+            # Stream HTML; cap at 256 KB
+            resp = sess.get(url, timeout=timeout, headers=headers, stream=True)
+            resp.raise_for_status()
+            content_type = resp.headers.get("Content-Type", "").lower()
+            raw = b""
+            for chunk in resp.iter_content(chunk_size=8192):
+                raw += chunk
+                if len(raw) >= 262144:
+                    break
 
         # ── PDF path ──────────────────────────────────────────────────────────
-        if "pdf" in content_type or url.lower().endswith(".pdf"):
+        if "pdf" in content_type or is_pdf:
             try:
                 import io
+                import logging as _logging
                 import pypdf
+                # Suppress noisy pypdf warnings (malformed xref tables, EOF, etc.)
+                _logging.getLogger("pypdf").setLevel(_logging.ERROR)
                 reader = pypdf.PdfReader(io.BytesIO(raw))
                 text_parts = []
                 for page in reader.pages[:4]:
@@ -398,7 +411,7 @@ def fetch_detail_deadline(url: str, session=None, timeout: int = 10) -> str:
         return ""
 
 
-
+def extract_department(text):
     """Try to extract a department name from raw_text.
 
     Looks for common patterns like:
