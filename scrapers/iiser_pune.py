@@ -1,6 +1,7 @@
 import logging
 
 from scrapers.utils import BaseScraper, clean_text, extract_dates, extract_department, extract_eligibility, normalize_position_type, fetch_detail_deadline
+from scrapers.generic_scraper import _JUNK_TITLES, _STRONG_JOB_KEYWORDS
 
 logger = logging.getLogger(__name__)
 
@@ -49,6 +50,9 @@ class IISERPuneScraper(BaseScraper):
             if len(cells) < 2:
                 return None
             title = clean_text(cells[0].get_text())
+        elif element.name == "a":
+            # Element IS the anchor (from `ul li a` selector)
+            title = clean_text(element.get_text())
         else:
             title_tag = element.find(["a", "h3", "h4", "span"])
             if title_tag is None:
@@ -60,8 +64,10 @@ class IISERPuneScraper(BaseScraper):
             return None
         if title.lower() in ("s.no", "sl.no", "#", "title", "position"):
             return None
+        if title.lower() in _JUNK_TITLES:
+            return None
 
-        link_tag = element.find("a")
+        link_tag = element if element.name == "a" else element.find("a")
         detail_url = ""
         if link_tag and link_tag.get("href"):
             href = str(link_tag["href"])
@@ -71,6 +77,12 @@ class IISERPuneScraper(BaseScraper):
                 detail_url = href
 
         raw_text = clean_text(element.get_text())
+
+        # Keyword-legitimacy check: only keep records that look like job postings.
+        combined_lower = (title + " " + raw_text).lower()
+        if not any(kw in combined_lower for kw in _STRONG_JOB_KEYWORDS):
+            return None
+
         dates = extract_dates(raw_text)
         deadline = dates[-1] if dates else ""
         if not deadline and detail_url:

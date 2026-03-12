@@ -207,10 +207,21 @@ def extract_dates(text):
         r"\b\d{1,2}(?:st|nd|rd|th)?[-/.\s]+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*[-/.\s]+\d{4}\b",
         # Dec 12, 2024  /  December 12 2024
         r"\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},?\s+\d{4}\b",
+        # Corrupted PDF format: DDMMYYYY (8 digits, e.g. "27032026" from bad OCR)
+        # Also handles DD1MM12026 (slashes OCR'd as "1"), e.g. "2710312026"
+        r"(?<!\d)(\d{2})1?(\d{2})1?(202\d)(?!\d)",
     ]
     dates = []
-    for pattern in patterns:
-        dates.extend(re.findall(pattern, text, re.IGNORECASE))
+    for i, pattern in enumerate(patterns):
+        if i == 4:
+            # DDMMYYYY / DD1MM12026: reconstruct as DD/MM/YYYY
+            for m in re.finditer(pattern, text, re.IGNORECASE):
+                day, month, year = m.group(1), m.group(2), m.group(3)
+                # Validate basic range
+                if 1 <= int(day) <= 31 and 1 <= int(month) <= 12:
+                    dates.append(f"{day}/{month}/{year}")
+        else:
+            dates.extend(re.findall(pattern, text, re.IGNORECASE))
     return dates
 
 
@@ -264,6 +275,17 @@ def is_expired(deadline_str: str, today: Optional[datetime] = None) -> bool:
 _JUNK_URL_FRAGMENTS = (
     "javascript:", "mailto:", "tel:", "google.com/forms", "docs.google",
     "forms.gle", "mathworks.com", "linkedin.com", "facebook.com",
+)
+
+# Filename keywords that indicate a PDF is NOT a recruitment advertisement —
+# e.g. telephone directories, UG brochures, student conduct codes.  These are
+# common attachment links found in site headers/footers on many institute pages
+# and should not be treated as detail advertisement PDFs.
+_JUNK_PDF_FILENAME_FRAGMENTS = (
+    "telephone", "directory", "brochure", "conduct-code", "conduct_code",
+    "discipline", "swagatham", "calendar", "timetable", "time-table",
+    "fee-structure", "annual-report", "annual_report", "newsletter",
+    "gazette", "nitc-calendar", "hostel", "rti-",
 )
 
 _JUNK_URL_PATHS = {
@@ -405,7 +427,66 @@ def fetch_detail_deadline(url: str, session=None, timeout: int = 10) -> str:
             # .docx / .doc / other binary – skip
             return ""
 
-        return _extract_deadline_from_text(clean_text(text))
+        deadline = _extract_deadline_from_text(clean_text(text))
+
+        # ── Secondary: follow first .pdf link when HTML yields no date ────────
+        if not deadline:
+            try:
+                from bs4 import BeautifulSoup as _BS2
+                from urllib.parse import urljoin
+                import io as _io
+                import logging as _logging2
+                import pypdf as _pypdf
+                _soup2 = _BS2(raw.decode("utf-8", errors="replace"), "lxml")
+                _seen_pdf_urls: set = set()
+                for _a in _soup2.find_all("a", href=True):
+                    _href = str(_a["href"]).strip()
+                    if not _href.lower().endswith(".pdf"):
+                        continue
+                    if not _href.startswith("http"):
+                        _href = urljoin(url, _href)
+                    if _is_junk_url(_href):
+                        continue
+                    # Skip PDFs whose filename contains non-recruitment keywords
+                    _fname_lower = _href.lower()
+                    if any(
+                        _frag in _fname_lower
+                        for _frag in _JUNK_PDF_FILENAME_FRAGMENTS
+                    ):
+                        continue
+                    # Deduplicate PDF URLs
+                    if _href in _seen_pdf_urls:
+                        continue
+                    _seen_pdf_urls.add(_href)
+                    try:
+                        _pdf_resp = sess.get(_href, timeout=timeout, headers=headers)
+                        _pdf_resp.raise_for_status()
+                        _logging2.getLogger("pypdf").setLevel(_logging2.ERROR)
+                        _reader = _pypdf.PdfReader(_io.BytesIO(_pdf_resp.content))
+                        _pdf_text = " ".join(
+                            _pg.extract_text() or "" for _pg in _reader.pages[:4]
+                        )
+                        _pdf_clean = clean_text(_pdf_text)
+                        # Prefer keyword-proximate date (more reliable signal)
+                        _pdf_deadline = ""
+                        for _m in _DEADLINE_KEYWORDS_RE.finditer(_pdf_clean):
+                            _window = _pdf_clean[_m.end(): _m.end() + 120]
+                            _cands = extract_dates(_window)
+                            for _rd in _cands:
+                                if parse_deadline_date(_rd) is not None:
+                                    _pdf_deadline = _rd
+                                    break
+                            if _pdf_deadline:
+                                break
+                        if _pdf_deadline:
+                            deadline = _pdf_deadline
+                            break
+                    except Exception:
+                        continue
+            except Exception:
+                pass
+
+        return deadline
 
     except Exception:
         return ""

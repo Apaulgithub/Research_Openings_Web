@@ -64,11 +64,57 @@ _JUNK_TITLES = {
     "email", "phone", "address", "location", "map",
     "apply online", "apply now", "click here", "download", "view",
     "notification", "circular", "order", "memorandum",
+    # People directory pages (not job postings)
+    "fellows and project scientists", "post-doctoral fellows",
+    "postdoctoral fellows", "research fellows", "project scientists",
+    "visiting faculty", "adjunct faculty", "emeritus faculty",
+    "faculty members", "faculty list", "research staff list",
+    "current members", "group members", "team members",
+    # Generic link labels (no content)
+    "application", "details", "corrigendum", "advertisement",
+    "apply", "apply here", "link", "pdf", "click",
+    # Careers page headings (not individual postings)
+    "careers", "careers@iiitl", "job openings", "current openings",
+    "open positions", "opportunities", "employment opportunities",
 }
 
 # Minimum meaningful raw_text length for a record to be kept.
 # Entries shorter than this are almost certainly nav links, not job postings.
 _MIN_RAW_TEXT_LEN = 30
+
+# Keywords that indicate an entry is a genuine job/research posting.
+# _parse_generic uses this to reject nav items and news blurbs.
+# These are split into "strong" (sufficient alone) and "context" (require
+# at least two present or a strong indicator in the title).
+_STRONG_JOB_KEYWORDS = {
+    "jrf", "srf", "ra-i", "ra-ii", "ra-iii",
+    "junior research fellow", "senior research fellow",
+    "research associate", "research assistant", "research intern",
+    "project associate", "project assistant", "project staff",
+    "project scientist", "field investigator", "field assistant",
+    "post-doctoral", "postdoctoral", "post doctoral",
+    "walk-in", "walk in interview",
+    "advertisement for the position", "advertisement for the post",
+    "advertisement for recruitment", "application are invited",
+    "applications are invited", "applications invited",
+    "recruitment to the post", "engagement of",
+    "advt. no", "advt no", "advt:",
+    # IIT Bhubaneswar style: project-specific positions with [Last Date: …]
+    "[last date:", "last date:", "last date :",
+    # General short-form / common patterns
+    "vacancy", "vacancies", "recruitment of",
+    "post of ", "position of ", "positions of ",
+    "project position", "project staff", "project fellow",
+    "temporary position", "temporary post",
+    "contractual appointment", "contract appointment",
+    "purely temporary", "purely on contract",
+    "one position", "two positions", "three positions",
+    "no. of post", "number of post",
+    # Advertisement-title patterns (e.g. IIIT Lucknow inline PDF links)
+    "project advertisement", "vacancy notice", "recruitment notice",
+    "recruitment advertisement", "employment notice",
+    "job advertisement", "appointment advertisement",
+}
 
 # Heading keywords that signal the start of an "Archives" / "Past" section.
 # When current_section_only=True the scraper stops at the first element whose
@@ -86,7 +132,7 @@ INSTITUTE_REGISTRY = [
     {"name": "IIT Jodhpur",      "url": "https://erponline.iitj.ac.in/RnDOutside/projectTemporaryAppointment.htm",                      "base": "https://erponline.iitj.ac.in","network": "IIT",   "selenium": False},
     {"name": "IIT Indore",       "url": "https://www.iiti.ac.in/recruitments/project-positions",                                        "base": "https://www.iiti.ac.in",      "network": "IIT",   "selenium": False},
     {"name": "IIT BHU Varanasi", "url": "https://iitbhu.ac.in/dean/dord/recruitment",                                                   "base": "https://iitbhu.ac.in",        "network": "IIT",   "selenium": False},
-    {"name": "IIT ISM Dhanbad",  "url": "https://people.iitism.ac.in/~research/",                                                       "base": "https://people.iitism.ac.in", "network": "IIT",   "selenium": False},
+    {"name": "IIT ISM Dhanbad",  "url": "https://people.iitism.ac.in/~research/Projectopening.php",                                        "base": "https://people.iitism.ac.in", "network": "IIT",   "selenium": False},
     {"name": "IIT Bhubaneswar",  "url": "https://www.iitbbs.ac.in/index.php/home/jobs/research-jobs/",                                  "base": "https://www.iitbbs.ac.in",    "network": "IIT",   "selenium": False},
     {"name": "IIT Gandhinagar",  "url": "https://iitgn.ac.in/careers/staff",                                                            "base": "https://iitgn.ac.in",         "network": "IIT",   "selenium": False},
     {"name": "IIT Patna",        "url": "https://www.iitp.ac.in/?option=com_content&view=article&id=1758:notice-board-list",            "base": "https://www.iitp.ac.in",      "network": "IIT",   "selenium": False},
@@ -264,16 +310,33 @@ class GenericInstituteScraper(BaseScraper):
                         openings.append(record)
 
             if not openings:
-                containers = soup.select(
-                    "div.view-content div.views-row, "
-                    "ul li, "
-                    "article, "
-                    "div.content div.field-items div"
-                )
-                for container in containers:
-                    record = self._parse_generic(container)
-                    if record:
-                        openings.append(record)
+                # Try each selector independently (in priority order) and use
+                # the first one that yields valid records.  Using a single
+                # multi-selector causes duplication when a more-specific
+                # selector (e.g. div.xc-calendar-list-item) matches elements
+                # that are also children of a less-specific one (ul li).
+                _CONTAINER_SELECTORS = [
+                    "div.view-content div.views-row",
+                    "div.xc-calendar-list-item",
+                    "article.elementor-post",
+                    "article",
+                    "ul li",
+                    "ol li",
+                    "div.content div.field-items div",
+                    # Inline-link content areas (e.g. IIIT Lucknow's
+                    # gdlr-core-text-box-item-content, generic p a, td a)
+                    "div.gdlr-core-text-box-item-content a",
+                ]
+                for _sel in _CONTAINER_SELECTORS:
+                    _candidates = soup.select(_sel)
+                    _found = []
+                    for container in _candidates:
+                        record = self._parse_generic(container)
+                        if record:
+                            _found.append(record)
+                    if _found:
+                        openings.extend(_found)
+                        break  # stop at first selector that produces results
 
         self.logger.info(
             "Scraped %d openings from %s.", len(openings), self.institute_name
@@ -299,6 +362,11 @@ class GenericInstituteScraper(BaseScraper):
             return None
 
         title = clean_text(cells[0].get_text())
+        # If first cell is empty, a serial number, or just a digit string,
+        # the actual title is probably in the second cell (e.g. NIT Hamirpur).
+        if (not title or title.lower() in _JUNK_TITLES or len(title) < 6
+                or title.isdigit()):
+            title = clean_text(cells[1].get_text())
         if not title or title.lower() in _JUNK_TITLES:
             return None
         # Drop very short strings (likely index numbers or single letters)
@@ -310,9 +378,18 @@ class GenericInstituteScraper(BaseScraper):
         if link_tag and link_tag.get("href"):
             detail_url = self._resolve_url(link_tag["href"])
 
-        raw_text = clean_text(row.get_text())
+        # Use a space separator so adjacent cell texts don't run together
+        # (fixes cases like "Click here20.03.2026" → "Click here 20.03.2026")
+        raw_text = clean_text(row.get_text(" ", strip=True))
         if len(raw_text) < _MIN_RAW_TEXT_LEN:
             return None
+
+        # Keyword-legitimacy check: skip rows that are not actual job postings
+        # (e.g. PhD admission lists, exam results, faculty lists).
+        combined_lower = (title + " " + raw_text).lower()
+        if not any(kw in combined_lower for kw in _STRONG_JOB_KEYWORDS):
+            return None
+
         dates = extract_dates(raw_text)
         deadline = dates[-1] if dates else ""
         if not deadline and detail_url:
@@ -335,14 +412,62 @@ class GenericInstituteScraper(BaseScraper):
 
     def _parse_generic(self, element):
         """Fallback parser for non-table layouts."""
-        link_tag = element.find("a")
+        # When the container element IS itself an <a> tag (e.g. when the CSS
+        # selector targets anchors directly, like "div.foo a"), use the element
+        # itself as the link_tag — element.find("a") searches only children.
+        _element_is_anchor = getattr(element, "name", None) == "a"
+        if _element_is_anchor:
+            link_tag = element
+        else:
+            link_tag = element.find("a")
         if link_tag is None:
             return None
 
         title = clean_text(link_tag.get_text())
-        if not title or len(title) < 8:
+
+        # If the first link's text is a junk label (e.g. "Application",
+        # "Details"), look for non-link text in the element that could serve
+        # as the actual job title (e.g. IIIT Pune's div.career-div-left).
+        if not title or len(title) < 8 or title.lower() in _JUNK_TITLES:
+            # Try to find a non-anchor text node or dedicated title element
+            title_el = element.find(class_=lambda c: c and "title" in c.lower())
+            if title_el is None:
+                # Fall back: collect non-link text from the element
+                raw_non_link = " ".join(
+                    chunk for chunk in element.strings
+                    if chunk.strip() and not any(
+                        chunk.strip() == a.get_text(strip=True)
+                        for a in element.find_all("a")
+                    )
+                )
+                title = clean_text(raw_non_link)
+            else:
+                title = clean_text(title_el.get_text())
+            if not title or len(title) < 8 or title.lower() in _JUNK_TITLES:
+                return None
+            # The first link was a junk label — find the "Details" or main link
+            # (prefer a link that points to a PDF advertisement over the
+            # "Application" form link).
+            for a in element.find_all("a", href=True):
+                lbl = clean_text(a.get_text()).lower()
+                href = a.get("href", "")
+                if lbl in ("details",) or ("advertisement" in href.lower() and ".pdf" in href.lower()):
+                    link_tag = a
+                    break
+
+        if not title or title.lower() in _JUNK_TITLES:
             return None
-        if title.lower() in _JUNK_TITLES:
+
+        # Reject email addresses and bare URLs as titles
+        # (e.g. "deanfaculty(AT)iisermohali.ac.in" or "Careers@IIITL")
+        _title_lower = title.lower()
+        if title.startswith("http"):
+            return None
+        # Obfuscated email pattern: word(AT)domain or word[at]domain
+        if "(at)" in _title_lower or "[at]" in _title_lower:
+            return None
+        # Careers page heading pattern
+        if _title_lower.startswith("careers@"):
             return None
 
         detail_url = ""
@@ -350,8 +475,29 @@ class GenericInstituteScraper(BaseScraper):
             detail_url = self._resolve_url(link_tag["href"])
 
         raw_text = clean_text(element.get_text())
-        if len(raw_text) < _MIN_RAW_TEXT_LEN:
+        # When the container element IS the <a> tag (e.g. selectors like
+        # "div.gdlr-core-text-box-item-content a"), raw_text == link text.
+        # Use the title as raw_text in that case; skip the length floor.
+        if not _element_is_anchor and len(raw_text) < _MIN_RAW_TEXT_LEN:
             return None
+
+        # Keyword-legitimacy check: the combined text (title + raw_text) must
+        # contain at least one strong job/recruitment keyword.  This blocks nav
+        # menu entries, news blurbs, and CMS sidebar links.
+        combined_lower = (title + " " + raw_text).lower()
+        if not any(kw in combined_lower for kw in _STRONG_JOB_KEYWORDS):
+            # Special relaxation: a link pointing to a PDF whose title contains
+            # "advertisement" is almost certainly a job posting (e.g. IIIT Lucknow).
+            _is_pdf_ad = (
+                detail_url.lower().endswith(".pdf")
+                and any(kw in _title_lower for kw in (
+                    "advertisement", "vacancy notice", "recruitment notice",
+                    "recruitment advertisement", "employment notice",
+                ))
+            )
+            if not _is_pdf_ad:
+                return None
+
         dates = extract_dates(raw_text)
         deadline = dates[-1] if dates else ""
         if not deadline and detail_url:
