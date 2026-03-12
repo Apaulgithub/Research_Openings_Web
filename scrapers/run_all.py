@@ -95,6 +95,12 @@ def run_all():
     all_openings = filter_active(all_openings)
     logger.info("Total active openings after expiry filter: %d", len(all_openings))
 
+    # Stamp every record with the current run time so the frontend can sort
+    # by "newly added" (records scraped in the latest run appear first).
+    scraped_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    for item in all_openings:
+        item.setdefault("scraped_at", scraped_at)
+
     merged_path = os.path.join(
         DATA_DIR,
         "all_openings_{}.json".format(datetime.now().strftime("%Y%m%d")),

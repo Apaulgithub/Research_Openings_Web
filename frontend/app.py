@@ -207,7 +207,7 @@ def main():
     df = pd.DataFrame(data)
 
     # Ensure all expected columns exist
-    for col in ["institute", "title", "position_type", "deadline", "detail_url", "raw_text"]:
+    for col in ["institute", "title", "position_type", "deadline", "detail_url", "raw_text", "scraped_at"]:
         if col not in df.columns:
             df[col] = ""
 
@@ -264,7 +264,14 @@ def main():
     with col1:
         sort_by = st.selectbox(
             "Sort by",
-            options=["Deadline (soonest first)", "Deadline (latest first)", "Institute (A→Z)", "Institute (Z→A)", "Position Type"],
+            options=[
+                "Newly Added (newest first)",
+                "Deadline (soonest first)",
+                "Deadline (latest first)",
+                "Institute (A\u2192Z)",
+                "Institute (Z\u2192A)",
+                "Position Type",
+            ],
             index=0,
         )
     with col2:
@@ -273,7 +280,9 @@ def main():
     if hide_no_deadline:
         filtered = filtered[filtered["_deadline_dt"].notna()]
 
-    if sort_by == "Deadline (soonest first)":
+    if sort_by == "Newly Added (newest first)":
+        filtered = filtered.sort_values("scraped_at", ascending=False, na_position="last")
+    elif sort_by == "Deadline (soonest first)":
         # Put NaT (no deadline) at the end — these are likely walk-in / ongoing
         filtered = filtered.sort_values("_deadline_dt", ascending=True, na_position="last")
     elif sort_by == "Deadline (latest first)":
