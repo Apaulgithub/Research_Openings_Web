@@ -23,10 +23,17 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install system dependencies (OCR + PDF utils)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            tesseract-ocr \
+            poppler-utils
+
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install requests beautifulsoup4 lxml pandas pydantic
+          pip install -r requirements.txt
 
       - name: Run all scrapers
         run: python -m scrapers.run_all
