@@ -438,6 +438,7 @@ def fetch_detail_deadline(url: str, session=None, timeout: int = 10) -> str:
 
         # ── PDF path ──────────────────────────────────────────────────────────
         if "pdf" in content_type or is_pdf:
+            text = ""
             try:
                 import io
                 import logging as _logging
@@ -450,8 +451,30 @@ def fetch_detail_deadline(url: str, session=None, timeout: int = 10) -> str:
                     text_parts.append(page.extract_text() or "")
                 text = " ".join(text_parts)
             except Exception:
-                # pypdf failed (encrypted, malformed) – treat as no deadline
-                return ""
+                # pypdf failed (encrypted, malformed)
+                text = ""
+
+            # OCR fallback for scanned/image-only PDFs (common for NIT Calicut,
+            # ISI Tezpur, etc.). This is optional and only runs when pypdf
+            # yields no extractable text.
+            if not clean_text(text):
+                try:
+                    from pdf2image import convert_from_bytes
+                    import pytesseract
+
+                    images = convert_from_bytes(
+                        raw,
+                        first_page=1,
+                        last_page=2,
+                        fmt="png",
+                    )
+                    ocr_parts = []
+                    for img in images:
+                        ocr_parts.append(pytesseract.image_to_string(img) or "")
+                    text = " ".join(ocr_parts)
+                except Exception:
+                    # OCR not available (system deps missing) or conversion failed
+                    return ""
         # ── HTML path ─────────────────────────────────────────────────────────
         elif "html" in content_type or not url.lower().endswith(
             (".pdf", ".docx", ".doc", ".xlsx", ".zip")

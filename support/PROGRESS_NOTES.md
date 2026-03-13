@@ -283,7 +283,35 @@ for img in images:
     if deadline:
         return deadline
 ```
-Requires `sudo apt install tesseract-ocr poppler-utils` + `pip install pytesseract pdf2image`.
+Requires system packages `tesseract-ocr` + `poppler-utils` (for `pdftoppm`) plus
+Python packages `pytesseract` + `pdf2image`.
+
+**Installed in this repo:** `pdf2image`, `pytesseract`, `Pillow` were added to
+`requirements.txt`.
+
+**Still needed on the OS:**
+```bash
+sudo apt-get update
+sudo apt-get install -y tesseract-ocr poppler-utils
+```
+
+### 5.8 Scrape reliability: retries + broken TLS
+
+Some institutes intermittently fail due to connection resets/timeouts, and some
+hosts have broken/self-signed TLS chains (notably multiple ISI sites and
+Jadavpur University).
+
+**Implemented (13 Mar 2026):**
+- Added a small retry + exponential backoff in `BaseScraper._fetch_with_requests()`.
+- Added a tight insecure-TLS allowlist (`_INSECURE_TLS_HOST_ALLOWLIST`) and
+    automatically sets `verify=False` for those hosts.
+
+This restores scraping for:
+- ISI Kolkata, ISI Delhi, ISI Chennai, ISI Tezpur
+- Jadavpur University notifications page
+
+**Note:** Disabling TLS verification is a trade-off. It's restricted to a small
+allowlist and logs a warning whenever it's used.
 
 ### 5.8 Scrape reliability: retries + broken TLS
 
