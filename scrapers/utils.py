@@ -252,19 +252,26 @@ def extract_dates(text):
         # Dec 12, 2024  /  December 12 2024
         r"\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},?\s+\d{4}\b",
     # Corrupted PDF/OCR format: DDMMYYYY (8 digits, e.g. "27032026")
-    # Also handles DD1MM12026 (slashes OCR'd as "1"), e.g. "2710312026".
-    # NOTE: We restrict the year to 2020-2027 to avoid spurious "2028"
-    # matches that sometimes appear from broken PDF text extraction.
-    r"(?<!\d)(\d{2})1?(\d{2})1?(202[0-7])(?!\d)",
+    # Also handles common OCR confusions where separators get dropped or
+    # misread as '1': e.g. "2710312026" for "27/03/2026".
+    # NOTE: Restrict year to 2020-2030 to reduce spurious far-future matches.
+    r"(?<!\d)(\d{2})\D?(\d{2})\D?(202\d)(?!\d)",
     ]
     dates = []
     for i, pattern in enumerate(patterns):
         if i == len(patterns) - 1:
-            # DDMMYYYY / DD1MM12026: reconstruct as DD/MM/YYYY
+            # DDMMYYYY-ish: reconstruct as DD/MM/YYYY
             for m in re.finditer(pattern, text, re.IGNORECASE):
                 day, month, year = m.group(1), m.group(2), m.group(3)
-                # Validate basic range
-                if 1 <= int(day) <= 31 and 1 <= int(month) <= 12:
+                try:
+                    day_i = int(day)
+                    month_i = int(month)
+                    year_i = int(year)
+                except ValueError:
+                    continue
+                if not (2020 <= year_i <= 2030):
+                    continue
+                if 1 <= day_i <= 31 and 1 <= month_i <= 12:
                     dates.append(f"{day}/{month}/{year}")
         else:
             dates.extend(re.findall(pattern, text, re.IGNORECASE))
@@ -364,7 +371,8 @@ _JUNK_URL_PATHS = {
 # Keywords that appear near deadline text in recruitment notices.
 _DEADLINE_KEYWORDS_RE = re.compile(
     r"(?:last\s+date|deadline|closing\s+date|last\s+date\s+of\s+application"
-    r"|date\s+of\s+interview|walk.?in|application\s+last\s+date)",
+    r"|date\s+of\s+interview|walk.?in|application\s+last\s+date"
+    r"|submit\s+on\s+or\s+before|on\s+or\s+before|applications?\s+are\s+invited\s+up\s+to)",
     re.IGNORECASE,
 )
 
@@ -510,9 +518,8 @@ def fetch_detail_deadline(url: str, session=None, timeout: int = 10) -> str:
                 # pypdf failed (encrypted, malformed)
                 text = ""
 
-            # OCR fallback for scanned/image-only PDFs (common for NIT Calicut,
-            # ISI Tezpur, etc.). This is optional and only runs when pypdf
-            # yields no extractable text.
+            # OCR fallback for scanned/image-only PDFs (common for several NITs).
+            # This only runs when pypdf yields no extractable text.
             if not clean_text(text):
                 try:
                     from pdf2image import convert_from_bytes
@@ -529,7 +536,8 @@ def fetch_detail_deadline(url: str, session=None, timeout: int = 10) -> str:
                         ocr_parts.append(pytesseract.image_to_string(img) or "")
                     text = " ".join(ocr_parts)
                 except Exception:
-                    # OCR not available (system deps missing) or conversion failed
+                    # OCR not available (system deps missing) or conversion failed.
+                    # Keep it conservative: return blank rather than guessing.
                     return ""
         # ── HTML path ─────────────────────────────────────────────────────────
         elif "html" in content_type or not url.lower().endswith(
