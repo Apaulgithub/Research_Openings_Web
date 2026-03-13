@@ -256,6 +256,10 @@ for u in urls:
 ```
 If PDFs do have dates but `filter_active()` is removing them (dates are in 2025), they will disappear correctly once the scraper runs.
 
+**Update (13 Mar 2026):** The IISc PDFs are machine-readable, but most of them
+do not include an explicit closing date at all (they ask candidates to email a
+CV). In those cases leaving `deadline=""` is correct.
+
 ### 5.3 IIT BHU Varanasi — `#v-pills-corri` anchor URL
 
 The entry has `detail_url = "https://iitbhu.ac.in/#v-pills-corri"` which is a JavaScript tab anchor, not a PDF.  The actual corrigendum notice URL needs to be found manually on the page.
@@ -280,6 +284,24 @@ for img in images:
         return deadline
 ```
 Requires `sudo apt install tesseract-ocr poppler-utils` + `pip install pytesseract pdf2image`.
+
+### 5.8 Scrape reliability: retries + broken TLS
+
+Some institutes intermittently fail due to connection resets/timeouts, and some
+hosts have broken/self-signed TLS chains (notably multiple ISI sites and
+Jadavpur University).
+
+**Implemented (13 Mar 2026):**
+- Added a small retry + exponential backoff in `BaseScraper._fetch_with_requests()`.
+- Added a tight insecure-TLS allowlist (`_INSECURE_TLS_HOST_ALLOWLIST`) and
+    automatically sets `verify=False` for those hosts.
+
+This restores scraping for:
+- ISI Kolkata, ISI Delhi, ISI Chennai, ISI Tezpur
+- Jadavpur University notifications page
+
+**Note:** Disabling TLS verification is a trade-off. It's restricted to a small
+allowlist and logs a warning whenever it's used.
 
 ### 5.5 IIITDM Kancheepuram — 58 Google Forms (unfixable)
 

@@ -36,6 +36,18 @@ DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 os.makedirs(DATA_DIR, exist_ok=True)
 
 
+# Some institute sites have broken/self-signed TLS chains. For these hosts only,
+# we disable certificate verification so scrapes don't fail completely.
+# This is intentionally a tight allowlist.
+_INSECURE_TLS_HOST_ALLOWLIST = {
+    "www.isical.ac.in",
+    "www.isid.ac.in",
+    "isic.isichennai.res.in",
+    "www.isine.ac.in",
+    "jadavpuruniversity.in",
+}
+
+
 class BaseScraper(ABC):
     """Base class for all institute scrapers."""
 
@@ -104,23 +116,53 @@ class BaseScraper(ABC):
 
     def _fetch_with_requests(self, url, timeout=15):
         """Fetch static HTML with requests."""
+        # Transient network issues are common for institute sites.
+        # A small retry with backoff improves daily scrape stability without
+        # significantly slowing down the pipeline.
+        verify_tls = True
         try:
-            response = self.session.get(url, timeout=timeout)
-            response.raise_for_status()
-            self.logger.info("Fetched %s (status %d)", url, response.status_code)
-            return response.text
-        except requests.exceptions.Timeout:
-            self.logger.error("Timeout while fetching %s", url)
-            return None
-        except requests.exceptions.ConnectionError:
-            self.logger.error("Connection error for %s", url)
-            return None
-        except requests.exceptions.HTTPError as exc:
-            self.logger.error("HTTP error for %s: %s", url, exc)
-            return None
-        except requests.exceptions.RequestException as exc:
-            self.logger.error("Request failed for %s: %s", url, exc)
-            return None
+            from urllib.parse import urlparse
+
+            host = urlparse(url).netloc.lower()
+            if host in _INSECURE_TLS_HOST_ALLOWLIST:
+                verify_tls = False
+        except Exception:
+            pass
+
+        if not verify_tls:
+            self.logger.warning(
+                "TLS verification disabled for host in allowlist: %s",
+                url,
+            )
+
+        last_exc: Exception | None = None
+        for attempt in range(3):
+            try:
+                response = self.session.get(url, timeout=timeout, verify=verify_tls)
+                response.raise_for_status()
+                self.logger.info("Fetched %s (status %d)", url, response.status_code)
+                return response.text
+            except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as exc:
+                last_exc = exc
+                wait_s = 1.5 * (2 ** attempt)
+                self.logger.warning(
+                    "Network error fetching %s (attempt %d/3): %s; retrying in %.1fs",
+                    url,
+                    attempt + 1,
+                    exc,
+                    wait_s,
+                )
+                time.sleep(wait_s)
+                continue
+            except requests.exceptions.HTTPError as exc:
+                self.logger.error("HTTP error for %s: %s", url, exc)
+                return None
+            except requests.exceptions.RequestException as exc:
+                self.logger.error("Request failed for %s: %s", url, exc)
+                return None
+
+        self.logger.error("Failed to fetch %s after 3 attempts: %s", url, last_exc)
+        return None
 
     def _fetch_with_selenium(self, url):
         """Fetch dynamic page content with Selenium."""
