@@ -247,15 +247,19 @@ def extract_dates(text):
         r"\b\d{4}[-/.]\d{1,2}[-/.]\d{1,2}\b",
         # 12th Dec 2024  /  12 Dec 2024  /  12-Dec-2024
         r"\b\d{1,2}(?:st|nd|rd|th)?[-/.\s]+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*[-/.\s]+\d{4}\b",
+    # 12th December, 2024  /  12 December 2024
+    r"\b\d{1,2}(?:st|nd|rd|th)?\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*,?\s+\d{4}\b",
         # Dec 12, 2024  /  December 12 2024
         r"\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},?\s+\d{4}\b",
-        # Corrupted PDF format: DDMMYYYY (8 digits, e.g. "27032026" from bad OCR)
-        # Also handles DD1MM12026 (slashes OCR'd as "1"), e.g. "2710312026"
-        r"(?<!\d)(\d{2})1?(\d{2})1?(202\d)(?!\d)",
+    # Corrupted PDF/OCR format: DDMMYYYY (8 digits, e.g. "27032026")
+    # Also handles DD1MM12026 (slashes OCR'd as "1"), e.g. "2710312026".
+    # NOTE: We restrict the year to 2020-2027 to avoid spurious "2028"
+    # matches that sometimes appear from broken PDF text extraction.
+    r"(?<!\d)(\d{2})1?(\d{2})1?(202[0-7])(?!\d)",
     ]
     dates = []
     for i, pattern in enumerate(patterns):
-        if i == 4:
+        if i == len(patterns) - 1:
             # DDMMYYYY / DD1MM12026: reconstruct as DD/MM/YYYY
             for m in re.finditer(pattern, text, re.IGNORECASE):
                 day, month, year = m.group(1), m.group(2), m.group(3)
@@ -271,7 +275,7 @@ def extract_dates(text):
 _DATE_FORMATS = [
     "%d/%m/%Y", "%d-%m-%Y", "%d.%m.%Y",
     "%d/%m/%y",  "%d-%m-%y",  "%d.%m.%y",
-    "%Y-%m-%d",  "%Y/%m/%d",
+    "%Y-%m-%d",  "%Y/%m/%d", "%Y.%m.%d",
     "%d %b %Y",  "%d %B %Y",
     "%b %d, %Y", "%B %d, %Y",
     "%d %b. %Y",
@@ -284,9 +288,32 @@ def parse_deadline_date(deadline_str: str) -> Optional[datetime]:
     if not deadline_str or not deadline_str.strip():
         return None
     text = deadline_str.strip()
+    # Normalize ordinal day suffixes: "18th March 2026" -> "18 March 2026"
+    text = re.sub(r"\b(\d{1,2})(st|nd|rd|th)\b", r"\1", text, flags=re.IGNORECASE)
+    # Drop obvious notice numbers that look like dates: "2025-26/02".
+    # IMPORTANT: don't reject real ISO dates like "2026-03-20".
+    if re.fullmatch(r"\d{4}[-/]\d{2}[-/]\d{1,2}", text):
+        parts = re.split(r"[-/]", text)
+        if len(parts) == 3:
+            y, mid, last = parts
+            # Notice-number heuristic: middle part is a *2-digit year* (e.g. 26)
+            # rather than a month (01-12).
+            try:
+                mid_i = int(mid)
+            except ValueError:
+                mid_i = 0
+            if mid_i > 12:
+                return None
     for fmt in _DATE_FORMATS:
         try:
-            return datetime.strptime(text, fmt)
+            dt = datetime.strptime(text, fmt)
+            # Reject impossible day/month combinations that sometimes appear in
+            # scraped PDFs (e.g. 31-11-2025). If strptime parsed it, it's real,
+            # but most impossible combos won't parse anyway; keep this check as
+            # a safety net if we later add more permissive parsing.
+            if not (1 <= dt.month <= 12 and 1 <= dt.day <= 31):
+                return None
+            return dt
         except ValueError:
             continue
     # Flexible fallback via pandas (handles many edge cases)
@@ -341,6 +368,14 @@ _DEADLINE_KEYWORDS_RE = re.compile(
     re.IGNORECASE,
 )
 
+# Phrases that frequently precede non-deadline dates inside advertisements
+# (e.g. project tenure end dates). If a candidate date is near these phrases,
+# we should ignore it.
+_NON_DEADLINE_CONTEXT_RE = re.compile(
+    r"(?:end\s+date|tenure\s+end|project\s+end|duration\s+of\s+the\s+project)",
+    re.IGNORECASE,
+)
+
 
 def _is_junk_url(url: str) -> bool:
     """Return True if a detail URL is unlikely to hold a recruitment notice."""
@@ -379,16 +414,37 @@ def _extract_deadline_from_text(text: str) -> str:
     """
     if not text:
         return ""
+
+    # Some institutes include notice numbers like "2025-26/02" or "2024-25/11"
+    # in prominent locations. Our date regex can misread these as dates.
+    # If such a pattern occurs, it should never be used as a deadline.
+    def _looks_like_notice_number(s: str) -> bool:
+        s = (s or "").strip()
+        # Examples: 2025-26/02, 2025-26/3, 2021-22/01
+        return re.fullmatch(r"\d{4}[-/]\d{2}[-/]\d{1,2}", s) is not None
     for m in _DEADLINE_KEYWORDS_RE.finditer(text):
         # Look in the ~120 chars after the keyword for a date
         window = text[m.end(): m.end() + 120]
         candidates = extract_dates(window)
         for raw_date in candidates:
+            # Ignore project end-date fields accidentally captured near keywords.
+            # We look a bit around the candidate inside the window.
+            try:
+                pos = window.find(raw_date)
+                around = window[max(0, pos - 40): pos + len(raw_date) + 40]
+                if _NON_DEADLINE_CONTEXT_RE.search(around):
+                    continue
+            except Exception:
+                pass
+            if _looks_like_notice_number(raw_date):
+                continue
             if parse_deadline_date(raw_date) is not None:
                 return raw_date
     # Fallback: last parseable date anywhere in the text
     all_dates = extract_dates(text)
     for raw_date in reversed(all_dates):
+        if _looks_like_notice_number(raw_date):
+            continue
         if parse_deadline_date(raw_date) is not None:
             return raw_date
     return ""
@@ -493,6 +549,11 @@ def fetch_detail_deadline(url: str, session=None, timeout: int = 10) -> str:
             return ""
 
         deadline = _extract_deadline_from_text(clean_text(text))
+
+        # If we extracted something that looks like a notice/reference number
+        # instead of a real date (common on NIT Durgapur / MNNIT PDFs), drop it.
+        if deadline and parse_deadline_date(deadline) is None:
+            deadline = ""
 
         # ── Secondary: follow first .pdf link when HTML yields no date ────────
         if not deadline:
