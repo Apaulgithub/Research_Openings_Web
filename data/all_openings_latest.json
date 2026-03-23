@@ -1,5 +1,44 @@
 [
   {
+    "institute": "IIT Madras",
+    "network": "IIT",
+    "department": "",
+    "eligibility": "",
+    "title": "Software Test Engineer/ Automation Tester -Advt 41/2026",
+    "position_type": "other",
+    "deadline": "26/03/2026",
+    "detail_url": "",
+    "raw_text": "Announcement for the post of Software Test Engineer/ Automation Tester -Advt 41/2026 Last Date - 26-03-2026 2 Yrs Chennai No of Vacancies - 2 Announcement for the post of Software Test Engineer/ Automation Tester -Advt 41/2026",
+    "hash": "4c2443ae55321d6b878f5760f85864f0ae07f0d03315ae745a62edad9fdc1405",
+    "scraped_at": "2026-03-23 07:19:16"
+  },
+  {
+    "institute": "IIT Madras",
+    "network": "IIT",
+    "department": "",
+    "eligibility": "",
+    "title": "Database Specialist / Database Administrator-Advt 40/2026",
+    "position_type": "other",
+    "deadline": "26/03/2026",
+    "detail_url": "",
+    "raw_text": "Announcement for the post of Database Specialist / Database Administrator-Advt 40/2026 Last Date - 26-03-2026 2 Yrs Chennai No of Vacancies - 1 Announcement for the post of Database Specialist / Database Administrator-Advt 40/2026",
+    "hash": "a24d9d08642e1a5262a8d88cea65db654f869a4a2013c8d93bc92f627f738e78",
+    "scraped_at": "2026-03-23 07:19:16"
+  },
+  {
+    "institute": "IIT Madras",
+    "network": "IIT",
+    "department": "",
+    "eligibility": "",
+    "title": "Project Officer-Advt 39/2026",
+    "position_type": "project_officer",
+    "deadline": "23/03/2026",
+    "detail_url": "",
+    "raw_text": "Announcement for the post of Project Officer-Advt 39/2026 Last Date - 23-03-2026 0 Yrs Chennai No of Vacancies - 1 Announcement for the post of Project Officer-Advt 39/2026",
+    "hash": "74fd9eb0525f9388fdaf557a7a74e08734be29378331bedcb87cd126e351fe76",
+    "scraped_at": "2026-03-23 07:19:16"
+  },
+  {
     "institute": "IIT Kharagpur",
     "network": "IIT",
     "department": "",
@@ -10,7 +49,7 @@
     "detail_url": "",
     "raw_text": "Temporary Position(s) Number of Vacancies Last Date of Application",
     "hash": "73cb361a4c2b5940459d83d28af337bc1f242522273992c72a641ad7778ffa48",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -23,7 +62,7 @@
     "detail_url": "",
     "raw_text": "Junior Project Officer PI Name - Pawan GoyalDept - Computer Science and Engineering 1 03-04-2026",
     "hash": "9e921aa91294e5ace6b8ca9c2ced91699369b24b2b79b9a143ea8400ae1b235d",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -36,7 +75,7 @@
     "detail_url": "",
     "raw_text": "Project Research Scientist - I (Non- Medical) PI Name - Koel ChaudhuryDept - School of Medical Science and Technology 1 01-04-2026",
     "hash": "47ac087183e58f17cd625dacad40f78a8b3a103a55bceb931fde126212df832c",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -49,20 +88,20 @@
     "detail_url": "",
     "raw_text": "Research Assistant PI Name - Richa ChopraDept - Centre of Excellence for Indian Knowledge Systems 1 25-03-2026",
     "hash": "cacb7df052a0ef59401023358a79c1d0c333976c5dae222215a709336126882c",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
     "network": "IIT",
     "department": "",
     "eligibility": "",
-    "title": "Junior Research Fellowship PI Name - Debaprasad KasthaDept - Electrical Engineering",
-    "position_type": "jrf",
-    "deadline": "22/03/2026",
+    "title": "Laboratory Assistant/Technician / Project Assistant / Technical Assistant/ Field Assistant PI Name - Debalay ChakrabartiDept - Metallurgical and Materials Engineering",
+    "position_type": "project_associate",
+    "deadline": "06/04/2026",
     "detail_url": "",
-    "raw_text": "Junior Research Fellowship PI Name - Debaprasad KasthaDept - Electrical Engineering 1 22-03-2026",
-    "hash": "ce6fafac07851a60f4f81a319659396499bf77b7a004700b6ca90bd272c58bc5",
-    "scraped_at": "2026-03-22 07:06:38"
+    "raw_text": "Laboratory Assistant/Technician / Project Assistant / Technical Assistant/ Field Assistant PI Name - Debalay ChakrabartiDept - Metallurgical and Materials Engineering 1 06-04-2026",
+    "hash": "f15256a2449e9f56f1cae4c82d43bb32cc6af424b4b6e00dfcc36769cbae0c90",
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -75,7 +114,7 @@
     "detail_url": "",
     "raw_text": "Project Associate-I PI Name - Monosij MaitraDept - Computer Science and Engineering 1 09-04-2026",
     "hash": "05d2b70ad17b7dd56ca604290d55306260cf685dd3fb5bbe0333c27963b80c39",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -88,7 +127,7 @@
     "detail_url": "",
     "raw_text": "Networking Lead PI Name - Dept - Alumni Affairs and International Relations 1 24-03-2026",
     "hash": "1c235fae8cbfd62f66affd83344cbf3f9a5860fbea22ad115cda7e716f40f9e0",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -101,7 +140,7 @@
     "detail_url": "",
     "raw_text": "Networking Executive PI Name - Dept - Alumni Affairs and International Relations 2 24-03-2026",
     "hash": "a1fcefbcc1a40d3ca653cc995e39400a907e853d2c5b128223f550b5705ba224",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -114,111 +153,7 @@
     "detail_url": "",
     "raw_text": "Marketing Executive PI Name - Dept - Alumni Affairs and International Relations 5 24-03-2026",
     "hash": "7cd9e57477511d49f3146ec909421557d6544dbb3a5ee08b7dc230a86e855a9c",
-    "scraped_at": "2026-03-22 07:06:38"
-  },
-  {
-    "institute": "IIT Kharagpur",
-    "network": "IIT",
-    "department": "",
-    "eligibility": "",
-    "title": "Stewardship Executive PI Name - Dept - Alumni Affairs and International Relations",
-    "position_type": "other",
-    "deadline": "24/03/2026",
-    "detail_url": "",
-    "raw_text": "Stewardship Executive PI Name - Dept - Alumni Affairs and International Relations 2 24-03-2026",
-    "hash": "916070169159614008f2f5d51ccf52eff113789b2a21274b48967151a4413d68",
-    "scraped_at": "2026-03-22 07:06:38"
-  },
-  {
-    "institute": "IIT Kharagpur",
-    "network": "IIT",
-    "department": "",
-    "eligibility": "",
-    "title": "Event Management Executive PI Name - Dept - Alumni Affairs and International Relations",
-    "position_type": "other",
-    "deadline": "24/03/2026",
-    "detail_url": "",
-    "raw_text": "Event Management Executive PI Name - Dept - Alumni Affairs and International Relations 2 24-03-2026",
-    "hash": "6d6df1aa0885c6e193b90e5706410b74e1870dd91f80fcab70417b6d483dab2b",
-    "scraped_at": "2026-03-22 07:06:38"
-  },
-  {
-    "institute": "IIT Kharagpur",
-    "network": "IIT",
-    "department": "",
-    "eligibility": "",
-    "title": "Event Management Lead PI Name - Dept - Alumni Affairs and International Relations",
-    "position_type": "other",
-    "deadline": "24/03/2026",
-    "detail_url": "",
-    "raw_text": "Event Management Lead PI Name - Dept - Alumni Affairs and International Relations 1 24-03-2026",
-    "hash": "c50ca969085783df180f81ed590170f0129a0326d13eed86be44569db9533afc",
-    "scraped_at": "2026-03-22 07:06:38"
-  },
-  {
-    "institute": "IIT Kharagpur",
-    "network": "IIT",
-    "department": "",
-    "eligibility": "",
-    "title": "Branding: Sr. Content writer PI Name - Dept - Alumni Affairs and International Relations",
-    "position_type": "other",
-    "deadline": "24/03/2026",
-    "detail_url": "",
-    "raw_text": "Branding: Sr. Content writer PI Name - Dept - Alumni Affairs and International Relations 1 24-03-2026",
-    "hash": "6cc6ab63e22015973796cc4368f048bc0c2773b8b4eba521c71e80b5ae61253d",
-    "scraped_at": "2026-03-22 07:06:38"
-  },
-  {
-    "institute": "IIT Kharagpur",
-    "network": "IIT",
-    "department": "",
-    "eligibility": "",
-    "title": "Branding: Jr. Content writer PI Name - Dept - Alumni Affairs and International Relations",
-    "position_type": "other",
-    "deadline": "24/03/2026",
-    "detail_url": "",
-    "raw_text": "Branding: Jr. Content writer PI Name - Dept - Alumni Affairs and International Relations 1 24-03-2026",
-    "hash": "1dc682f671afb7b94525202c82fb0a675ab04dd6596419bbc94b10ef001f4d97",
-    "scraped_at": "2026-03-22 07:06:38"
-  },
-  {
-    "institute": "IIT Kharagpur",
-    "network": "IIT",
-    "department": "",
-    "eligibility": "",
-    "title": "Branding: Creative Designer PI Name - Dept - Alumni Affairs and International Relations",
-    "position_type": "other",
-    "deadline": "24/03/2026",
-    "detail_url": "",
-    "raw_text": "Branding: Creative Designer PI Name - Dept - Alumni Affairs and International Relations 1 24-03-2026",
-    "hash": "746da840d50b4859fc2ead95b2b836501bd64306f679e4ccd2a22337a6705795",
-    "scraped_at": "2026-03-22 07:06:38"
-  },
-  {
-    "institute": "IIT Kharagpur",
-    "network": "IIT",
-    "department": "",
-    "eligibility": "",
-    "title": "Senior Accountant PI Name - Dept - Alumni Affairs and International Relations",
-    "position_type": "other",
-    "deadline": "24/03/2026",
-    "detail_url": "",
-    "raw_text": "Senior Accountant PI Name - Dept - Alumni Affairs and International Relations 1 24-03-2026",
-    "hash": "8bbba931705de8caee67099a8a960b4fda11df8ee2022287ae77dfc0c6c8b0be",
-    "scraped_at": "2026-03-22 07:06:38"
-  },
-  {
-    "institute": "IIT Kharagpur",
-    "network": "IIT",
-    "department": "",
-    "eligibility": "",
-    "title": "Junior Accountant PI Name - Dept - Alumni Affairs and International Relations",
-    "position_type": "other",
-    "deadline": "24/03/2026",
-    "detail_url": "",
-    "raw_text": "Junior Accountant PI Name - Dept - Alumni Affairs and International Relations 1 24-03-2026",
-    "hash": "52c845f174f46bd17d6d8ce531b5214f5edb310b8c25500fcd0aa2f047585e46",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -231,7 +166,111 @@
     "detail_url": "",
     "raw_text": "Junior Purchase Executive PI Name - Dept - Alumni Affairs and International Relations 1 24-03-2026",
     "hash": "b788e6c98baefc41d180c7480286cc015f4852f0ddfcaeafcf0ef36a6daa4cc8",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "network": "IIT",
+    "department": "",
+    "eligibility": "",
+    "title": "Event Management Executive PI Name - Dept - Alumni Affairs and International Relations",
+    "position_type": "other",
+    "deadline": "24/03/2026",
+    "detail_url": "",
+    "raw_text": "Event Management Executive PI Name - Dept - Alumni Affairs and International Relations 2 24-03-2026",
+    "hash": "6d6df1aa0885c6e193b90e5706410b74e1870dd91f80fcab70417b6d483dab2b",
+    "scraped_at": "2026-03-23 07:19:16"
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "network": "IIT",
+    "department": "",
+    "eligibility": "",
+    "title": "Event Management Lead PI Name - Dept - Alumni Affairs and International Relations",
+    "position_type": "other",
+    "deadline": "24/03/2026",
+    "detail_url": "",
+    "raw_text": "Event Management Lead PI Name - Dept - Alumni Affairs and International Relations 1 24-03-2026",
+    "hash": "c50ca969085783df180f81ed590170f0129a0326d13eed86be44569db9533afc",
+    "scraped_at": "2026-03-23 07:19:16"
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "network": "IIT",
+    "department": "",
+    "eligibility": "",
+    "title": "Branding: Sr. Content writer PI Name - Dept - Alumni Affairs and International Relations",
+    "position_type": "other",
+    "deadline": "24/03/2026",
+    "detail_url": "",
+    "raw_text": "Branding: Sr. Content writer PI Name - Dept - Alumni Affairs and International Relations 1 24-03-2026",
+    "hash": "6cc6ab63e22015973796cc4368f048bc0c2773b8b4eba521c71e80b5ae61253d",
+    "scraped_at": "2026-03-23 07:19:16"
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "network": "IIT",
+    "department": "",
+    "eligibility": "",
+    "title": "Branding: Jr. Content writer PI Name - Dept - Alumni Affairs and International Relations",
+    "position_type": "other",
+    "deadline": "24/03/2026",
+    "detail_url": "",
+    "raw_text": "Branding: Jr. Content writer PI Name - Dept - Alumni Affairs and International Relations 1 24-03-2026",
+    "hash": "1dc682f671afb7b94525202c82fb0a675ab04dd6596419bbc94b10ef001f4d97",
+    "scraped_at": "2026-03-23 07:19:16"
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "network": "IIT",
+    "department": "",
+    "eligibility": "",
+    "title": "Branding: Creative Designer PI Name - Dept - Alumni Affairs and International Relations",
+    "position_type": "other",
+    "deadline": "24/03/2026",
+    "detail_url": "",
+    "raw_text": "Branding: Creative Designer PI Name - Dept - Alumni Affairs and International Relations 1 24-03-2026",
+    "hash": "746da840d50b4859fc2ead95b2b836501bd64306f679e4ccd2a22337a6705795",
+    "scraped_at": "2026-03-23 07:19:16"
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "network": "IIT",
+    "department": "",
+    "eligibility": "",
+    "title": "Senior Accountant PI Name - Dept - Alumni Affairs and International Relations",
+    "position_type": "other",
+    "deadline": "24/03/2026",
+    "detail_url": "",
+    "raw_text": "Senior Accountant PI Name - Dept - Alumni Affairs and International Relations 1 24-03-2026",
+    "hash": "8bbba931705de8caee67099a8a960b4fda11df8ee2022287ae77dfc0c6c8b0be",
+    "scraped_at": "2026-03-23 07:19:16"
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "network": "IIT",
+    "department": "",
+    "eligibility": "",
+    "title": "Junior Accountant PI Name - Dept - Alumni Affairs and International Relations",
+    "position_type": "other",
+    "deadline": "24/03/2026",
+    "detail_url": "",
+    "raw_text": "Junior Accountant PI Name - Dept - Alumni Affairs and International Relations 1 24-03-2026",
+    "hash": "52c845f174f46bd17d6d8ce531b5214f5edb310b8c25500fcd0aa2f047585e46",
+    "scraped_at": "2026-03-23 07:19:16"
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "network": "IIT",
+    "department": "",
+    "eligibility": "",
+    "title": "Stewardship Executive PI Name - Dept - Alumni Affairs and International Relations",
+    "position_type": "other",
+    "deadline": "24/03/2026",
+    "detail_url": "",
+    "raw_text": "Stewardship Executive PI Name - Dept - Alumni Affairs and International Relations 2 24-03-2026",
+    "hash": "916070169159614008f2f5d51ccf52eff113789b2a21274b48967151a4413d68",
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -244,7 +283,7 @@
     "detail_url": "",
     "raw_text": "Web Developer PI Name - Dept - Alumni Affairs and International Relations 1 24-03-2026",
     "hash": "f202fd9a11f231b7d10d9fd6467690312f6a7bfa065bc38cf4a8855122f2b4c6",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -257,7 +296,7 @@
     "detail_url": "",
     "raw_text": "Sr. Project MTS/Project MTS PI Name - Dept - Alumni Affairs and International Relations 2 24-03-2026",
     "hash": "5e759293df178427f16432a0be26f2fc45ec3c08846fc1eaa320ea7ac0700ef3",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -270,7 +309,7 @@
     "detail_url": "",
     "raw_text": "Stewardship Lead PI Name - Dept - Alumni Affairs and International Relations 1 24-03-2026",
     "hash": "af901701f37780cb00958f0fdb11f8a152b78d289e21fb11c4dbbe309e3b6c66",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -283,7 +322,7 @@
     "detail_url": "",
     "raw_text": "Marketing Lead PI Name - Dept - Alumni Affairs and International Relations 1 24-03-2026",
     "hash": "3125d70108e27ef0c31c65c5c9bfe03ae88a2b5e6953b00b2615f3d9e6de276f",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -296,7 +335,7 @@
     "detail_url": "",
     "raw_text": "Project Assistant PI Name - Abhijit MukherjeeDept - Geology and Geophysics 1 26-03-2026",
     "hash": "272d09b477e01ab46cc47ca03fc0716f33c94ab71b47ed4d544f691e97ad4319",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -309,7 +348,7 @@
     "detail_url": "",
     "raw_text": "Senior Research Fellow (SRF) PI Name - Aurobinda RoutrayDept - Electrical Engineering 1 31-03-2026",
     "hash": "22f25a5ba4f639276bb42730d6fc1b37cd2fa58b0c199d3f235b7cea5ccc9eea",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -322,7 +361,7 @@
     "detail_url": "",
     "raw_text": "Junior Research Fellowship PI Name - Gorachand DuttaDept - School of Medical Science and Technology 1 31-03-2026",
     "hash": "6d960cb0338bda34ebb6df81dfc26378988bff531cc0040447fbe0d5e84f89df",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -335,7 +374,7 @@
     "detail_url": "",
     "raw_text": "Project Technical Assistant PI Name - Vishwanath NagarajanDept - Ocean Engg and Naval Architecture 1 30-03-2026",
     "hash": "69ceddd006959cc141ad63202a742451269ee0c4f30269c6e15342bc84f73308",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -348,7 +387,7 @@
     "detail_url": "",
     "raw_text": "Project Research Scientist - I (Non- Medical) PI Name - Mrinal Kumar AcharyaDept - Advanced Technology Development Centre 1 27-03-2026",
     "hash": "d941212eaa08c028d32e4c4678e2ba85ca6042671a5c594fd48b5093f229ad05",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -361,7 +400,7 @@
     "detail_url": "",
     "raw_text": "Project Technical Assistant PI Name - Chandra Sekhar TiwaryDept - Metallurgical and Materials Engineering 1 26-03-2026",
     "hash": "d6db14b1f71cb98e9f696aa00a592b88fa07fe8bb85fa67bd1d7f756d0aa89ff",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -374,7 +413,7 @@
     "detail_url": "",
     "raw_text": "Administrative Assistant PI Name - Priyadarshi PatnaikDept - Humanities and Social Sciences 1 26-03-2026",
     "hash": "49d434899afb71bedf17d7204b9fc2e1805987d7d881ef278e7a62be23861160",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -387,7 +426,7 @@
     "detail_url": "",
     "raw_text": "Project Research Assistant PI Name - Priyadarshi PatnaikDept - Humanities and Social Sciences 3 25-03-2026",
     "hash": "13e9c24d26d2ca3b7e0bce15121aed6386a838395f19066f3be840ea95aa946b",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -400,7 +439,7 @@
     "detail_url": "",
     "raw_text": "Project Technical Assistant PI Name - Priyadarshi PatnaikDept - Humanities and Social Sciences 2 26-03-2026",
     "hash": "b97f67b7575b7f4690eb9f66224bcc0f930605963c049bada94df08c2ac47e32",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -413,7 +452,7 @@
     "detail_url": "",
     "raw_text": "Project Research Scientist - II (Non- Medical) PI Name - Arindam MondalDept - Bioscience and Biotechnology 1 25-03-2026",
     "hash": "9342b060ad4234950158a0044918789fdfe0dd7ca614189713854ce188d1915b",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -426,7 +465,7 @@
     "detail_url": "",
     "raw_text": "Project Research Associate PI Name - Suman Kalyan SamantaDept - Chemistry 1 26-03-2026",
     "hash": "f6c0a726dc1593940fe766ba8b7c4794998ae29b4385fc7fb2a23c2850197229",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Kharagpur",
@@ -439,7 +478,7 @@
     "detail_url": "",
     "raw_text": "Junior Research Fellow (JRF) PI Name - Siddharth TamangDept - Centre of Excellence in Advanced Manufacturing Technology 2 30-03-2026",
     "hash": "b99d145bd5428198be82ed2c634c73091a5c0edef38c8afde1aca56bcd6a14f7",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Hyderabad",
@@ -452,7 +491,7 @@
     "detail_url": "https://iith.ac.in/assets/files/careers/staff/project_associate_social_sciences_advt.pdf",
     "raw_text": "18-03-2026 Applications invited for the post of Project Associate in Social Science, under Department of Civil Engineering, IIT Hyderabad 26-03-2026",
     "hash": "a70fc02fd338c2d7da96064fba4a0789d1f2a27e6eaf5de8b6985406ad943407",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Hyderabad",
@@ -465,7 +504,7 @@
     "detail_url": "https://iith.ac.in/assets/files/careers/staff/jrf_ad_anrf_chemistry_mar_2026.pdf",
     "raw_text": "17-03-2026 Applications are invited for the position of Junior Research Fellow, under Department of Chemistry, IIT Hyderabad 31-03-2026",
     "hash": "da518619fc16d429c2df3270eebc6945a5194eb7abe7edaf96cce81ce7cb736d",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Hyderabad",
@@ -478,7 +517,7 @@
     "detail_url": "https://iith.ac.in/assets/files/careers/staff/drsti_sr_po_jrf.pdf",
     "raw_text": "15-03-2026 Applications are invited for the position of Junior Research Fellow, IIT Hyderabad 28-03-2026",
     "hash": "0c23305f6bd1549b723d2cf928aed5c8dfc431af0d2aa84083bfe1efa18723dc",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Hyderabad",
@@ -491,7 +530,7 @@
     "detail_url": "https://iith.ac.in/assets/files/careers/staff/advertisement_jrf_position_cleanz_coe_march_2026.pdf",
     "raw_text": "11-03-2026 Applications are invited for the position of Junior Research Fellow (JRF) under CLEANZ CoE, IIT Hyderabad 25-03-2026",
     "hash": "05d609558f8389848e8c0469dc1f562ef7371dcaf7111aca423b1243f95fbe7c",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Indore",
@@ -504,7 +543,7 @@
     "detail_url": "https://www.iiti.ac.in/public/storage/recruitments/March2026/5cw1Yu9pCyktc6UoF1Aq.pdf",
     "raw_text": "Advertisement of Project Research Scientist Project Title: Low cost digital solution development for MSMEs Last Date : March 30, 2026 Download",
     "hash": "8be2d8637e21124b68d7eb15438ea353b95d0755a25ccb22e05cadd87e1ef4c2",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Indore",
@@ -517,7 +556,7 @@
     "detail_url": "https://www.iiti.ac.in/public/storage/recruitments/March2026/Bm82WR6gHzbSGVb4ISEr.pdf",
     "raw_text": "Advertisement for Recruitment of Project Associate. Project Titled : Design and Development of a Computer-Aided Diagnosis (CAD) System for Cancer Image Classification. Last Date of Application: 23 March 2026. Download",
     "hash": "e52337f40e540e4187f789a00b777c1eab93eb6dd13ed485b9b0ecb7f51acdd2",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Indore",
@@ -530,7 +569,7 @@
     "detail_url": "https://www.iiti.ac.in/public/storage/recruitments/March2026/fWNnvclqhG43xja1cayu.pdf",
     "raw_text": "Advertisement for recruitment of Project Research Staff (Multicentric - 02 Sites) Project : Point-of-care diagnostic device for early oral cancer detection using microbial profiling from saliva samples. Last date : March 10, 2026 (Round 1), March 20, 2026 (Round 2), March 30, 2026 (Round 3). Download",
     "hash": "628324f86bce0f54f72bf523780686d9dcb8605706c310aa88bbd9c1ec033a69",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Indore",
@@ -543,7 +582,7 @@
     "detail_url": "https://docs.google.com/forms/d/e/1FAIpQLScdCtR5Ez_NmZIxl_j9Y-YZWJ--KzwqgC5__10NE5W83746dw/viewform",
     "raw_text": "Advertisement for the recruitment of Assistant General Manager/Chief Manager (Engagement) and Senior Manager (Operations) Application for the Position of Assistant General Manager/Chief Manager (Engagement) Application for the Position of Senior Manager (Operations) Download",
     "hash": "d8077a7dad2da3a524b70dfac8b01075a395fca7f233490f246e64fcff6aef25",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Indore",
@@ -556,7 +595,7 @@
     "detail_url": "https://www.iiti.ac.in/public/storage/recruitments/January2026/iJOxkMfUl3PO4iJ7Wuok.docx",
     "raw_text": "Advertisement for Project Assistant Title of the Project: Development and characterization of URUMI sword Last Date & Time: Jan. 16, 2026, 5:00 PM Download",
     "hash": "f46436d1778aba391fd45c6bce208ecf0ec7643b58b85eb2de8ab80feebee0dc",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Indore",
@@ -569,7 +608,7 @@
     "detail_url": "https://www.iiti.ac.in/public/storage/recruitments/August2025/lOFe7m4hp4Tr7eHvPzVL.pdf",
     "raw_text": "Advertisement for Project Assistants (PA) position to work on the Narmada River Basin Management Studies research project, funded by the Ministry of Jal Shakti, Govt. of India. Download",
     "hash": "1bddef728aac7d4b10985f731f4f54d5e9d99b37a5de772c17d345f08620ff69",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Indore",
@@ -582,7 +621,7 @@
     "detail_url": "https://www.iiti.ac.in/public/storage/recruitments/July2025/0EdP0hn8d9fYDAEobM9k.pdf",
     "raw_text": "Advertisement for the post of Administration Assistant in the project titled \"KISEM Energy\" Download",
     "hash": "182b98e2c2035cb1f298f6c60e54f833a796eda2cd8be9e6b87c67b00212671b",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Indore",
@@ -595,7 +634,7 @@
     "detail_url": "https://www.iiti.ac.in/public/storage/recruitments/June2025/MDPAI3W8pefUUaGF7VKL.pdf",
     "raw_text": "Interview for Research Intern Positions Project Title : TTDF/6G/194: DARPAN - An AI-assisted reliable indigenous digital twin for sixth sense 6G Networks Download",
     "hash": "5fd85048f7801e5cab5d7c13fece3e29b053a69e4bea595b9a312f0ea8190392",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT BHU Varanasi",
@@ -608,20 +647,7 @@
     "detail_url": "https://iitbhu.ac.in/#v-pills-corri",
     "raw_text": "Postdoctoral Fellow Position Advt No. IIT(BHU)/R&D/IPDF/01/2025Apply Here Corrigendum I Recruitment Advertisement This browser does not support PDFs. Please download the PDF to view it: <a href=\"/contents/institute/dean/dord/doc/dean_dord_post_doc_adv.pdf\">Download PDF</a>",
     "hash": "cf780859a543814658976a2e3051db6b886c8e8efd8f996e51ebc5fdc209e509",
-    "scraped_at": "2026-03-22 07:06:38"
-  },
-  {
-    "institute": "IIT ISM Dhanbad",
-    "network": "IIT",
-    "department": "",
-    "eligibility": "",
-    "title": "Project JRF",
-    "position_type": "jrf",
-    "deadline": "23/03/2026",
-    "detail_url": "https://people.iitism.ac.in/~download/projectOpening//uploads/pdfprj/1190/Project JRF_2026-03-03_10-40-39.pdf ",
-    "raw_text": "1258 Project JRF Mathematics and Computing Prof. A Antony Selvan 23-03-2026 Click",
-    "hash": "3f8ed85d88c46198dd180b8368f6f556fdf51f1e668a872da0b0181a004d5c6c",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT ISM Dhanbad",
@@ -634,7 +660,7 @@
     "detail_url": "https://people.iitism.ac.in/~download/projectOpening//uploads/pdfprj/974/Project JRF_2026-03-06_17-37-51.pdf ",
     "raw_text": "1262 Project JRF Applied Geophysics Prof Sanjit Kumar Pal 15-04-2026 Click",
     "hash": "74d17c1f7b59db05098950c24d24c44b42a383c1819ab20a0cdc1429ef7725e1",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT ISM Dhanbad",
@@ -647,7 +673,7 @@
     "detail_url": "https://people.iitism.ac.in/~download/projectOpening//uploads/pdfprj/1612/Project JRF_2026-03-10_18-35-03.pdf ",
     "raw_text": "1263 Project JRF Mathematics and Computing Dr Ashok Das 29-03-2026 Click",
     "hash": "b8c3f4037a7341ecd6654675e61496821178cd98509dfd2cf6081ab8028e0559",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT ISM Dhanbad",
@@ -660,7 +686,7 @@
     "detail_url": "https://people.iitism.ac.in/~download/projectOpening//uploads/pdfprj/1197/Project Associate_2026-03-13_16-28-35.pdf ",
     "raw_text": "1264 Project Associate Management Studies & Industrial Engineering Prof. SHASHANK � BANSAL 24-03-2026 Click",
     "hash": "05f023867bf092ec45133a1adbf5b1a7abba7785a427d4440efd6bcab3a8a581",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT ISM Dhanbad",
@@ -673,7 +699,111 @@
     "detail_url": "https://people.iitism.ac.in/~download/projectOpening//uploads/pdfprj/1296/Research Assistant_2026-03-17_18-25-41.pdf ",
     "raw_text": "1267 Research Assistant Humanities and Social Sciences Dr Sruti Kanungo 27-03-2026 Click",
     "hash": "f250b0d1bdf3f27ead2f9a0ace144eb60e56228717968b600dac2f0e56399657",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "network": "IIT",
+    "department": "",
+    "eligibility": "Postdoctoral",
+    "title": "Postdoctoral Fellow",
+    "position_type": "post_doctoral",
+    "deadline": "27/03/2026",
+    "detail_url": "https://drive.google.com/file/d/1A3OKrFqdso3LR7VrcHFj_kgbiem1VjZ6/view?usp=drive_link",
+    "raw_text": "Postdoctoral Fellow Electrical Engineering Prof. Nithin V George 20.03.2026 27.03.2026 Detail Apply Open",
+    "hash": "3f758f1e029d858c294772461df50f5d748d24897b41716d0f4aa977dc0613b5",
+    "scraped_at": "2026-03-23 07:19:16"
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "network": "IIT",
+    "department": "",
+    "eligibility": "Postdoctoral",
+    "title": "Postdoctoral Fellow",
+    "position_type": "post_doctoral",
+    "deadline": "30/05/2026",
+    "detail_url": "https://drive.google.com/file/d/1sZzBWFOnGfbzO2gKB0SP3z9niUSc3DT4/view?usp=drive_link",
+    "raw_text": "Postdoctoral Fellow Humanities and Social Sciences Prof. Praharsh M. Patel 19.03.2026 30.05.2026 Detail Apply Open",
+    "hash": "e2563ad60b5d64f3841f7698bb8072a8918ba5b418620bb7dc4c8a0721e7d61c",
+    "scraped_at": "2026-03-23 07:19:16"
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "network": "IIT",
+    "department": "",
+    "eligibility": "Postdoctoral",
+    "title": "Postdoctoral Research Associate",
+    "position_type": "research_associate",
+    "deadline": "01/05/2026",
+    "detail_url": "https://drive.google.com/file/d/1qVcmYcJEgshG5TqOzLLOaw37ubfqEpHl/view?usp=drive_link",
+    "raw_text": "Postdoctoral Research Associate Electrical Engineering Prof. Raghunandan M Rao 17.03.2026 01.05.2026 Detail Apply Open",
+    "hash": "993007fad6dc35f0b757f3e2f74c9efa3099b34226250836ef689056555d0a51",
+    "scraped_at": "2026-03-23 07:19:16"
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "network": "IIT",
+    "department": "",
+    "eligibility": "",
+    "title": "Project Associate I",
+    "position_type": "project_associate",
+    "deadline": "21/04/2026",
+    "detail_url": "https://drive.google.com/file/d/13etiUMvzMVEqxAOpnRjaoKJ1nIKYnRqR/view?usp=drive_link",
+    "raw_text": "Project Associate I Center for Creative Learning Prof. Manish Jain 16.03.2026 21.04.2026 Detail Apply Open",
+    "hash": "f02b5da22a724bed88627cddf74ef2886d769ad337582135ec9610f0d54dc360",
+    "scraped_at": "2026-03-23 07:19:16"
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "network": "IIT",
+    "department": "",
+    "eligibility": "",
+    "title": "Research Associate II",
+    "position_type": "research_associate",
+    "deadline": "23/03/2026",
+    "detail_url": "https://drive.google.com/file/d/1tIC0HEEJgJvz4QQjBtgsqFnGs8Erkk92/view",
+    "raw_text": "Research Associate II Center for Creative Learning Prof. Manish Jain 16.03.2026 23.03.2026 Detail Apply Open",
+    "hash": "02a17adf9952452a191bbe30e3e89a25aa1c6b2f7531e7ac7b01159f75c1e59a",
+    "scraped_at": "2026-03-23 07:19:16"
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "network": "IIT",
+    "department": "",
+    "eligibility": "",
+    "title": "Project Scientist I",
+    "position_type": "project_scientist",
+    "deadline": "21/04/2026",
+    "detail_url": "https://drive.google.com/file/d/1yYV4S7gTcNjNtIJRSomn6VWSTrHQQLaV/view",
+    "raw_text": "Project Scientist I Center for Creative Learning Prof. Manish Jain 16.03.2026 21.04.2026 Detail Apply Open",
+    "hash": "0b2ddd32078bd8506acbf48441e9fcef8f6c14ebe641fdf9e42b76289b8f8ba2",
+    "scraped_at": "2026-03-23 07:19:16"
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "network": "IIT",
+    "department": "",
+    "eligibility": "",
+    "title": "Junior Research Fellow",
+    "position_type": "jrf",
+    "deadline": "02/04/2026",
+    "detail_url": "https://drive.google.com/file/d/18BmgTX-f3z2JJ0QDMrCsvCmKNRjE3dwO/view?usp=drive_link",
+    "raw_text": "Junior Research Fellow Chemical Engineering Prof. Abinaya Sampath 13.03.2026 02.04.2026 Detail Apply Open",
+    "hash": "86962848f66f91fe982d51927e031b0e94f19372d7d604a30b273ac4e2fa32eb",
+    "scraped_at": "2026-03-23 07:19:16"
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "network": "IIT",
+    "department": "",
+    "eligibility": "Postdoctoral",
+    "title": "Postdoctoral Researcher",
+    "position_type": "post_doctoral",
+    "deadline": "25/03/2026",
+    "detail_url": "https://drive.google.com/file/d/17yTX2aRcjZViSbLgHeinYwDgCpw_QG5L/view?usp=drive_link",
+    "raw_text": "Postdoctoral Researcher Electrical Engineering Prof. Joycee Mekie 02.03.2026 25.03.2026 Detail Apply Open",
+    "hash": "0f546df29a53d6e828e3a146a1b7f20f2b5e728be0fc835f3b7a1431fcc5be32",
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Mandi",
@@ -686,7 +816,7 @@
     "detail_url": "https://www.iitmandi.ac.in/\n",
     "raw_text": "Advertisement for the project position under the project titled: CHETNA: Cognitive Hardware for EEG/EMG-based Therapeutic Neuro-Assistance. APPLY",
     "hash": "0d78078cc050750affa7b76260ef8ff47789bf68ac1eb1abe7bd85a5045c9118",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Mandi",
@@ -699,7 +829,7 @@
     "detail_url": "https://www.iitmandi.ac.in/recruitment/brns_akd_512_Rev_Feb_10_2026.pdf\n",
     "raw_text": "Date Extended:Advertisement for the project position under the project titled:Ultra High Efficient Compact Power Converters for Radio Frequency (RF) Communication System.",
     "hash": "b63b155d1b83b1ffd23bfe49ca3395816dfdd78a7bfaba2ee3ba778f4a61e7fb",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Mandi",
@@ -712,7 +842,7 @@
     "detail_url": "https://www.iitmandi.ac.in/recruitment/IITM _SRIC_DRDO_AR_DB_RAK_562_01.pdf\n",
     "raw_text": "Advertisement for the project position under the project titled: Development of phase-field modeling and machine learning-based approaches for the fracture analysis of composite structures under multiphysics loadings.",
     "hash": "d915f04d7bc414a78eb90a2864a48ef3bc7014fa0545ae88684b0429cdbda3e2",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Mandi",
@@ -725,7 +855,7 @@
     "detail_url": "https://www.iitmandi.ac.in/recruitment/IITM_DRDO_AR&DB_MT_566_2026.pdf\n",
     "raw_text": "Advertisement for the project position under the project titled:Design, Modelling, and Analysis of Functionally Graded Auxetic Metamaterial Panels.",
     "hash": "7b12ad22cf8702bf1664555ec2c083bdc4bb0afbf032b468f612ff02bd2f3049",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Mandi",
@@ -738,7 +868,7 @@
     "detail_url": "https://www.iitmandi.ac.in/recruitment/AR_DB_RK_550_2025.pdf\n",
     "raw_text": "Advertisement for the project position under the project titled: Design, analysis and development of photostrictive composite actuator.",
     "hash": "4343b4637a94b1bd56ce9ed04338c7b5ea774e7c4716e083a870f873948dba9f",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Mandi",
@@ -751,7 +881,7 @@
     "detail_url": "https://forms.gle/vj1KASDayhPv9Luw5",
     "raw_text": "Advertisement for the project position under the project titled:Integrated Machine Learning and Remote Sensing for Real-Time Predictive Modeling of rainfall-Induced Landslides in Kamand Valley. APPLY",
     "hash": "14fc15c7356cc356ceb5038fb543337b508bf693beae316cee0588e6f27f4ad4",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Mandi",
@@ -764,7 +894,7 @@
     "detail_url": "https://www.iitmandi.ac.in/recruitment/IITM_MEITY_IIITDM_ASH_396.pdf\n",
     "raw_text": "Advertisement for the project position under the project titled: Capacity building for human resource development in unmanned aircraft system (drone and related technology).",
     "hash": "3c4e4c8e38ed5a8392df38a7c24d9733cd296f34a69146ba053a829ecb6b93d0",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Mandi",
@@ -777,7 +907,7 @@
     "detail_url": "https://forms.gle/YYRes4yiZdLKLZqG6",
     "raw_text": "Advertisement for the project position under the project titled: Cost-effective safety solution for low-rise masonry dwellings subjected to rockfall impact induced by landslides: laboratory testing, field demonstration and development of guidelines. APPLY",
     "hash": "149c8a8e6ba8a5ac77db9ee5e1883179f146b56e9205c154d6d64eb480709bcc",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Dharwad",
@@ -790,7 +920,7 @@
     "detail_url": "https://www.iitdh.ac.in/other-recruitments",
     "raw_text": "RA/iPDFs & Project StaffProject StaffResearch Associates (RA) Opportunities",
     "hash": "a6c369f106e70fb5fbfb9705e46d5f250d6b1372fb734bb598591be3aafdc48b",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Dharwad",
@@ -803,7 +933,7 @@
     "detail_url": "https://www.iitdh.ac.in/research-associates-ra-opportunities",
     "raw_text": "Research Associates (RA) Opportunities",
     "hash": "3846f6985f26f317614c7a054b630f95c2c875a75b3e451aa453a3906495fdd3",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Dharwad",
@@ -816,7 +946,7 @@
     "detail_url": "https://www.iitdh.ac.in/other-recruitments",
     "raw_text": "iPDFs & others Others Postdoctoral Fellowship Opportunities",
     "hash": "f6443cbf51ddad5c8f4d696539379ebf45fc7dcf1e4620a04e68cd9fe2c9146a",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIT Dharwad",
@@ -829,7 +959,7 @@
     "detail_url": "https://iitdh.ac.in/postdoctoral-fellowship-opportunities",
     "raw_text": "Postdoctoral Fellowship Opportunities",
     "hash": "683c69f2b32ce379072a10c23fb2071a5dfebbe57a7d4627bb1c410a122b5ca2",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Trichy",
@@ -842,7 +972,7 @@
     "detail_url": "https://www.nitt.edu/home/other/jobs/ECE_JRF_PA_MAR_2026.pdf",
     "raw_text": "Inviting applications for JRF / Project Associate - I in ECE Department, April 03, 2026",
     "hash": "a0f92af4562328d7320a1d0e4d7122221ff0b7ae7bfc07fd43252a0351f53880",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Durgapur",
@@ -855,7 +985,7 @@
     "detail_url": "https://nitdgp.ac.in/uploads/ECE_Eligible_Candidate_Level-13A2.pdf",
     "raw_text": "2025-02-15 List of provisionally Eligible Candidates for Presentation Against Advertisement No. NITD/Estt./Faculty/01/2024/03 dated 30.02.2024 -ECE - Level - 13A2",
     "hash": "4809ef00dae609271f27f7a600fceedbb73328dadae22b85647ba999e41c98f2",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Durgapur",
@@ -868,7 +998,7 @@
     "detail_url": "https://nitdgp.ac.in/uploads/NBCC_JRF_Ad_.pdf",
     "raw_text": "2025-06-02 Advertisement for the post of JRF for project Development of Eco-Friendly Heat Reflective Bricks and Manufacturing of Eco-Friendly Shuttering Material from Agro-Wastes (NITD/SRCC/DD/CE/2025-26/02)",
     "hash": "28babbc87935c07a9b372d47c2f01aeb3fcf3729ab4e70524da7afd0c9692617",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Durgapur",
@@ -881,7 +1011,7 @@
     "detail_url": "https://nitdgp.ac.in/uploads/Advertisement_for_Office_for_Project_final.pdf",
     "raw_text": "2024-05-24 Advertisement for the office at Giridih on rent for the project entitled “Impacting the life of Farmers in Giridih district by adopting affirmative steps” (NITD/SRCC/GP/MATH/2024-25/03)",
     "hash": "b871aac07ba4fdd0d8355c74f14e827b0aefb2c620abfec5dd4202e1e06addfc",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Durgapur",
@@ -894,7 +1024,7 @@
     "detail_url": "https://nitdgp.ac.in/uploads/Shortlisted_Candidates_(JRF_and_Post_Doc)-NTTM-MKM.pdf",
     "raw_text": "2024-04-19 Shortlisted Candidates for the Interview of one JRF and one Postdoc Fellow under NTTM , MoT, GoI Funded Research Project (NITD/SRCC/MKM/CH/2023-24/17)",
     "hash": "8a436aab842120240be7b5a430d7e10cec9cab3ed4c0a02e1b60b38da25755a0",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Durgapur",
@@ -907,7 +1037,7 @@
     "detail_url": "https://nitdgp.ac.in/uploads/List_of_candidates_shortlisted_for_interview_in_the_selection_of_Project_Assistant_under_NTTM,_MoT,_GoI_sponsored_project.pdf",
     "raw_text": "2024-03-20 List of the shortlisted candidates for interview in the selection process of Project Assistant (01 no.) on temporary basis for NTTM, MoT, GoI sponsored project (NITD/SRCC/SP/CE/2023-24/15)",
     "hash": "0247800b2b4c50dff6e1e54fb6023ce6fc573e5825f358667540032e05fd0ab0",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Durgapur",
@@ -920,7 +1050,7 @@
     "detail_url": "https://nitdgp.ac.in/uploads/Advirtisement_for_the_post_of_project_assistant_under_NTTM,_MoT,_GoI_sponsored_project_on_high_speed_railway_embankment_system.pdf",
     "raw_text": "2024-01-18 Advertisement for recruitment of a Project Assistant under NTTM , MoT, GoI funded research project (NITD/SRCC/SP/CE/2023-24/15)",
     "hash": "ee4f1650fa49ef3b5b4a25b08ed4414aa561fab167764d00b54bb8ed178165cc",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Durgapur",
@@ -933,7 +1063,7 @@
     "detail_url": "https://nitdgp.ac.in/uploads/userfiles/files/Advertisement_JRF.jpg",
     "raw_text": "2022-05-12 Recruitment of JRF for the project “Artificial Intelligence for Affordable Screening and Prediction of Diabetic Retinopathy in the Framework of Big Data.” (Advt. No.: (NITD/SRCC/AKD/EE/2021/14/04)",
     "hash": "7d83603066e5443d217fe88ad43f3ede2c2409611cfd69a658f15bf314156220",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Durgapur",
@@ -946,7 +1076,7 @@
     "detail_url": "https://nitdgp.ac.in/uploads/userfiles/files/Notification for Sports Assistant (Female)(1).pdf",
     "raw_text": "2022-03-23 Notification: Application for the post of: Sports Assistant (Female) Advertisement No. NITD/SAC/S.A/2021-22/01.",
     "hash": "61041117a2004f3e89be95cf031d71e32e513e789a7287849ee3a41800465783",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -959,7 +1089,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-junior-research-fellow-on-a-contract-basis-for-a-research-project-in-the-department-of-mechanical-engineering",
     "raw_text": "Advertisement for the position of Junior Research Fellow (on a contract basis) for a Research Project in the “Department of Mechanical Engineering” New",
     "hash": "e8e4b540b97cd206a86ac91d969b22617655a2890e052806904ad338cba19ccd",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -972,7 +1102,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of---junior-research-fellow-on-a-contract-basis-for-a-research-project-in-the-department-of-civil-engineering-dr-b-radhika",
     "raw_text": "Advertisement for the position of Junior Research Fellow (on a contract basis) for a Research Project in the “Department of Civil Engineering”. (Dr. B. Radhika) New",
     "hash": "77d2a32ee7af22424aaf903a050b13f2bd7e8fd7798b2b33f29e88f90bf76b1c",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -985,7 +1115,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of--jrf-project-associate-i-on-contract-basis-amp-project-intern-on-contract-basis-for-research-project-in-the-department-of-architecture-and-planning-",
     "raw_text": "Advertisement for the position of JRF/ Project Associate I (on contract basis) & Project Intern (on contract basis) for Research Project in the “Department of Architecture and Planning . New",
     "hash": "37121b7ce9cb4027a2a881cce96ca0071f6ee09650c1e147783250611883030e",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -998,7 +1128,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-research-intern--on-a-contract-basis-for-a-research-project-in-the-department-of-physicsdr-p-muhammed-shafi",
     "raw_text": "Advertisement for the position of Research Intern on a contract basis for a Research Project in the Department of Physics.(Dr. P. Muhammed Shafi) New",
     "hash": "9db2ad2f7bdf781146ae199e0dd8d790d6330d64871e684480c8330d1fa2b74f",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1011,7 +1141,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-research-associate-i--on-a-contract-basis-for-a-consultancy-project-in-the-department-of-mechanical-engineeringdr-vinod-kumar-sharma",
     "raw_text": "Advertisement for the position of Research Associate I on a contract basis for a consultancy project in the Department of Mechanical Engineering.(Dr. Vinod Kumar sharma) New",
     "hash": "b82e9ab1a4b8d1c97a80ac7e29ec185f3ce2e16bc1eff0c527f2bd31ef0bf75e",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1024,7 +1154,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-junior-research-fellow--on-a-contract-basis-for-a-research-project-in-the-department-of-civil-engineeringdr-prethiv-kumar-r",
     "raw_text": "Advertisement for the position of Junior Research Fellow on a contract basis for a Research Project in the Department of Civil Engineering.(Dr. Prethiv Kumar R.) New",
     "hash": "b9aac465d0395ffb58bb38d0c7146f61ed9b406aaee98dd90641cf2b31e14847",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1037,7 +1167,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-junior-research-fellow--on-a-contract-basis-for-a-research-project-in-the-department-of-civil-engineeringdr-b-radhika",
     "raw_text": "Advertisement for the position of Junior Research Fellow on a contract basis for a Research Project in the Department of Civil Engineering.(Dr. B. Radhika) New",
     "hash": "91289eef4703f226eff9fac6ab9f2d57b9eedf451aa0035a08e9e0cf8719766d",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1050,7 +1180,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-jrfpa-i-on-a-contract-basis-for-a-research-project-in-the-department-of-mechanical-engineering-",
     "raw_text": "Advertisement for the position of JRF/PA I on a contract basis for a Research Project in the department of Mechanical Engineering. New",
     "hash": "0906564746a9e6292325fce84a7a5e6aed4573b2675a606a493ce100141c69eb",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1063,7 +1193,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-project-technical-support---iii-on-a-contract-basis-for-a-research-project-in-the-department-of-bioscience-amp-engineering",
     "raw_text": "Advertisement for the position of PROJECT TECHNICAL SUPPORT - III on a contract basis for a Research Project in the department of bioscience & engineering. New",
     "hash": "9f9f4f6db3d2dace4eebb1d6799372d863017a48a4d5bba9f13122e942bde0d3",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1076,7 +1206,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-jrfpa-1on-a-contract-basis-for-a-research-project-in-the-department-of-chemical-engineering",
     "raw_text": "Advertisement for the position of JRF/PA 1on a contract basis for a Research Project in the department of Chemical Engineering New",
     "hash": "207abfb845cd76b84c7a3815ab61765348002b304f78d5bb7b657c1cc85d8adf",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1089,7 +1219,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-field-worker-on-a-contract-basis-for-a-research-project-in-the-department-of-electrical-engineering--",
     "raw_text": "Advertisement for the position of Field Worker on a contract basis for a Research Project in the Department of Electrical Engineering . New",
     "hash": "b1ea06c7367767d5acd226878f30b12cc5c2f72dda4dd0debf77ce306847f852",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1102,7 +1232,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-junior-research-fellow--on-a-contract-basis-for-a-research-project-in-the-department-of-chemistry",
     "raw_text": "Advertisement for the position of Junior Research Fellow on a contract basis for a Research Project in the Department of Chemistry. New",
     "hash": "a3cced695e9ef66d077a3e3b8812fac908fb3fe9470c78b45f1f4ae3801e8fdc",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1115,7 +1245,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-or-the-position-of-jrfpa-1on-a-contract-basis-for-a-research-project-in-the-department-of-civil-engineering-",
     "raw_text": "Advertisement or the position of JRF/PA 1on a contract basis for a Research Project in the department of Civil Engineering. New",
     "hash": "4d8ea3b03770cf3d4afb3204626add1d02d5757ce6a0232f20df664f05ada12f",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1128,7 +1258,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-engagement-of-an-intern-on-contract-basis-for-csr-research-project--in-the-department-of-computer-science-and-engineering-",
     "raw_text": "Advertisement for the engagement of an Intern (on contract basis) for CSR Research Project in the Department of Computer Science and Engineering New",
     "hash": "fa63af4ca26638d7d6f170ef3debc140a0b4143a21947dc658a99dd70d0189d7",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1141,7 +1271,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisment-for-the-position-of-project-assistant--on-a-contract-basis-for-a-research-project-in-the-department-of-civil-engineering",
     "raw_text": "Advertisment for the position of Project Assistant on a contract basis for a Research Project in the department of Civil Engineering. New",
     "hash": "09707c5a36d2601461e069651eaa9b057dc2152e2f1553db3e1b53ba076ef79c",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1154,7 +1284,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisment-for-the-position-of-junior-research-fellowproject-associate-i--on-a-contract-basis-for-a-research-project-in-the-department-of-mechanical-engineering",
     "raw_text": "Advertisment for the position of Junior Research Fellow/Project Associate I on a contract basis for a Research Project in the department of Mechanical Engineering New",
     "hash": "65776fb9880d023ce4bf043b69be7254d3584aa80e2e25b1b224e48474e1453a",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1167,7 +1297,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-project-associate-i--on-a-contract-basis-for-a-research-project-in-the-department-of-mechanical-engineering",
     "raw_text": "Advertisement for the position of Project Associate I on a contract basis for a Research Project in the department of Mechanical Engineering. New",
     "hash": "9f94d06869315f7f641cd9cade24196dc5f9684ac9b40391f4f844e3456139a4",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1180,7 +1310,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-project-associate-i-ii--on-a-contract-basis-for-a-research-project-in-the-centre-for-river-basin-management-",
     "raw_text": "Advertisement for the position of Project Associate I/ II on a contract basis for a Research Project in the Centre for River Basin Management. New",
     "hash": "c53a19c2cd0dfbe90253d3c17b815405dfc73ea511be0584f26a5121e87ae785",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1193,7 +1323,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-as-per-annexure-i-of-the-advertisement-on-a-contract-basis-for-a-research-project-in-the-department-of-mechanical-engineeringdr-gangadhara-kiran-kumar-l",
     "raw_text": "Advertisement for the position of as per annexure I of the advertisement on a contract basis for a Research Project in the Department of Mechanical Engineering.(Dr. Gangadhara Kiran Kumar L) New",
     "hash": "cc50dabb884ea26c71f9a8fbe729cc95135ac8bd588f4dfbb944c6494266d0a7",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1206,7 +1336,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-project-associate-i--on-a-contract-basis-for-a-research-project-in-the-department-of-electrical-engineeringdr-devesh-shukla",
     "raw_text": "Advertisement for the position of project associate I on a contract basis for a Research Project in the Department of Electrical Engineering.(Dr. Devesh Shukla) New",
     "hash": "3ce5e78f9b4a1a590c824812cb583a55efaab190e7bf3c1c2d54f0295e5140f6",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1219,7 +1349,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-jrf--on-a-contract-basis-for-a-research-project-in-the-department-of-electrical-engineeringdr-rakesh-r-warier",
     "raw_text": "Advertisement for the position of JRF on a contract basis for a Research Project in the Department of Electrical Engineering.(Dr. Rakesh R. Warier) New",
     "hash": "152ab26e66d5c26afaf763c3a9d159a8132255d01683a720462d647c153fff91",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1232,7 +1362,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/-advertisement-for-the-position-of-project-associate-i--on-a-contract-basis-for-a-research-project-in-the-department-of-electrical-engineeringdr-devesh-shukla",
     "raw_text": "Advertisement for the position of project associate I on a contract basis for a Research Project in the Department of Electrical Engineering.(Dr. Devesh Shukla) New",
     "hash": "1da338cd0d54f84ad1e968bfc2126ab90e184b184d07476da1c0375f6cc888a4",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1245,7 +1375,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-project-associate-i-on-a-contract-basis-for-a-research-project-in-the-department-of-civildr-george-k-varghese",
     "raw_text": "Advertisement for the position of Project Associate I on a contract basis for a Research Project in the Department of civil.(Dr. George. K. Varghese). New",
     "hash": "fd2e80b37037f88657a3aea636e02a134b935447e73e8d8e8a555c35a12d2f2c",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1258,7 +1388,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-field-worker-on-a-contract-basis-for-a-research-project-in-the-department-of-civildr-m-sivakumar",
     "raw_text": "Advertisement for the position of field worker on a contract basis for a Research Project in the Department of civil.(Dr. M. Sivakumar) New",
     "hash": "bcb245e9e4582c0f98bf3f9f1344d3fa53200ce48399b545b052b2c9085a8ba6",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1271,7 +1401,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-junior-research-fellow-on-a-contract-basis-for-a-research-project-in-the-department-of-mathematics-",
     "raw_text": "Advertisement for the position of Junior Research Fellow on a contract basis for a Research Project in the Department of Mathematics.( Dr. Lineesh M. C.) New",
     "hash": "de77ddcf9e721f554fcf82b73a613009ba5077b4efaba3ae9927dfa6638930cd",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1284,7 +1414,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-junior-research-fellow-on-a-contract-basis-for-a-research-project-in-the-department-of-physicsdr-muhammed-shafi-p",
     "raw_text": "Advertisement for the position of Junior Research Fellow on a contract basis for a Research Project in the Department of Physics.(Dr. Muhammed Shafi P) New",
     "hash": "e57972f326835444f202c0985aff30c3e1e268e25156d3fc19f361ff874daa98",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1297,7 +1427,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-junior-research-fellow-on-a-contract-basis-for-a-research-project-in-the-department-of-electronics-and-communication-engineeringdr-anup-aprem",
     "raw_text": "Advertisement for the position of Junior Research Fellow on a contract basis for a Research Project in the Department of Electronics and Communication Engineering.(Dr. Anup Aprem) New",
     "hash": "10378b21cb1845278e300533c0c6ddd5aa2ec0508b9c872ebd0ffc55d44b8132",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1310,7 +1440,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-junior-research-fellowproject-associate-i--on-a-contract-basis-for-a-research-project-in-the-department-of-chemical-engineering-dr-panneerselvam-ranganathan",
     "raw_text": "Advertisement for the position of Junior Research Fellow/Project associate-I on a contract basis for a Research Project in the Department of Chemical Engineering. (Dr. Panneerselvam Ranganathan) New",
     "hash": "dcbf4408e74338e2be30938da6141fdd54f6110a6c57639b966a79e3f6949a6a",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1323,7 +1453,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-project-assistant-i-on-a-contract-basis-for-a-research-project-in-the-department-of-electrical-engineeringdr-soumya-ranjan-meher",
     "raw_text": "Advertisement for the position of Project Assistant-I on a contract basis for a Research Project in the Department of Electrical Engineering.(Dr. Soumya Ranjan Meher) New",
     "hash": "2d4c28e37fb82819934b95d00aa34c4f7b51cfde8a1ac06c3a222d17d675e7ac",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1336,7 +1466,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-junior-research-fellow--on-a-contract-basis-for-a-research-project-in-the-department-of-mechanical-engineeringdr-deepak-lawrence-k",
     "raw_text": "Advertisement for the position of Junior Research Fellow on a contract basis for a Research Project in the Department of Mechanical Engineering.(Dr. Deepak Lawrence K.) New",
     "hash": "84f4068732dbfa82d86ee2e4f198d3b771a9bbffaa19952b0da187789fb2fb27",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1349,7 +1479,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-junior-research-fellow--on-a-contract-basis-for-a-research-project-in-the-department-of-physics",
     "raw_text": "Advertisement for the position of Junior Research Fellow on a contract basis for a Research Project in the Department of Physics New",
     "hash": "3c815a12868976a86ae9a218773566c4e444aeba4d635d506bbe294dd48e4b9b",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1362,7 +1492,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-junior-research-fellow--on-a-contract-basis-for-a-research-project-in-the-department-of-chemical-engineering",
     "raw_text": "Advertisement for the position of Junior Research Fellow on a contract basis for a Research Project in the Department of Chemical Engineering New",
     "hash": "303f2b8e92556377b1e6c0cfbc9510fe1c32b813a90f327d426760cfe19928a7",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1375,7 +1505,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/for-the-position-of-junior-research-fellow--on-a-contract-basis-for-a-research-project-in-the-department-of-electrical-engineering",
     "raw_text": "Advertisement for the position of Junior Research Fellow on a contract basis for a Research Project in the Department of Electrical Engineering. New",
     "hash": "7686e437f75dd20de66b73c92c3cb2ed254f2b456b25efe1d4e9115b34d27a31",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1388,7 +1518,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-junior-research-fellow--on-a-contract-basis-for-a-research-project-in-the-department-of-civil-engineering",
     "raw_text": "Advertisement for the position of Junior Research Fellow on a contract basis for a Research Project in the Department of Civil Engineering. New",
     "hash": "abd31caf5693a0c8f479fcd734dbecada7226c3159c6585aca554a0fe051e9ec",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1401,7 +1531,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-junior-research-fellow--on-a-contract-basis-for-a-research-project-in-the-department-of-electrical-engineering-",
     "raw_text": "Advertisement for the position of Junior Research Fellow on a contract basis for a Research Project in the Department of Electrical Engineering . New",
     "hash": "f9a93b277c950489ed380eaa4e7897328f1f56440933173e85bbd52e3c9f65af",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1414,7 +1544,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-project-associate-i--on-a-contract-basis-for-a-research-project-in-the-eced",
     "raw_text": "Advertisement for the position of Project Associate-I on a contract basis for a Research Project in the ECED New",
     "hash": "e37621b72d2978ea344d4cb01378cb93f7952733a33a304a4df5075abe319a3d",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1427,7 +1557,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-project-scientist--on-a--contract-basis-for-a-research-project-in-the-department-of-electronics-and-communication-engineering",
     "raw_text": "Advertisement for the position of Project Scientist on a contract basis for a Research Project in the Department of Electronics and Communication Engineering. New",
     "hash": "8da7111ccc39c727f920a8aeafced816a3a76c886c8d7d4504e2cb7950fe86aa",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1440,7 +1570,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-junior-research-fellow--on-a-contract-basis-for-a-research-project-in-csed",
     "raw_text": "Advertisement for the position of Junior Research Fellow on a contract basis for a Research Project in CSED New",
     "hash": "828d60e91bf85cb0904ce8ce9518b17f57d37b0574328e0dfda7f7338f97de0b",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1453,7 +1583,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-junior-research-fellow--on-a-contract-basis-for-a-research-project-in-the-department-of-computer-science-and-engineering-",
     "raw_text": "Advertisement for the position of Junior Research Fellow on a contract basis for a Research Project in the Department of Computer Science and Engineering New",
     "hash": "4a06bc487f2e7cc55998f8ccfb5edfda5281cd36527a805876a712be8cbcad5a",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1466,7 +1596,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for--the-position-of-junior-research-fellow--on-a-contract-basis-for-a-research-project-in-the-department-of-electronics-and-communication-engineering",
     "raw_text": "Advertisement for the position of Junior Research Fellow on a contract basis for a Research Project in the Department of Electronics and Communication Engineering New",
     "hash": "d0bf4ad513576f25916329a48bd9293d574b74bec5494dc0fe5900e6d71aa913",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1479,7 +1609,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-position-of-project-associate-i--on-a-contract-basis-for-a-research-project-in-the-department-of-mechanical-engineering",
     "raw_text": "Advertisement for position of Project Associate-I on a contract basis for a Research Project in the Department of Mechanical Engineering New",
     "hash": "19d32d1d327a92fa0b877793acbb91f152648452fb025df4f10f8fce168a8ab4",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1492,7 +1622,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-project-scientist-position-on-a-contract-basis-for-a-research-project-in-the-department-of-electronics-and-communication-engineering",
     "raw_text": "Advertisement for Project Scientist Position on a contract basis for a Research Project in the Department of Electronics and Communication Engineering New",
     "hash": "65286bb021ab060b87fd7a044366d232aa2c02f004c04b015c25927829d82d0c",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1505,7 +1635,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/junior-research-fellow-one-post-on-a-contract-basis-for-a-research-project-in-the-department-of-civil-engineering-on-contract-basis-in--nit-calicut",
     "raw_text": "Junior Research Fellow (One Post) on a contract basis for a Research Project in the Department of Civil Engineering on contract basis in NIT Calicut. New",
     "hash": "0af02b2ad115abc8473057e5eb568ad8b7ef9d9a60df0e6bf4817c17231ca5a4",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Calicut",
@@ -1518,7 +1648,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/walk-in-interview-notice-for-the-post-of-two-project-assistants-on-contract-basis-in-the-office-of-research-and-consultancy-nit-calicut",
     "raw_text": "Walk-in-interview Notice for the post of Two Project Assistants on contract basis in the Office of Research and Consultancy, NIT Calicut. New",
     "hash": "cc812e379843900af06cb921fc00db0b37009ab50f22c69ebe80c75d7f0cfe88",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Hamirpur",
@@ -1531,7 +1661,7 @@
     "detail_url": "https://nith.ac.in/uploads/files/mar26/eligibility-list-jrf-fe-nmhs.pdf",
     "raw_text": "List of Provisionally Eligible and Ineligible Candidates for the Posts of JRF and Field Assistant under NMHS (MoEFCC) Sanctioned Project (Advertisement No. NIT/HMR/R&C/2026/2522-2523 & NIT/HMR/R&C/2026/2524-2525) 12-03-2026 24-03-2026",
     "hash": "095401cbc3a6565113fcca591e2e491fceba15e7676d88cd49c9551c09f77652",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Hamirpur",
@@ -1544,7 +1674,7 @@
     "detail_url": "https://nith.ac.in/uploads/files/feb26/jrf-isea-iii.pdf",
     "raw_text": "Advertisement for the Recruitment to the Post of Junior Research Fellow (ISEA Phase-III) 11-02-2026 25-03-2026",
     "hash": "4fbb94ff15f07fa318af96cb4a5048bb433656602f5d7955ef8d012f077f9b56",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Hamirpur",
@@ -1557,7 +1687,7 @@
     "detail_url": "https://nith.ac.in/uploads/files/mar26/summer-internship2026.pdf",
     "raw_text": "Invitation of Applications for Summer Internship Programme 2026 (Advt. No. NIT/HMR/TPO/Summer Training/Internship/2026/5501 dated 03 March 2026) 06-03-2026 10-04-2026",
     "hash": "8aab812b57d526146e245ec3e6c05ebde82d259d69f4af743210bac8f39dd359",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Hamirpur",
@@ -1570,7 +1700,7 @@
     "detail_url": "https://nith.ac.in/uploads/files/oct25/advt_apprentices-library_2026-27.pdf",
     "raw_text": "Applications are Invited for the Position of \"Library Apprentices\" 28-10-2025 31-11-2025",
     "hash": "6010bba18516a16b2530957a58c263847ede5e3c5a7f2a92319d56bb2fa851c3",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Silchar",
@@ -1583,7 +1713,7 @@
     "detail_url": "https://www.nits.ac.in/storage/CareerDocument/Career_69bd5aec4df42.pdf",
     "raw_text": "Notification regarding interview for the post of Registrar",
     "hash": "4fc9d2788899d8fc290332bd5f036b424efe9b12f887ec84aa0888bcbf36323d",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Silchar",
@@ -1596,7 +1726,7 @@
     "detail_url": "https://www.nits.ac.in/storage/CareerDocument/Career_69b97d7ac0456.pdf",
     "raw_text": "Applications are invited from Indian citizens for Project Associate-I (PA-I) in the Department of Mechanical Engineering",
     "hash": "18ca6be38aa178301fa4ae26c37bef239062ebdc6e144a91053f5298aba7e569",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Silchar",
@@ -1609,7 +1739,7 @@
     "detail_url": "https://erp.nits.ac.in/ext/recruitement/extVerification",
     "raw_text": "Link to download Admit Card of the written Test for the post of Technical Assistant",
     "hash": "8c91a7e9d362d157fee71bcc03b8668eab6b8a516558c04bc889c62562048753",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Silchar",
@@ -1622,7 +1752,7 @@
     "detail_url": "https://www.nits.ac.in/storage/CareerDocument/Career_6882f832a92a7.pdf",
     "raw_text": "Applications are invited from Indian citizens for Project Associate-I(PA-I)and Project Associate-II (PA-II) in the Department of Electronics & Communication Engineering",
     "hash": "9ed1d6110a031a7e053f74b045cea4b23aeb0799221fa31112a84844371562e8",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Silchar",
@@ -1635,7 +1765,7 @@
     "detail_url": "https://www.nits.ac.in/storage/CareerDocument/Career_685d0f0983ec0.pdf",
     "raw_text": "Applications are invited from aspiring candidates of Assam only for Graduate Apprentice (Engineering/Non-Engineering)/Technician Apprentice (Diploma) Training in various Disciplines for a period of 1 year at NIT Silchar",
     "hash": "980b520e781add1d6c25138ed76ab478d9a9fec8b6e11000cd1c57c1507ea6e4",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "NIT Silchar",
@@ -1648,7 +1778,7 @@
     "detail_url": "https://www.nits.ac.in/storage/CareerDocument/Senior_Assistant-compressed.pdf",
     "raw_text": "Results of candidates appeared in the CRENIT Examination 2023 conducted by NTA for the post of Senior Assistant",
     "hash": "aca17c6c1afb2ff4de2df0287bd371521a44273b32a2d17b58fc4dd87dd0e22f",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "MNNIT Allahabad",
@@ -1661,7 +1791,7 @@
     "detail_url": "https://www.mnnit.ac.in/images/newstories/2026/Project_Project/Advertisement-CARS_NEW.pdf",
     "raw_text": "Advertsiement for the post of Project Associate-I (on contract) in research project entitled “Prediction of Projectile Trajectory and Velocity in 2D through Machine Learning and Computer Vision\" funded by HEMRL, Pune as per RSQR no. HEMRL/CARS/MED/2025-26/3 for 12 months.",
     "hash": "dc368f8c5ff32ee2360e72e0ea50b1e930ad4f82eedbd7944f91692ad8fb9010",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Jabalpur",
@@ -1674,7 +1804,7 @@
     "detail_url": "https://forms.gle/xUGN2SYr2ucZCbNw5",
     "raw_text": "Applications are invited for the post of Project Assistant to work purely on temporary basis on the Agri-Hub Foundation, IIT Indore sponsored research project, File No.: Project No.:IITI/AgriHub/2026/PRJ-D/05, titled “Development of a Multi-Functional Agri-Bot for Precision Harvesting and Soil Diagnostics”. Application form: https://forms.gle/xUGN2SYr2ucZCbNw5 Submission Deadline for Application Form: April 08, 2026 more details... April 08, 2026",
     "hash": "3e018bf377b5dcc8c0666a05bad9456fa85ae61ca669633835415bae1c570d8a",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Jabalpur",
@@ -1687,7 +1817,7 @@
     "detail_url": "https://forms.gle/g9ofGDcmkLZSthdr9",
     "raw_text": "Applications are invited from interested candidates for written test and interview to work on the following one Project position at PDPM IIITDMJ for an Indian Council for Social Science Research (ICSSR) funded project entitled, \"The Role of Old Age Homes in Providing Social Security- A Study of Geriatric Care in India\" Application form: https://forms.gle/g9ofGDcmkLZSthdr9 Submission Deadline for Application Form: 27 th May, 2025 till 5 PM. more details... 27 th May, 2025",
     "hash": "357347aef952cf4f928bc313f6bcda44fb1824d2969f2926dc710857432c1bee",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Jabalpur",
@@ -1700,7 +1830,7 @@
     "detail_url": "https://docs.google.com/forms/d/e/1FAIpQLSfPSnWUVLpmbR_DGHKpBo3GBHF6EwUsccOLrafaeDKsksctIA/viewform?vc=0&c=0&w=1&flr=0",
     "raw_text": "Applications are invited from interested candidates for walk-in test/interview for the below mentioned position to work on a UGC DAE CSR funded research project titled \"Interface Investigation of β-(AlxGa1-x)2O3/Ga2O3 Heterojunctions for High Electron Mobility Transistor Applications\". Post: CRS Project Fellow Application form: https://forms.gle/QeSdJTzbs.../../ Date of Walk -in Test/ Interview: Tentatively, June 8-9, 2023 more details... June 8-9, 2023",
     "hash": "b74b4251ed8f645207e013947a3b031bca3f7013352a71bad5a097905c1167e9",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Jabalpur",
@@ -1713,7 +1843,7 @@
     "detail_url": "https://www.iiitdmj.ac.in/jobs/download/JRF/Advertisement-DST-SERB-PS-24052023.pdf",
     "raw_text": "Applications are invited from interested candidates for walk-in test/interview for the below mentioned position to work on a DST-SERB funded research project titled \"Development of Li doped ZnO based electrolyte for low-temperature solid oxide fuel cell (SOFC)\". Date of Walk -in Test/ Interview: Tentatively, June 8-9, 2023 more details... June 8-9, 2023",
     "hash": "e02079851fd810a91ba66b7cd567a9d54d4ee4cd1e034c0765aa188d62a385b5",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -1726,7 +1856,7 @@
     "detail_url": "https://forms.gle/pq59bo62MkbKmoiGA",
     "raw_text": "Numerical Modelling of self-sealing coating on the fuel tank performance under impact loading Project Assistant Dr. Arul Kumar Mariyappan LINK",
     "hash": "c8eff7854c9c484e78ffb9996b3bf4e9a49dcca5459d97d77c08aef3c7af44ca",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -1739,7 +1869,7 @@
     "detail_url": "https://forms.gle/Wi1QNZSvsQVaeVCm9",
     "raw_text": "Development of SiCx Thin Films for MEMS Devices in Harsh Environments Junior Research Fellow Dr. Ashok Kumar Reddy Y LINK",
     "hash": "f77c51f5d40c14728daf192e272d3ba3ab920a387f1d8a5ab4a2b20f9a87ad23",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -1752,7 +1882,7 @@
     "detail_url": "https://forms.gle/goUf5RepEHEJacFw5",
     "raw_text": "HASense: Battery-Free Smart Sensing for Health, Agriculture, and Supply Chain Project Associate I Dr. Sundeep Kumar LINK",
     "hash": "2f3edd22d6c5cad485e58de9069807867810f96544548fb45920ad29bbbf0310",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -1765,7 +1895,7 @@
     "detail_url": "https://forms.gle/kQFLbLaayafBcydH7",
     "raw_text": "Wearable thermoelectric generators for powering various health monitoring sensors for long term manned missions Junior Research Fellow Prof. Jayabal K LINK",
     "hash": "5a74c3a0c0bf4a5edde15b52ee17cf159287f7cf2a2f49da11789d9c102bf2db",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -1778,7 +1908,7 @@
     "detail_url": "https://forms.gle/HHyfhRVxur4gqguYA",
     "raw_text": "Health Monitoring using AI/ML Project Associate I Dr. Rohini P LINK",
     "hash": "3c5763ce358153e373b6456987fa29b16126645641b63814fa20f0a7f8ca5f02",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -1791,7 +1921,7 @@
     "detail_url": "https://forms.gle/ZPDdtC9cRSFiQRL49",
     "raw_text": "Performance Study on the Cooperative Base Stations in 5G and Beyond Mobile Networks Junior Research Fellow Prof. Selvaraj M D LINK",
     "hash": "61ddee3cd57de5359a4320ae9710b784a6d7e90bbbb19d61611bbbfc1fd49bd1",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -1804,7 +1934,7 @@
     "detail_url": "https://forms.gle/yHB57H2gMSR8b8xS6",
     "raw_text": "AI and Vision Integrated Autonomous Mobile Lignite Dust Collecting System for Cleaning Bunker Floors Junior Research Fellow Prof. Sreekumar M LINK",
     "hash": "5ac340f37a0a638bbd735097c976e0e5227204b84ec156e75c8e37c73a06cc9f",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -1817,7 +1947,7 @@
     "detail_url": "https://forms.gle/XZexaGN14rvdAX6n8)",
     "raw_text": "Development of SiCx Thin Films for MEMS Devices in Harsh Environments Junior Research Fellow Dr. Y Ashok Kumar LINK",
     "hash": "c2345e428d5f6e0abf4d4fdb9f124d0bca9be820f1e051b29dcc6ef44709cf94",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -1830,7 +1960,7 @@
     "detail_url": "",
     "raw_text": "Development of a thermoplastic composite tape winding setup with enhanced build capability Junior Research Fellow Dr. Venkata Timmaraju Mallina -",
     "hash": "3a31623df38ae4f0b54b23c324881a0a9e3d9b2b55d0d4f3e0f3eca8ac4062be",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -1843,7 +1973,7 @@
     "detail_url": "https://forms.gle/D9SA7brWodCxTp138",
     "raw_text": "Porous Electroosmotic Microchannel Cooling System for High Heat Flux Dissipating Electronics Project Associate-I Dr. Shubhankar Chakraborty LINK",
     "hash": "7f4528cb2e2dacf48ee476647a42678fda14d7016460bdede1f390c0aec3928c",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -1856,7 +1986,7 @@
     "detail_url": "https://forms.gle/jkrXi7WkAFtMWR4U7",
     "raw_text": "Mathematical modelling simulation and experimental verification of underwater rigid-body dynamics Project Associate-1 Prof. S Jayavel LINK",
     "hash": "5908927bc39ab5d02415e653c676fe71e0bfdf37313e5517c0a5d6132b1df52d",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -1869,7 +1999,7 @@
     "detail_url": "",
     "raw_text": "Information Security Education and Awareness (ISEA) Project Phase-III Junior Research Fellow Dr. Noor Mahammad -",
     "hash": "a646dd72cdc92dc58cecc7bb082d29cb21f45b013027dae30005abdcd4763b5c",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -1882,7 +2012,7 @@
     "detail_url": "https://forms.gle/sqDQWZNiRrmyAWEZ8",
     "raw_text": "Design of peptitude-funcationalized carbon dots as dual-action theranostic nanoagents for targeting oral cancer using tumor-on-achip platformv Project Associate-1 Dr. Monisha M LINK",
     "hash": "f2a676543a48138de5690d65e52ad33b5cc3457dd54710e9ee525a6e998cb3bc",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -1895,7 +2025,7 @@
     "detail_url": "https://forms.gle/hPdzCVMQ69S3AEkp8",
     "raw_text": "Design and development of an automated multipurpose rig to fabricate customized fiber nano wires / tapers / couplers for investigating Nano Photonics applications Junior Research Fellow Dr. Naveen Kumar LINK",
     "hash": "85dcb301b25c5aeddeb8bed5156894b3c94576645abd47c92d3f8860d0efc820",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -1908,7 +2038,7 @@
     "detail_url": "",
     "raw_text": "Mathematical modelling simulation and experimental verification of underwater rigid-body dynamics Project Associate-1 Prof. S Jayavel -",
     "hash": "ecae0596ff37a7baeba03709975e8f54408a58cb57164571eb8d5593f94d5aa9",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -1921,7 +2051,7 @@
     "detail_url": "",
     "raw_text": "Development of sustainable products from banana pseudostem agriculture wastes Junior Research Fellow Dr. Raguraman Munusamy -",
     "hash": "177190b006b5fa637cffa0680244c503905e9f1ef8311fbc8c44de8895c4ac41",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -1934,7 +2064,7 @@
     "detail_url": "",
     "raw_text": "Smart Autonomous Responsive Assistant for Humans Research Intern Dr. Jagadeesh Kakarla -",
     "hash": "bf2656854bb46b93082a696ac12c0b58dfbf75e29faeb4f5b820d1897ccaece2",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -1947,7 +2077,7 @@
     "detail_url": "https://forms.gle/bGAbsEJcSzvHmSC98",
     "raw_text": "Design and Development of a multifunctional underactuated mechanism with grasping, perching and adaptive landing skills for drone applications / Aeronautics R&D Board Research Assistant Dr. Nagamanikandan Govindan LINK",
     "hash": "9141808f7faff8e4f100f6c5087ffc2c0603f68cde4524024c19c9eb1ffcc916",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -1960,7 +2090,7 @@
     "detail_url": "https://forms.gle/nJWiWS2muNNYo2217",
     "raw_text": "Design of RF Sub-assemblies of a Multi-frequency Gyrotron for Generating Vortex Beam Junior Research Fellow Dr. Yuvaraj S LINK",
     "hash": "5023b389b0a683ad2fcf6e9aeaf80955ebf38f9834458c51c7074bc755179525",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -1973,7 +2103,7 @@
     "detail_url": "https://forms.gle/2E8NsNiQyPAgenxN7",
     "raw_text": "Design, Development and Demonstration of Semi-Automatic indigenous equipment in fabrication of cylindrical and prismatic cells Research Associate-I Dr. Selvajyothi K LINK",
     "hash": "b0c6ee04c5cf6c99dbf7610ed02eebb8fa05851a25bda6f524af63e6a53101a2",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -1986,7 +2116,7 @@
     "detail_url": "https://forms.gle/ecjXbPCyCLWN7Miv6",
     "raw_text": "Performance Study on the Cooperative Base Stations in 5G and Beyond Mobile Networks Junior Research Fellow Prof. Selvaraj M D LINK",
     "hash": "b99e14cf92061b86d834f5da18dfd032a853cf6478c1e841f3758719edd0d5c9",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -1999,7 +2129,7 @@
     "detail_url": "https://forms.gle/2ZoQf3ws61Kc5wxE8",
     "raw_text": "Mathematical modelling simulation and experimental verification of underwater rigid-body dynamics Project Associate-1 Prof. S Jayavel LINK",
     "hash": "b465fdd36a274cad23d89959ff04768f01725bff8fa0c2a0331030dcee299291",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2012,7 +2142,7 @@
     "detail_url": "https://forms.gle/j2L2cqoXFRtasBjA9",
     "raw_text": "Design and Development of a multifunctional underactuated mechanism with grasping, perching and adaptive landing skills for drone applications / Aeronautics R&D Board Project Associate Dr. Nagamanikandan Govindan LINK",
     "hash": "d54b9b301cb24aedede0e1873273a7658a379b7ed0599e3845c8cd4143e7100d",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2025,7 +2155,7 @@
     "detail_url": "https://forms.gle/AoiHSb8ZFkiNpYga6",
     "raw_text": "Design and Development of an Immersive VRBiofeedback Therapy System for Anxiety and Affective Disorders in Indian Adults Junior Research Fellow Dr. Kannadasan K LINK",
     "hash": "ff60f77c75a27dcf90e20deae9b78ab5a1ac8a2b7e4232adc93dd5877a8ef46c",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2038,7 +2168,7 @@
     "detail_url": "",
     "raw_text": "Prototype Design and Validation of a Handheld Polarization Imaging Probe for Early Detection of Precancerous Cervical Cancer Lesions Using Mueller Matrix Polarimetry and Machine Learning: A Pilot Study Junior Research Fellow Dr. Pal Uttam Mrinal -",
     "hash": "a23882015e5fbc5c68573a1b69a16edb063eedc05a6dd32895e5d2ca92f295aa",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2051,7 +2181,7 @@
     "detail_url": "https://forms.gle/CfLQhLCaRjyrkkgX9",
     "raw_text": "Design of a High-Power Multi-band Orbital Angular Momentum (OAM) Source for Microwave Quantum Communication Junior Research Fellow Dr. Yuvaraj S LINK",
     "hash": "bfac8b17ca20dbe55645e7d78db186224fcd520a3faf13fa28b5f34ee9724bd8",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2064,7 +2194,7 @@
     "detail_url": "https://forms.gle/q2q43JyDmhrRhBrTA",
     "raw_text": "Development of a thermoplastic composite tape winding setup with enhanced build capability Junior Research Fellow Dr. Venkata Timmaraju Mallina LINK",
     "hash": "acf5a46cf838edd228f8805a2f8560dc336ee11b6983f158128616dcc28b2216",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2077,7 +2207,7 @@
     "detail_url": "https://forms.gle/hiR2s4imUrsowXj36",
     "raw_text": "Design and Development of a multifunctional underactuated mechanism with grasping, perching and adaptive landing skills for drone applications / Aeronautics R&D Board Research Assistant Dr. Nagamanikandan Govindan LINK",
     "hash": "04f7996e33516db38671fb26a7bb85d22abead35780294b21e46a98b6b14de3c",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2090,7 +2220,7 @@
     "detail_url": "https://forms.gle/J7ffBnLL677bje9YA",
     "raw_text": "Scaling up and assessment of self purifying water container elight pure technology for fluoride affected and rural area applications Junior Research Fellow Dr. Jayachandra Bingi LINK",
     "hash": "a4638951cc3e68b42320a0e3e7ab6287fee52d7590beac8be9195ff676c3d22e",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2103,7 +2233,7 @@
     "detail_url": "https://forms.gle/9okPRbZXoo3Kuj3CA",
     "raw_text": "Next-Generation Thermoelectric Textiles: Pioneering the future of Wearable Technology Research Associate I Dr. Pandiyarasan Veluswamy LINK",
     "hash": "8f91ca91ad37b1e34b0e362c0dbea3e15b2e5e2d6984fe4f2d026df79be009dd",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2116,7 +2246,7 @@
     "detail_url": "https://forms.gle/YTUKfUwYfj6LJWWH8",
     "raw_text": "Development of a thermoplastic composite tape winding setup with enhanced build capability Junior Research Fellow Dr. Venkata Timmaraju Mallina LINK",
     "hash": "41999ba3c359527773538ee3abd9c70a7bfbab434bbb5d2fa3478fae855105b6",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2129,7 +2259,7 @@
     "detail_url": "https://forms.gle/kBWUAY8EsRhLbGk57",
     "raw_text": "Impact of Convexity, Chordality, Planarity on Domination Problems - Computing and Complexity Study Junior Research Fellow Dr. Sadagopan N LINK",
     "hash": "a9ee080565db6ec4bba975fde90d2004a59bfec1981751d4d1cd982592b44dee",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2142,7 +2272,7 @@
     "detail_url": "https://forms.gle/pGPpQCTBER9FZMYK8",
     "raw_text": "Performance Study on the Cooperative Base Stations in 5G and Beyond Mobile Networks Junior Research Fellow Prof. Selvaraj M D LINK",
     "hash": "e34f787d142d224e3e8fddab4c686963da5b7423f65bb309ca2251b85593810d",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2155,7 +2285,7 @@
     "detail_url": "https://forms.gle/vh3nKus3dbYJiyaw8",
     "raw_text": "Impact of Convexity, Chordality, Planarity on Domination Problems - Computing and Complexity Study Junior Research Fellow Dr. Sadagopan N LINK",
     "hash": "6d7cc0dad9d2faffb8f7ff065b135bf42c6a0f62c454974fd9da7a104b34a99c",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2168,7 +2298,7 @@
     "detail_url": "https://docs.google.com/forms/d/e/1FAIpQLSccWIvVq3rwa2svp2e-AxyQZsqxKdsMLjKKz-yKPVkL3Y-YVw/viewform?usp=sharing",
     "raw_text": "Design and Development of a multifunctional underactuated mechanism with grasping, perching and adaptive landing skills for drone applications / Aeronautics R&D Board Project Associate Dr. Nagamanikandan Govindan LINK",
     "hash": "65d9ecf7dcae859de6b081b8eaa9352ec1cfb84aa66c9f682748c505c5c6b44e",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2181,7 +2311,7 @@
     "detail_url": "",
     "raw_text": "Metagratings based Reconfigurable Intelligent Surfaces for X-band N-LOS Radar Surveillance Junior Research Fellow Dr. Sreenath Reddy Thummaluru -",
     "hash": "36d4daa58745ba0c374506eb1bdb0b2d9caec3cc7bfbccf371fb2a95c979701d",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2194,7 +2324,7 @@
     "detail_url": "https://forms.gle/WyMMk9KtG2tdxkm7A",
     "raw_text": "Development of self-powered wearable thermoelectric power generator to boost the energy storage capacity of bioelectronics Junior Research Fellow Dr. Manjusha Battabyal LINK",
     "hash": "dbc2a27721b8bdfc90b6b78d6307f9c6e1bce25df6d86420480d960a7494902b",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2207,7 +2337,7 @@
     "detail_url": "https://forms.gle/7nieV3eET7717kVh6",
     "raw_text": "Development of artificial Intelligent system for Character Recognition of Tamil Epigraphy scripts Junior Research Fellow Dr. Rohini P LINK",
     "hash": "6e7da1fca8e3e33dff19f3d0b7591156009404ecdc97823751df057b93c11053",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2220,7 +2350,7 @@
     "detail_url": "https://forms.gle/ZK97DsGPijjjCp7p7",
     "raw_text": "Mathematical modelling simulation and experimental verification of underwater rigid-body dynamics Project Associate-I Prof. S Jayavel LINK",
     "hash": "2b206504421873156b481f6162b2dfba51074ff0412fbb3327bc647095ef82b6",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2233,7 +2363,7 @@
     "detail_url": "https://forms.gle/VgWEhaQ9pK3rrHgC8",
     "raw_text": "Metagratings based Reconfigurable Intelligent Surfaces for X-band N-LOS Radar Surveillance Junior Research Fellow Dr. Sreenath Reddy Thummaluru LINK",
     "hash": "42be8c486110c5d21d2fbd32085194eae59c10213c0083181e159f581cc02bb8",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2246,7 +2376,7 @@
     "detail_url": "https://forms.gle/36inGnmn2978KENHA",
     "raw_text": "Development of multi-class liver abnormalities detection system from ultrasound images using deep learning methods Junior Research Fellow Dr. Priyanka Kokil LINK",
     "hash": "b3ed7a205fed141855c9c02c4ae4139be3e28a0a361c6b5cf85bf5cedc70dc27",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2259,7 +2389,7 @@
     "detail_url": "",
     "raw_text": "Development of a thermoplastic composite tape winding set- up with enhanced build capacity Junior Research Fellow Dr. Timmaraju Mallina -",
     "hash": "81d18ca34b174e161ebe251d6fd3defeb85c0263855864aa6586ba8ecb20c00b",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2272,7 +2402,7 @@
     "detail_url": "",
     "raw_text": "Impact of Convexity, Chordality, Planarity on Domination Problems - Computing and Complexity Study Junior Research Fellow Dr. Sadagopan N -",
     "hash": "69ddb670cf468127ef58fa9c956dab92f9e4021fb64c8a1d89686ba3e67fae91",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2285,7 +2415,7 @@
     "detail_url": "https://forms.gle/41sYipAuQBPkZR1B6",
     "raw_text": "Design and Development of a Standalone Device for Early Detection of Plant Diseases using Machine Learning Techniques Junior Research Fellow Dr. Priyanka Kokil LINK",
     "hash": "7e9c6a2c7ca26b1d8de4544c6962c4fd99f1588242a99b7e6894d21c1057eab7",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2298,7 +2428,7 @@
     "detail_url": "",
     "raw_text": "Development of a thermoplastic composite tape windingset-up with enhanced build capacity Junior Research Fellow Dr. Timmaraju Mallina -",
     "hash": "41e112f5030e7cbd3c5ee73682701bbe70ecd9e4491c098c6b585bf988736361",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2311,7 +2441,7 @@
     "detail_url": "https://forms.gle/rGmYYSwZddt35vG4A",
     "raw_text": "Design, Analysis, Development of Experimental setup, and Experimental investigation Junior Research Fellow Dr. Shubhankar Chakraborty LINK",
     "hash": "4359fa04d844143ac6816e7cc8d91259a3b44242387f116a3b535f229747656e",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2324,7 +2454,7 @@
     "detail_url": "https://forms.gle/aNQJWMrV1qAgPDBA6",
     "raw_text": "Design and Development of a Standalone Device for Early Detection of Plant Diseases using Machine Learning Techniques Junior Research Fellow Dr. Priyanka Kokil LINK",
     "hash": "6a980a853e83dc8723eef22d17e5805d86393e6e2de23c252164e7d17f59e966",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2337,7 +2467,7 @@
     "detail_url": "https://forms.gle/PAtHB3Kviw6YUzJ48",
     "raw_text": "Beyond Gendered textbooks: An Investigation into gender(ed) discourses in secondary English language classrooms in India and Uganda Research Associate Dr. Kandharaja K M C LINK",
     "hash": "cd3db0aa9f394c121162d557b9c20feadccda9148f3d0fd36c9c85c7c3a874ba",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2350,7 +2480,7 @@
     "detail_url": "",
     "raw_text": "Experimental and Computational investigation of flow past innovative adaptive blades of Savonius turbine for effect energy harvesting Junior Research Fellow Prof. S Jayavel -",
     "hash": "f576a845e22ba088b2d399af6c06ac3cd895cb42dec1b0408d10554137a96fe3",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2363,7 +2493,7 @@
     "detail_url": "https://forms.gle/fYayMcFNWfHZJZCd9",
     "raw_text": "Development of a thermoplastic composite tape windingset-upwithenhanced build capability Junior Research Fellow Dr. Venkata Timmaraju Mallina LINK",
     "hash": "72626b9393683c9d49164718d411d60b10e9124481d8a2b6275af7b5b7049d38",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2376,7 +2506,7 @@
     "detail_url": "https://forms.gle/h1LtPTTFdX7wqCas8",
     "raw_text": "Project Bio-Dental Shape Memory Polymer Research Assistant Dr. Jayachandra Bingi LINK",
     "hash": "7c25a9c7a69fe102b0b1b52862ab74fd31c506f62834b0d46cba1701b7ef6b71",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2389,7 +2519,7 @@
     "detail_url": "https://forms.gle/CUMoNNbqsALP8hgE8",
     "raw_text": "The Milk adulteration detection using LG beam optics phenomena Research Intern Dr. Jayachandra Bingi LINK",
     "hash": "bb7dc331c7f6bcfecc14c9728ca8e06c266324299433d26632f368fba24b5319",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2402,7 +2532,7 @@
     "detail_url": "https://forms.gle/26YqxB8RMP9vkPxW9",
     "raw_text": "Experimental and Computational investigation of flow past innovative adaptive blades of Savonius turbine for effect energy harvesting Junior Research Fellow Prof. S Jayavel LINK",
     "hash": "5fb228f059c077bd90fe5ede7c943570cbe5e5b63eb1da60557515ff5045bb8f",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2415,7 +2545,7 @@
     "detail_url": "https://forms.gle/XPcuhXQ798yxwSSL6",
     "raw_text": "Design and Development of a Standalone Device for Early Detection of Plant Diseases using Machine Learning Techniques Junior Research Fellow Dr. Priyanka Kokil LINK",
     "hash": "48627665c4fc79b7e4adf741367596ce20ea8398319f04b8e8fb12658201cd6c",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2428,7 +2558,7 @@
     "detail_url": "https://forms.gle/MB8XithjA6zDYSyr7",
     "raw_text": "Development of non-intrusive pressure sensor using Optical Sensor Technology Research Project Associate Prof. Naveen Kumar and Dr. Venkata Timmaraju Mallina LINK",
     "hash": "2e59bc8d18293ed18f6c407bfd0e9964b6c3f6af51f42c971d29efe862b9b863",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2441,7 +2571,7 @@
     "detail_url": "https://forms.gle/DH7UKs3nDkrrsZKN9",
     "raw_text": "Development of a thermoplastic composite tape winding set-up with enhanced build capability Junior Research Fellow Dr. Venkata Timmaraju Mallina LINK",
     "hash": "cd8c9105663c69c02b404a8822651cb7e1dbb4017e793039290dd18e0cc69bf3",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2454,7 +2584,7 @@
     "detail_url": "https://forms.gle/7TQ1odJtxHA66Gpq8",
     "raw_text": "NICU Neonatal Monitor: Smart textile-based sensor design development and fabrication Junior Research Fellow Dr. Pandiyarasan Veluswamy and Dr Rohini P LINK",
     "hash": "4718c834a9ec0bfebaaae0ec7756bbe34efe56eafe1466e2b3d9e7c460dfbb59",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2467,7 +2597,7 @@
     "detail_url": "https://forms.gle/RiBK5h7DiMhq1aXQ7",
     "raw_text": "Artificial Intelligence & IoT-based Smart Vet Ecosystem for Animal Health, Patient care & Precision Farming Junior Research Fellow Dr. Pandiyarasan Veluswamy and Dr Rohini P LINK",
     "hash": "3666e265a91e260dbcdd4b637b6f30fb1e98f06f4a48dfbbbf3db20672222d65",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kancheepuram",
@@ -2480,7 +2610,7 @@
     "detail_url": "https://forms.gle/BbpLyDbZWRzwoVZG9",
     "raw_text": "Development of Energy Efficient Wireless Sensor Network and Communication Platform for Precision Agriculture Project Associate - I Dr. Sanjeet Kumar Nayak LINK",
     "hash": "f43b82ef52ec083abe2a98dca92f90a13969ecd865b3ba22eb0fa51e8e56ab70",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIITDM Kurnool",
@@ -2493,7 +2623,7 @@
     "detail_url": "https://files.iiitk.ac.in/uploads/recruitment/2026/project/RA_Advertisement.pdf",
     "raw_text": "25 Applications are invited for the ARMREB-DRDO sponsored research project (ARMREB/MAA/2025/306) titled Development of Impact Test Coupons with Superior Strain Energy Absorption Characteristics for Underbody Protection in Armoured Fighting Vehicles (AFVs) for the post of Research Associate – 01 . 27th March2026",
     "hash": "4932309f08631ce43a026f4c5496a48fba900a40d5395d481f6d61701e0cc78d",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIIT Pune",
@@ -2506,7 +2636,7 @@
     "detail_url": "https://iiitp.ac.in/sites/default/files/2025-12/AAP%20Advertisement_%20Application%20form.pdf",
     "raw_text": "RECRUITMENT NOTICE FOR THE POST OF ADJUNCT ASSISTANT PROFESSOR (AAP) (ON TEMPORARY BASIS) Application Details Corrigendum",
     "hash": "c64cf17ab76dc984b7a7ba231496998e86b5598b6cb6fbb29cce32cb08829b1e",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IIIT Raichur",
@@ -2519,7 +2649,7 @@
     "detail_url": "https://iiitr.ac.in/assets/files/Faculty Recruitment Notification 01-2026.pdf",
     "raw_text": "20-03-2026 Faculty Recruitment Advertisement - 2026 Apply Here Last date to apply: 20-04-2026 - Open 20 April 2026",
     "hash": "f15bb6753dfd1d8e15218e89c4ff6c86cd3c0ed070b3ff36cde422d495ebc96d",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IISER TVM",
@@ -2532,7 +2662,7 @@
     "detail_url": "https://www.iisertvm.ac.in/openings/read/openings-recruitment-for-the-post-of-project-scientist-ii-in-an-externally-funded-project-development-of-multimodal-optical-coherence-tomography-ultrasound-mems-technology-based-microscopic-resolution-photoacoustic-elastography-oct-us-mems-upae-imaging-system-a-validation-study-for-ophthalmic-diagnosis-and-therapeutic-treatments",
     "raw_text": "Recruitment for the post of Project Scientist II in an externally funded project \"Development of multimodal optical coherence tomography ultrasound MEMS technology-based microscopic-resolution photoacoustic elastography (OCT- US-MEMS-uPAE) imaging system: a validation study for ophthalmic diagnosis and therapeutic treatments\" Project 2026-03-12 2026-03-20",
     "hash": "274fbf295653cd25bd96888b747f5869d975d8ab243f5358262644da64df5923",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IISER TVM",
@@ -2545,7 +2675,7 @@
     "detail_url": "https://www.iisertvm.ac.in/openings/read/openings-recruitment-for-the-post-of-ra-on-externally-funded-project-towards-eicks-conjecture-power-structure-in-p-groups-and-an-analogue-of-baers-theorem-for-profinite-groups",
     "raw_text": "Recruitment for the post of RA on externally funded project `Toward’s Eick’s Conjecture, Power structure in $p$-groups, and an analogue of Baer’s theorem for profinite groups` Project 2026-02-11 2026-03-04",
     "hash": "9f11a85018ad66dad1e15245f1fa068bd00acf07cb4967eb46bb3e880487382b",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IISER TVM",
@@ -2558,7 +2688,7 @@
     "detail_url": "https://www.iisertvm.ac.in/openings/read/openings-recruitment-for-the-post-of-srf-on-an-externally-funded-project-plantsynbio-plant-minichromosome-engineering",
     "raw_text": "Recruitment for the post of SRF on an externally funded project \"PlantSynBio : Plant Minichromosome Engineering\" Project 2026-02-11 2026-02-20",
     "hash": "98ee5827b7e524860fc0cc0678104b01a86fded3a70acc2a4a28dde8cd22312d",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IISER TVM",
@@ -2571,7 +2701,7 @@
     "detail_url": "https://www.iisertvm.ac.in/openings/read/openings-recruitment-for-the-post-of-project-assistant-on-an-externally-funded-project-mof-nanocellulose-hybrid-composite-materials-for-co2-capture-and-separation-applications",
     "raw_text": "Recruitment for the post of Project Assistant on an externally funded project `MOF-Nanocellulose Hybrid Composite Materials for CO2 Capture and Separation Applications` Project 2026-02-09 2026-02-16",
     "hash": "3449fce3f1851fe03f68d3bce8ac6ce02c45afe5abd951a409891e84cfd8ab6d",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IISER TVM",
@@ -2584,7 +2714,7 @@
     "detail_url": "https://www.iisertvm.ac.in/openings/read/openings-applications-are-invited-for-the-group-b-c-non-teaching-positions-on-regular-basis",
     "raw_text": "Applications are invited for the Group B & C non-teaching positions on regular basis Administration 2026-02-05 2026-02-25",
     "hash": "f2fc7ddcc828079b2fcfc4c27e31377bbebcbb25b4775fd53246622a4efb0dd5",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IISER TVM",
@@ -2597,7 +2727,7 @@
     "detail_url": "https://www.iisertvm.ac.in/openings/read/openings-recruitment-for-the-post-of-jrf-on-externally-funded-project-an-investigation-on-the-impacts-of-climate-change-and-anthropogenic-activities-on-terrestrial-hydroclimate-using-a-convection-permitting-climate-model",
     "raw_text": "Recruitment for the post of JRF on externally funded project \"An investigation on the impacts of climate change and anthropogenic activities on terrestrial hydroclimate using a convection-permitting climate model\" Project 2026-02-04 2026-02-20",
     "hash": "8397e3df973f84868c9e35bebd76d6a11f2e1fa3f65ad434c935b6d3d6e1f8f4",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IISER TVM",
@@ -2610,7 +2740,7 @@
     "detail_url": "https://www.iisertvm.ac.in/openings/read/openings-recruitment-for-the-post-of-junior-research-fellow-in-an-externally-funded-project-copula-based-nonparametric-inference-for-dependence-properties",
     "raw_text": "Recruitment for the post of Junior Research Fellow in an externally funded project \"Copula-based nonparametric inference for dependence properties\" Project 2025-12-12 2026-01-09",
     "hash": "94686fa2a6b4c087aa8a39cdbdf4d389fee967f559a2cdc73c316ad9c93b5d30",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IISER Tirupati",
@@ -2623,7 +2753,7 @@
     "detail_url": "https://www.iisertirupati.ac.in/jobs/advt_162026/",
     "raw_text": "1 Advertisement No.: (16/2026) -Recruitment for the post of “Consultant” under the RNPF funded project. April 1, 2026 Click Here",
     "hash": "2979147c6b3c2dddd3d4d85eeb5ebd7a428fa4a5968183980336c12ae0d38955",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IISER Tirupati",
@@ -2636,7 +2766,7 @@
     "detail_url": "https://www.iisertirupati.ac.in/jobs/advt_212026/",
     "raw_text": "2 Advertisement No.: (21/2026) – Recruitment for the post of “Research Associate-1” in the Department of Chemistry. March 31, 2026 Click Here",
     "hash": "3ea15c387ce723eab9bf27ebf0ea5cdf32a860216eeb9e38301cd5102608556c",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IISER Tirupati",
@@ -2649,7 +2779,7 @@
     "detail_url": "https://www.iisertirupati.ac.in/jobs/advt_192026/",
     "raw_text": "3 Advertisement No.: (19/2026) – Recruitment for the post of “Junior Research Fellow/Project Associate-I” under ANRF funded project March 30, 2026 Click Here",
     "hash": "4390e1208a389d9c775c54d6dc4a1cc2c2ac70530c3562d599a3fdc50125ace6",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "ISI Tezpur",
@@ -2662,7 +2792,7 @@
     "detail_url": "https://www.isine.ac.in/files/career/adv_148_25_26_plp.pdf",
     "raw_text": "Applications are invited for the recruitment of O1 (one) project linked person purely on temporary basis to work on the following project in the Theoretical and Applied Sciences Unit (TASU) of the lndian Statistical lnstitute (lSl), North-East Centre, Tezpur, Assam. Title of the project: lnvestigation of anthropogenic impact on the cryosphere ofthe Eastern Himalayan Region.",
     "hash": "0e74382c0a9dc5e8de639efd226f69ccdc27d5eff25a0f0d7bbc8707912ff2a3",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "ISI Tezpur",
@@ -2675,7 +2805,7 @@
     "detail_url": "https://www.isine.ac.in/files/career/adv101_plp_20240808.pdf",
     "raw_text": "Applications are invited for the recruitment of O1 (one) project linked person purely on temporary basis to work on the following project in the Theoretical and Applied Sciences Unit (TASU) of the lndian Statistical lnstitute (lSl), North-East Centre, Tezpur, Assam. Title of the project: lnvestigation of anthropogenic impact on the cryosphere ofthe Eastern Himalayan Region.",
     "hash": "316be9751a2db0f73e4ea57210e93a60ce6ba8f7d0c2dc36721d106555154967",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "ISI Tezpur",
@@ -2688,7 +2818,7 @@
     "detail_url": "https://www.isine.ac.in/files/career/adv45_PLP.pdf",
     "raw_text": "Recruitment of one Project Linked Person: Advertisement Addendum",
     "hash": "f34adc53c5b05189b49c3879266350f0043422dd55cceef4a246b5376549df20",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "ISI Tezpur",
@@ -2701,7 +2831,7 @@
     "detail_url": "https://www.isine.ac.in/files/career/addendum_adv114_recruit_vs_17082022.pdf",
     "raw_text": "Addendum: Recruitment of one Visiting Scientist",
     "hash": "5bd4bcf5a155e65d1064d105f332389bd8aad67a88b2423c7f96d36e6c115fb9",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "ISI Tezpur",
@@ -2714,7 +2844,7 @@
     "detail_url": "https://www.isine.ac.in/files/career/adv130_recruit_vs_20220812.pdf",
     "raw_text": "Recruitment of one Visiting Scientist in Economics",
     "hash": "2781a2ced24ec9ebc64899f92b291929f95833b3aeb06ea4d0625ac8b2f75a27",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "ISI Tezpur",
@@ -2727,7 +2857,7 @@
     "detail_url": "https://www.isine.ac.in/files/career/adv114_recruit_vs_20220727.pdf",
     "raw_text": "Recruitment of one Visiting Scientist",
     "hash": "404168da16391fcddeaa4915c42be8e1930aa91c3d56abea6b5283cff1f17ead",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IISc Bangalore",
@@ -2740,7 +2870,7 @@
     "detail_url": "https://iisc.ac.in/wp-content/uploads/2026/03/Job-opening.pdf",
     "raw_text": "Project Assistant Research Associate IAP Click here 25.03.2026 Open",
     "hash": "9dc52436a29cfe7dd34ee29908cf445402b353798f24a99e742471bb45517dc5",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IISc Bangalore",
@@ -2753,7 +2883,7 @@
     "detail_url": "https://iisc.ac.in/wp-content/uploads/2025/10/Job-openinPD.pdf",
     "raw_text": "Postdoctoral IAP Click here Closed",
     "hash": "5379c60d9fcfbb457aea164180ff720af177628f5b7221e378ec6d0ecbc767e4",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IISc Bangalore",
@@ -2766,7 +2896,7 @@
     "detail_url": "https://iisc.ac.in/wp-content/uploads/2025/04/JRF_Notice_ANRF_Project_TR.pdf",
     "raw_text": "Junior Research Fellow EE Click here Closed",
     "hash": "acf5eca4ade6aef13911313933878ef42802665c084cbd92d8df915ae8b60d20",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IISc Bangalore",
@@ -2779,7 +2909,7 @@
     "detail_url": "https://iisc.ac.in/wp-content/uploads/2025/03/Job-vacancy-revised.pdf",
     "raw_text": "Project Assistant EE Click here Closed",
     "hash": "e77dcc59c4d2072df000162b8a13410336bfbdb843c5c60b0da59f07d7c7b03f",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IISc Bangalore",
@@ -2792,7 +2922,7 @@
     "detail_url": "https://iisc.ac.in/wp-content/uploads/2025/02/job.pdf",
     "raw_text": "Project Assistant IAP Click here Closed",
     "hash": "cadb33bec179c98e86064c7438e2bc0e103d84f78e590b3ebc018d5c50623e5c",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   },
   {
     "institute": "IISc Bangalore",
@@ -2805,6 +2935,6 @@
     "detail_url": "https://iisc.ac.in/wp-content/uploads/2024/12/job-advertise.pdf",
     "raw_text": "Project Assistant IAP Click here Closed",
     "hash": "9907c03f9d2f90c33892f47bcc5cec2e21b0d6861e5d4423f1ea461961f1db50",
-    "scraped_at": "2026-03-22 07:06:38"
+    "scraped_at": "2026-03-23 07:19:16"
   }
 ]
