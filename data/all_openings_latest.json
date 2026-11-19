@@ -10,7 +10,7 @@
     "detail_url": "",
     "raw_text": "Temporary Position(s) Number of Vacancies Last Date of Application",
     "hash": "73cb361a4c2b5940459d83d28af337bc1f242522273992c72a641ad7778ffa48",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Kharagpur",
@@ -23,7 +23,7 @@
     "detail_url": "",
     "raw_text": "Sr. project Assistant-II PI Name - Dept - Kalpana Chawla Space Technology Cell 1 20-11-2026",
     "hash": "7bd9326a908e41dbbedad5967210607c66f4a37a20c6d8d8f0e9f81e08affb0d",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Kharagpur",
@@ -36,7 +36,7 @@
     "detail_url": "",
     "raw_text": "Post Doctoral Fellowship PI Name - Sandip ChakrabortyDept - Computer Science and Engineering 1 27-11-2026",
     "hash": "ef41bbc084a6e547d24818ef91765da5756b6bbe69b285222870077d2a3bbdef",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Kharagpur",
@@ -49,7 +49,7 @@
     "detail_url": "",
     "raw_text": "Research Associate (RA) PI Name - Kanishka BhuniaDept - Agricultural and Food Engineering 2 20-11-2026",
     "hash": "75f48ba1387a53e901b825e268fe988fdb1afc8831b742174fa04804c8ec8406",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Kharagpur",
@@ -62,7 +62,7 @@
     "detail_url": "",
     "raw_text": "Junior Research Fellow (JRF) PI Name - Shampa AichDept - Metallurgical and Materials Engineering 1 24-11-2026",
     "hash": "8ed2282ddd4dc74d33fc17fa73e738d17db866d0de2b6b27df7e2a72a537fc3a",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Kharagpur",
@@ -75,7 +75,7 @@
     "detail_url": "",
     "raw_text": "Project Manager PI Name - Shailendra Kumar VarshneyDept - Electronics and Electrical Communication Engg. 1 30-11-2026",
     "hash": "ce465c950ecadc7157832950e65270a0f0517cd198656bca2732ecf095e6500f",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Kharagpur",
@@ -88,7 +88,20 @@
     "detail_url": "",
     "raw_text": "Junior Research Fellow (JRF) PI Name - Shailendra Kumar VarshneyDept - Electronics and Electrical Communication Engg. 1 30-11-2026",
     "hash": "50da83a1453f4bdb662434b3297baa051e04c69a47068ed71716ba12eb360236",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "network": "IIT",
+    "department": "",
+    "eligibility": "",
+    "title": "Junior Research Fellow (JRF) PI Name - Aurobinda RoutrayDept - Mining Engineering",
+    "position_type": "jrf",
+    "deadline": "02/12/2026",
+    "detail_url": "",
+    "raw_text": "Junior Research Fellow (JRF) PI Name - Aurobinda RoutrayDept - Mining Engineering 1 02-12-2026",
+    "hash": "39e9f341eed5905de602c28b6ad6d92312a3761543986178ea4f8a7169e42886",
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Kharagpur",
@@ -101,7 +114,7 @@
     "detail_url": "",
     "raw_text": "Field Assistant PI Name - Aurobinda RoutrayDept - Mining Engineering 1 25-11-2026",
     "hash": "eae21495f51fd5a08cda1a3629538a9b696d06d5943c3ce6fdbb63902dd17df1",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Kharagpur",
@@ -114,7 +127,7 @@
     "detail_url": "",
     "raw_text": "Project Assistant PI Name - Dept - Nano Science and Technology 1 25-11-2026",
     "hash": "afcbe3e9f316cc1be930a0605a1b3dbac2dc33d3604413a692c0d5666b2d8894",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Kharagpur",
@@ -127,7 +140,7 @@
     "detail_url": "",
     "raw_text": "Junior Research Fellow (JRF) PI Name - Lisa RoyDept - Education 1 19-11-2026",
     "hash": "a3df69343a621ef7c549b6e98aab3a46b7e181590de060dacf2183075a0276ff",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Kharagpur",
@@ -140,7 +153,7 @@
     "detail_url": "",
     "raw_text": "Project Research Associate PI Name - Bivas MitraDept - Computer Science and Engineering 1 19-11-2026",
     "hash": "772a1dcd11d881ebd65112519fa4f8baf4eb4665aa7fa9c2219f455978a20751",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Kharagpur",
@@ -153,7 +166,7 @@
     "detail_url": "",
     "raw_text": "Junior Research Fellow (JRF) PI Name - Jitendra Kumar JhaDept - Industrial and Systems Engineering 2 01-12-2026",
     "hash": "fe40147a3820a73dcdceed35847c8be719a939ac425df2d50df4ad7c668ff50e",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Kharagpur",
@@ -166,7 +179,7 @@
     "detail_url": "",
     "raw_text": "Project Assistant PI Name - Amreesh ChandraDept - Physics 1 22-11-2026",
     "hash": "c1805679f33601bbaa30e75442c4ba43b73c2ba1dd5418cb1ef60d48af8cd0c7",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Kharagpur",
@@ -179,7 +192,20 @@
     "detail_url": "",
     "raw_text": "Project Technical Assistant PI Name - Partha Pratim BandyopadhyayDept - Mechanical Engineering 1 30-11-2026",
     "hash": "ac792d7589607254ca0167d67212aff4328381e0741679e624d9917e891d6811",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "network": "IIT",
+    "department": "",
+    "eligibility": "",
+    "title": "Senior Research Fellow (SRF) PI Name - Srinibas KarmakarDept - Aerospace Engineering",
+    "position_type": "srf",
+    "deadline": "03/12/2026",
+    "detail_url": "",
+    "raw_text": "Senior Research Fellow (SRF) PI Name - Srinibas KarmakarDept - Aerospace Engineering 1 03-12-2026",
+    "hash": "2ddc1e744e825bca9cfef3ff6a48250ad1bb567193f9b2b5efa4d6dcec5f2419",
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Kharagpur",
@@ -192,7 +218,7 @@
     "detail_url": "",
     "raw_text": "Project Scientist - I PI Name - Animesh MukherjeeDept - Computer Science and Engineering 1 25-11-2026",
     "hash": "d6eb2729b19455494fea1d2477afe0ba0a6ede994964375c7f0b14bc25c395b5",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Kharagpur",
@@ -205,7 +231,7 @@
     "detail_url": "",
     "raw_text": "Project Research Assistant PI Name - Sandeep D KulkarniDept - Deysarkar Centre of Petroleum and Energy Transition 1 28-11-2026",
     "hash": "73d77c61eb7e2aacaef42b8d6534c719f226b987f418e01cf797bab51834e084",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Kharagpur",
@@ -218,20 +244,7 @@
     "detail_url": "",
     "raw_text": "Project Assistant PI Name - Sandeep D KulkarniDept - Deysarkar Centre of Petroleum and Energy Transition 1 28-11-2026",
     "hash": "d8c21c09878dd9cb3db8dd75190a7ddf8e07a9cf923280bc1a6e932a02d520c3",
-    "scraped_at": "2026-11-18 15:19:01"
-  },
-  {
-    "institute": "IIT Kharagpur",
-    "network": "IIT",
-    "department": "",
-    "eligibility": "",
-    "title": "Project Scientist II PI Name - Niloy GangulyDept - Computer Science and Engineering",
-    "position_type": "project_scientist",
-    "deadline": "20/11/2026",
-    "detail_url": "",
-    "raw_text": "Project Scientist II PI Name - Niloy GangulyDept - Computer Science and Engineering 1 20-11-2026",
-    "hash": "30b822598d75494dd741d20036b8657cef2ba2288bd3e155608e3676e9d05383",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Kharagpur",
@@ -244,20 +257,20 @@
     "detail_url": "",
     "raw_text": "Project Scientist - I PI Name - Niloy GangulyDept - Computer Science and Engineering 4 20-11-2026",
     "hash": "da6c5ec2e3086bf6337d5b3f41801433549601e0b09858808983e9adb5d1e38e",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Kharagpur",
     "network": "IIT",
     "department": "",
     "eligibility": "",
-    "title": "Project Associate-I PI Name - Niloy GangulyDept - Computer Science and Engineering",
-    "position_type": "project_associate",
+    "title": "Project Scientist II PI Name - Niloy GangulyDept - Computer Science and Engineering",
+    "position_type": "project_scientist",
     "deadline": "20/11/2026",
     "detail_url": "",
-    "raw_text": "Project Associate-I PI Name - Niloy GangulyDept - Computer Science and Engineering 2 20-11-2026",
-    "hash": "056f58aa96e991889bc5ee19899ec6ae7adf18f0288aa109c65fa4c90c7eca93",
-    "scraped_at": "2026-11-18 15:19:01"
+    "raw_text": "Project Scientist II PI Name - Niloy GangulyDept - Computer Science and Engineering 1 20-11-2026",
+    "hash": "30b822598d75494dd741d20036b8657cef2ba2288bd3e155608e3676e9d05383",
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Kharagpur",
@@ -270,20 +283,20 @@
     "detail_url": "",
     "raw_text": "Senior Project Associate PI Name - Niloy GangulyDept - Computer Science and Engineering 1 20-11-2026",
     "hash": "d7ccd69a79081fad4a321f7a2acef180ec29e8bfda816765ec52bfe56c38de08",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Kharagpur",
     "network": "IIT",
     "department": "",
     "eligibility": "",
-    "title": "Project Research Assistant PI Name - Manas PaliwalDept - Metallurgical and Materials Engineering",
-    "position_type": "research_assistant",
-    "deadline": "27/11/2026",
+    "title": "Project Associate-I PI Name - Niloy GangulyDept - Computer Science and Engineering",
+    "position_type": "project_associate",
+    "deadline": "20/11/2026",
     "detail_url": "",
-    "raw_text": "Project Research Assistant PI Name - Manas PaliwalDept - Metallurgical and Materials Engineering 1 27-11-2026",
-    "hash": "f057571e329a61506eae524e69c788c20810bda4806357f4d4dbf6226c17eca1",
-    "scraped_at": "2026-11-18 15:19:01"
+    "raw_text": "Project Associate-I PI Name - Niloy GangulyDept - Computer Science and Engineering 2 20-11-2026",
+    "hash": "056f58aa96e991889bc5ee19899ec6ae7adf18f0288aa109c65fa4c90c7eca93",
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Kharagpur",
@@ -296,7 +309,20 @@
     "detail_url": "",
     "raw_text": "Sr. Project Assistant PI Name - Manas PaliwalDept - Metallurgical and Materials Engineering 1 27-11-2026",
     "hash": "2f2922e6093a7aab1c3cc7196a5720edaab3d728d09ec9b80867e2c8806e71b5",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "network": "IIT",
+    "department": "",
+    "eligibility": "",
+    "title": "Project Research Assistant PI Name - Manas PaliwalDept - Metallurgical and Materials Engineering",
+    "position_type": "research_assistant",
+    "deadline": "27/11/2026",
+    "detail_url": "",
+    "raw_text": "Project Research Assistant PI Name - Manas PaliwalDept - Metallurgical and Materials Engineering 1 27-11-2026",
+    "hash": "f057571e329a61506eae524e69c788c20810bda4806357f4d4dbf6226c17eca1",
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IISER Pune",
@@ -309,7 +335,7 @@
     "detail_url": "https://www.iiserpune.ac.in/opportunities/opening?id=2318",
     "raw_text": "\"एएनआरएफ़ परियोजना सहयोगी-I / ANRF Project Associate-I\"",
     "hash": "407b9d09df09b35287e7ace4fd4f02f86ccd758373a5965088362786f1cd984e",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IISER Pune",
@@ -322,7 +348,7 @@
     "detail_url": "https://www.iiserpune.ac.in/opportunities/opening?id=2316",
     "raw_text": "\"अनुसंधान सहयोगी / Research Associate\"",
     "hash": "38bb4f457c4dc6dc2bca75d418de61f69d9f45b9cfa059373a21e013630d700e",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Hyderabad",
@@ -335,7 +361,7 @@
     "detail_url": "https://iith.ac.in/assets/files/careers/staff/NanoX_RA_Ad-2026.pdf",
     "raw_text": "13-11-2026 Advertisement for Research Associate in the NanoX Cleanroom Facility @ IIT Hyderabad. 20-11-2026",
     "hash": "894ba8c4f2cd824688eefb6c9fe573dc92dd8e01a10d1d7e15f90f8dc956bb11",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Hyderabad",
@@ -348,7 +374,7 @@
     "detail_url": "https://iith.ac.in/assets/files/careers/staff/Advertisement for Project Manager-III.pdf",
     "raw_text": "06-11-2026 Advertisement for the post of Project Research Scientist- III (Medical) (No. of Posts: One), IIT Hyderabad 22-11-2026",
     "hash": "4abf691eaf69c8b411ee9cd8423465fe7536ec9a9a89835ef96ac09437e75a1c",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Hyderabad",
@@ -361,7 +387,7 @@
     "detail_url": "https://iith.ac.in/assets/files/careers/staff/Postdoc_Advt_CLEANZ-2026.pdf",
     "raw_text": "05-11-2026 Applications are invited for Post-Doctoral Research Fellow in AI-Driven Scale-Up of Graphene Synthesis and Process Optimization under the CLEANZ Centre of Excellence 25-11-2026, 17:00 hrs",
     "hash": "d00827d716bef5d2e38dd04e3de5e3a2114e95645d9f1545b5bc49aa61946997",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Hyderabad",
@@ -374,7 +400,7 @@
     "detail_url": "https://iith.ac.in/assets/files/careers/staff/Adv_CS_63_Project Accountant_Dt_17-11-2026.pdf",
     "raw_text": "17-11-2026 Notification for Recruitment of Project Accountant, Wadhwani Innovation Network (WIN) Centre of Excellence on Contract basis, IIT Hyderabad 17-12-2026",
     "hash": "60c9a56ac0dc2b3fb4682abc469d9aa4ec2f73c59172fdbf908d5553e77dec3d",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Hyderabad",
@@ -387,7 +413,7 @@
     "detail_url": "https://iith.ac.in/assets/files/careers/staff/Adv_CS_64_Junior Engineer(Electrical)_Dt_17-11-2026.pdf",
     "raw_text": "17-11-2026 Notification for Recruitment of Junior Engineer (Electrical) on Contract basis, IIT Hyderabad 17-12-2026",
     "hash": "462c0ee3cb7d6d816acc682e02d260e92e2aef6b08ddd38c93b6c16164034d2e",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Hyderabad",
@@ -400,7 +426,7 @@
     "detail_url": "https://iith.ac.in/assets/files/careers/staff/Adv_CS_62_CC_Dt_10-11-2026.pdf",
     "raw_text": "10-11-2026 Applications are invited for the following contractual positions in the Computer Centre, IIT Hyderabad: HPC System Engineer, Network Engineer, Web Developer, System Engineer, and AV Technician. 01-12-2026",
     "hash": "6c9173df5b7664cf2042b4f8b9aaa2b148dd9a8a3d7fe39fb82db01875270bd4",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT BHU Varanasi",
@@ -413,7 +439,7 @@
     "detail_url": "https://facultyrecruitment.iitbhu.ac.in/",
     "raw_text": "Recruitment AdvertisementPostdoctoral FellowPostdoctoral Fellow Position Advt No. IIT(BHU)/R&D/IPDF/01/2025 Apply Here Corrigendum I",
     "hash": "dd70bdce4c80273d737188d7078a368497cc0e6ef54d54f1e1093bcce5f73d6f",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT ISM Dhanbad",
@@ -426,7 +452,7 @@
     "detail_url": "https://people.iitism.ac.in/~download/projectOpening//uploads/pdfprj/810/Project Associate_2026-11-06_11-48-36.pdf ",
     "raw_text": "1424 Project Associate Mining Engineering Prof. Dheeraj Kumar 21-11-2026 Click",
     "hash": "fb9962c15e2482def8ebbb0f73b8a91eb8392051296a29c1e54823de6f653902",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT ISM Dhanbad",
@@ -439,7 +465,7 @@
     "detail_url": "https://people.iitism.ac.in/~download/projectOpening//uploads/pdfprj/1180/Project JRF_2026-11-16_16-00-45.pdf ",
     "raw_text": "1425 Project JRF Chemistry and Chemical Biology Dr Niladri Patra 30-11-2026 Click",
     "hash": "1a863f3b87cc4181d04fcc8644880861830bfdc32858883295844c59b15101a1",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT ISM Dhanbad",
@@ -452,7 +478,7 @@
     "detail_url": "https://people.iitism.ac.in/~download/projectOpening//uploads/pdfprj/1180/Post Doctoral Fellow (PDF)_2026-11-17_11-37-19.pdf ",
     "raw_text": "1426 Post Doctoral Fellow (PDF) Chemistry and Chemical Biology Dr Niladri Patra 30-11-2026 Click",
     "hash": "0e5aa88f48c168f980345f5b36b4cb60a7e302d104f6e7d79e8855326fbe4c7a",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT ISM Dhanbad",
@@ -465,7 +491,7 @@
     "detail_url": "https://people.iitism.ac.in/~download/projectOpening//uploads/pdfprj/915/Project JRF_2026-11-17_19-23-36.pdf ",
     "raw_text": "1429 Project JRF Computer Science and Engineering Dr Tarachand Amgoth 25-11-2026 Click",
     "hash": "d07b32c03f9c9d3bb332cd75cac1d5631042359b2b302936d26a24a72f82c031",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Gandhinagar",
@@ -478,7 +504,7 @@
     "detail_url": "https://drive.google.com/file/d/1leKFZyPV8kRJ46XopDcX0mHbRjz7VuUc/view?usp=drive_link",
     "raw_text": "Project Associate I (Civil Site Engineer) Civil Prof. Udit Bhatia 17.11.2026 23.11.2026 Detail Apply Open",
     "hash": "3269f6b2a1577a315ac2264b560d2b2c621e3f75e0e7ecf993a70cd59b780d71",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Gandhinagar",
@@ -491,7 +517,7 @@
     "detail_url": "https://drive.google.com/file/d/15-4W97_rTTCQI0V3y46sLnD4mHQbM1ig/view?usp=drive_link",
     "raw_text": "Project Assistant - I Center for Creative Learning Prof. Manish Jain 16.11.2026 20.11.2026 Detail Apply Open",
     "hash": "0eb522124cecf0cad02f3d33ebd2959b97485bc3dec3384f36d826c25f698be9",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Gandhinagar",
@@ -504,33 +530,7 @@
     "detail_url": "https://drive.google.com/file/d/10Cok3y0NBo5Ll2YCjpptpd3J86XRTtzm/view?usp=drive_link",
     "raw_text": "Post-Doctoral Fellow Computer science and engineering Prof. Ajay Singh 12.11.2026 25.11.2026 Detail Apply Open",
     "hash": "abcec31b44463c3b2322fb37c0b8231b92e5f6ded09192dfdf485f8cbb02ef8a",
-    "scraped_at": "2026-11-18 15:19:01"
-  },
-  {
-    "institute": "IIT Gandhinagar",
-    "network": "IIT",
-    "department": "",
-    "eligibility": "",
-    "title": "Project Associate - I",
-    "position_type": "project_associate",
-    "deadline": "18/11/2026",
-    "detail_url": "https://drive.google.com/file/d/1DHAddmOU22tUOW8MX9t9IUDeEqy8pREt/view?usp=drive_link",
-    "raw_text": "Project Associate - I Electrical Engineering Prof. Joycee Mekie 03.11.2026 18.11.2026 Detail Apply Open",
-    "hash": "9bc6a375a12d0dead954adbf2a05d0ef8de7f00bd9829ad40c2451e97110389f",
-    "scraped_at": "2026-11-18 15:19:01"
-  },
-  {
-    "institute": "IIT Gandhinagar",
-    "network": "IIT",
-    "department": "",
-    "eligibility": "",
-    "title": "Project Associate II (Chemistry)",
-    "position_type": "project_associate",
-    "deadline": "18/11/2026",
-    "detail_url": "https://drive.google.com/file/d/1zg27OzgXtdTbdi__-ecp7iZiHWjBcOnZ/view?usp=drive_link",
-    "raw_text": "Project Associate II (Chemistry) Center for Creative Learning Prof Manish Jain 29.10.2026 18.11.2026 Detail Apply Open",
-    "hash": "72ad9048253ffe5c6d0ea16aed2e34b1ba6cff0f824f9711413b070203c0fc82",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Gandhinagar",
@@ -543,7 +543,7 @@
     "detail_url": "https://drive.google.com/file/d/11uBvapkYUATFga_Fik_q3C9Hwi_6p9_o/view?usp=drive_link",
     "raw_text": "Project Associate II Center for Creative Learning Prof. Manish Jain 26.10.2026 16.11.2026 extended upto 23.11.2026 Detail Apply Open",
     "hash": "8225dca3187dc0de88f1894b3378ae5803702ca94a1af710a653d839a417b9e0",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Gandhinagar",
@@ -556,20 +556,20 @@
     "detail_url": "https://drive.google.com/file/d/1GOeZ5EejhwtTqA05CWK23WT7mN6cm9Sa/view?usp=drive_link",
     "raw_text": "Project Associate II (Mathematics) Center for Creative Learning Prof. Manish Jain 23.10.2026 16.11.2026 extended upto 23.11.2026 Detail Apply Open",
     "hash": "32119e7daf54658a5c4871d69f8c883b520301d6085c195a9a43e2f7f2e6854a",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Gandhinagar",
     "network": "IIT",
     "department": "",
-    "eligibility": "Post-Doctoral",
-    "title": "Post-Doctoral Fellow",
-    "position_type": "post_doctoral",
-    "deadline": "18/11/2026",
-    "detail_url": "https://drive.google.com/file/d/1xFgd0763bvijqWZVk2ydi3V-eq-WI0lM/view?usp=drive_link",
-    "raw_text": "Post-Doctoral Fellow Mechanical Engineering Prof. Harini Subramanian 13.10.2026 04.11.2026 extended upto 18.11.2026 Detail Apply Open",
-    "hash": "86290e6be1ca4c9bbad332e0c6c64d61b322736c0bf5c01d6a2d2d02a9273611",
-    "scraped_at": "2026-11-18 15:19:01"
+    "eligibility": "",
+    "title": "Project Associate II (Biology)",
+    "position_type": "project_associate",
+    "deadline": "27/11/2026",
+    "detail_url": "https://drive.google.com/file/d/1Y1O1HASrRu7kmtZaxln1GBFSAxMeSYWs/view?usp=drive_link",
+    "raw_text": "Project Associate II (Biology) Center for Creative Learning Prof Manish Jain 23.10.2026 17.11.2026 extended upto 27.11.2026 Detail Apply Open",
+    "hash": "32f8282f8adbc825eb9beaee5a4a56404f51ec6f8c2fd2f32b4b62689f3ba16b",
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Patna",
@@ -582,7 +582,7 @@
     "detail_url": "https://www.iitp.ac.in/news",
     "raw_text": "ConnectNews & UpdatesNewsNoticesArchived NoticesMedia CoverageOpportunitiesVacanciesCareer OpportunitiesLearning OpportunitiesPM-VIKASCells & ComplianceRTISC/ST/OBC CellWGRC-ICCGet in TouchQuick LinksContact Us",
     "hash": "44c87c371d0c6be52f5d83bf229846028e21337e1a121430e161b003cc171ae6",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Mandi",
@@ -595,7 +595,7 @@
     "detail_url": "http://iitmandi.ac.in/recruitment/IITM_DRDO_CARS_RS_630.pdf",
     "raw_text": "Advertisement for project positions under the project titled:Characterisation of the damage induced due to the thermal shock in the carbon/carbon composite materials.",
     "hash": "1a8ec57552d19f6e766d0b302b34e8edfe60013ff847a448c8a909a1b1f547f8",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Mandi",
@@ -608,7 +608,7 @@
     "detail_url": "https://forms.gle/HkfSFqRxMpRSqCH66",
     "raw_text": "Advertisement for project positions under the project titled: Tata Trusts SAFER Hills – Augmented Facilities for Empowering Resilience in Himalayan Hills. APPLY",
     "hash": "a50a62fcad39d1d3d3e72755d9e4160cf62f0a4bc3a145f2e235f7b260f55d6c",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Goa",
@@ -621,7 +621,7 @@
     "detail_url": "",
     "raw_text": "SI No. Start Date YYYY-MM-DD Advt. No. Name of the Post End Date YYYY-MM-DD Project Details Department Area of Specialisation PI Name & Email Result Remarks",
     "hash": "ba16bc74a0784f3c86c80ca97159f805b7348ea7ef7e3a60a98e67ee4c16fd21",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIT Dharwad",
@@ -634,7 +634,7 @@
     "detail_url": "https://forms.gle/tD5HjLMmqoMFeDtB6",
     "raw_text": "Junior Research Fellow (JRF) Start/End Dates: ( 10/11/2026 - 01/12/2026 ) Project Title: Unraveling the mechanistic underpinnings of arginomycin biosynthesis: A remarkable peptidyl-nucleoside natural product with potential therapeutic implications CSIR Sanction Reference No.: 80 (0135)/26/EMR-II Principal Investigator: Prof. Nilkamal Mahanta, Department of Chemistry Link to application form: Click here Click here to view advertisement",
     "hash": "46d72deafb855f4c70cd18810e0b60572e84c57ca58dd281feb4098edf311126",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Trichy",
@@ -647,7 +647,7 @@
     "detail_url": "https://www.nitt.edu/home/admissions/",
     "raw_text": "Admission B. Tech. / B. Arch. M. Tech. / M. Arch. M. Sc. MCA MBA MA M.S. (by Research) Ph. D. Post Doctoral Fellowship (MeitY) B.Sc. B.Ed. PG Diploma(Health Care Technology)",
     "hash": "e6f6842108e91046381ea1b926acdc52edbae15a58bc315af1668d2334951d03",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Durgapur",
@@ -660,7 +660,7 @@
     "detail_url": "https://nitdgp.ac.in/uploads/ECE_Eligible_Candidate_Level-13A2.pdf",
     "raw_text": "2025-02-15 List of provisionally Eligible Candidates for Presentation Against Advertisement No. NITD/Estt./Faculty/01/2024/03 dated 30.02.2024 -ECE - Level - 13A2",
     "hash": "4809ef00dae609271f27f7a600fceedbb73328dadae22b85647ba999e41c98f2",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Durgapur",
@@ -673,7 +673,7 @@
     "detail_url": "https://nitdgp.ac.in/uploads/NBCC_JRF_Ad_.pdf",
     "raw_text": "2025-06-02 Advertisement for the post of JRF for project Development of Eco-Friendly Heat Reflective Bricks and Manufacturing of Eco-Friendly Shuttering Material from Agro-Wastes (NITD/SRCC/DD/CE/2025-26/02)",
     "hash": "28babbc87935c07a9b372d47c2f01aeb3fcf3729ab4e70524da7afd0c9692617",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Durgapur",
@@ -686,7 +686,7 @@
     "detail_url": "https://nitdgp.ac.in/uploads/Advertisement_for_Office_for_Project_final.pdf",
     "raw_text": "2024-05-24 Advertisement for the office at Giridih on rent for the project entitled “Impacting the life of Farmers in Giridih district by adopting affirmative steps” (NITD/SRCC/GP/MATH/2024-25/03)",
     "hash": "b871aac07ba4fdd0d8355c74f14e827b0aefb2c620abfec5dd4202e1e06addfc",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Durgapur",
@@ -699,7 +699,7 @@
     "detail_url": "https://nitdgp.ac.in/uploads/Shortlisted_Candidates_(JRF_and_Post_Doc)-NTTM-MKM.pdf",
     "raw_text": "2024-04-19 Shortlisted Candidates for the Interview of one JRF and one Postdoc Fellow under NTTM , MoT, GoI Funded Research Project (NITD/SRCC/MKM/CH/2023-24/17)",
     "hash": "8a436aab842120240be7b5a430d7e10cec9cab3ed4c0a02e1b60b38da25755a0",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Durgapur",
@@ -712,7 +712,7 @@
     "detail_url": "https://nitdgp.ac.in/uploads/List_of_candidates_shortlisted_for_interview_in_the_selection_of_Project_Assistant_under_NTTM,_MoT,_GoI_sponsored_project.pdf",
     "raw_text": "2024-03-20 List of the shortlisted candidates for interview in the selection process of Project Assistant (01 no.) on temporary basis for NTTM, MoT, GoI sponsored project (NITD/SRCC/SP/CE/2023-24/15)",
     "hash": "0247800b2b4c50dff6e1e54fb6023ce6fc573e5825f358667540032e05fd0ab0",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Durgapur",
@@ -725,7 +725,7 @@
     "detail_url": "https://nitdgp.ac.in/uploads/Advirtisement_for_the_post_of_project_assistant_under_NTTM,_MoT,_GoI_sponsored_project_on_high_speed_railway_embankment_system.pdf",
     "raw_text": "2024-01-18 Advertisement for recruitment of a Project Assistant under NTTM , MoT, GoI funded research project (NITD/SRCC/SP/CE/2023-24/15)",
     "hash": "ee4f1650fa49ef3b5b4a25b08ed4414aa561fab167764d00b54bb8ed178165cc",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Durgapur",
@@ -738,7 +738,7 @@
     "detail_url": "https://nitdgp.ac.in/uploads/userfiles/files/Advertisement_JRF.jpg",
     "raw_text": "2022-05-12 Recruitment of JRF for the project “Artificial Intelligence for Affordable Screening and Prediction of Diabetic Retinopathy in the Framework of Big Data.” (Advt. No.: (NITD/SRCC/AKD/EE/2021/14/04)",
     "hash": "7d83603066e5443d217fe88ad43f3ede2c2409611cfd69a658f15bf314156220",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Durgapur",
@@ -751,7 +751,7 @@
     "detail_url": "https://nitdgp.ac.in/uploads/userfiles/files/Notification for Sports Assistant (Female)(1).pdf",
     "raw_text": "2022-03-23 Notification: Application for the post of: Sports Assistant (Female) Advertisement No. NITD/SAC/S.A/2021-22/01.",
     "hash": "61041117a2004f3e89be95cf031d71e32e513e789a7287849ee3a41800465783",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Calicut",
@@ -764,7 +764,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-project-assistant-on-contract-basis-for-a-research-project-in-the-department-of-civil-engineering-dr-resmi-s-r",
     "raw_text": "Advertisement for the position of Project Assistant (On contract basis) for a Research Project in the Department of Civil Engineering (Dr. Resmi S R) New",
     "hash": "e609d397c46465820acb993d98b81c8a43467b5febf29cb9db165889a553495c",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Calicut",
@@ -777,7 +777,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-jrf-on-contract-basis-for-a-research-project-in-the-department-of-civil-engineering-dr-resmi-s-r",
     "raw_text": "Advertisement for the position of JRF (On contract basis) for a Research Project in the Department of Civil Engineering (Dr. Resmi S R) New",
     "hash": "b469d12e21d860cdb5b664c51a176fa599670bc4cd22e947160371eb8b459614",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Calicut",
@@ -790,7 +790,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-project-assistant-on-contract-basis-for-a-research-project-in-the-department-of-civil-engineering",
     "raw_text": "Advertisement for the position of Project Assistant (On contract basis) for a Research Project in the Department of Civil Engineering (Dr. Nishant Mukund Pawar) New",
     "hash": "500d1978780dca481ae544ba96816ca421baa0075fd99cec026c086441a1aadb",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Calicut",
@@ -803,7 +803,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-project-associate-i-on-contract-basis-for-a-research-project-in-the-department-of-architecture-and-planning",
     "raw_text": "Advertisement for the position of Project Associate-I (On contract basis) for a Research Project in the Department of Architecture and Planning New",
     "hash": "e8cb47a6be626e3362f87fe079b945a4285ffe317992cf7bc3d4dddbb9861957",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Calicut",
@@ -816,7 +816,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-jrf-on-contract-basis-for-a-research-project-in-the-department-of-mechanical-engineering",
     "raw_text": "Advertisement for the position of JRF (On contract basis) for a Research Project in the Department of Mechanical Engineering New",
     "hash": "0a8d65407f97200348d8bdc07025309b3bdba53ca13fa06c99ed36cf984eba9c",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Calicut",
@@ -829,7 +829,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-post-of-project-associate-i-on-contract-basis-for-a-research-project-in-the-department-of-civil-engineering",
     "raw_text": "Advertisement for the post of Project Associate I (On contract basis) for a Research Project in the Department of Civil Engineering New",
     "hash": "d120b24b582126662fd80f7665e004444abb829d23b6e0f1541837ed5a9feecd",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Calicut",
@@ -842,7 +842,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-jrf-on-contract-basis-for-a-research-project-in-the-department-of-electrical-engineering",
     "raw_text": "Advertisement for the position of JRF (On contract basis) for a Research Project in the Department of Electrical Engineering New",
     "hash": "7c8958d519f8bc2752457b0110c9d7b6356dca5a4a0a8cc76e53351f6efd181f",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Calicut",
@@ -855,7 +855,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-project-associate-i-on-contract-basis-for-a-research-project-in-the-department-of-computer-science-and-engineering",
     "raw_text": "Advertisement for the position of Project Associate-I (On contract basis) for a Research Project in the Department of Computer Science and Engineering New",
     "hash": "378d7f9ec109db2f3721b9dcc681ed8767945ecb1d79b41a8e912434b4ff7ee4",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Calicut",
@@ -868,7 +868,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-research-associate-i-on-contract-basis-for-a-a-research-project-in-the-department-of-computer-science-and-engineering",
     "raw_text": "Advertisement for the position of Research Associate-I (On contract basis) for a Research Project in the Department of Computer Science and Engineering New",
     "hash": "35ecf3b65aa7d65fc14f20a3b606f9032cd212c23762b4d97a4b1585e297b5fe",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Calicut",
@@ -881,7 +881,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-position-of-junior-research-fellow-on-a-contract-basis-for-a-research-project-in-the-department-of-bioscience-and-engineering-2",
     "raw_text": "Advertisement for the position of Junior Research Fellow (on a contract basis) for a Research Project in the “Department of Bioscience and Engineering”",
     "hash": "a10ce69623b66fa564775cafa830ffe6a8424dcdaae28e656b313c6b248c736d",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Calicut",
@@ -894,7 +894,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-post-of-junior-research-fellow-on-contract-basis-for-a-research-project-in-the-department-of-mechanical-engineering-dr-deepak-lawrence-k",
     "raw_text": "Advertisement for the post of Junior Research Fellow (On contract basis) for a Research Project in the Department of Mechanical Engineering (Dr. Deepak Lawrence K)",
     "hash": "3164eaf1d015c28cf0892cfb48ffcda91b4695a41b56de2e9710d520849ab496",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Calicut",
@@ -907,7 +907,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-post-of-research-assistant-on-contract-basis-for-ifcparcefipra-project-in-the-department-of-civil-engineering",
     "raw_text": "Advertisement for the post of Research Assistant (On contract basis) for IFCPAR/CEFIPRA Project in the Department of Civil Engineering (Dr. Munavar Fairooz C)",
     "hash": "5223306c4203c1ca54a08577312f9eb1740dfa7bb6bbccb0699a767a0a367d12",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Calicut",
@@ -920,7 +920,7 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/advertisement-for-the-post-of--junior-research-fellowproject-associate-i---on-contract-basis-for-the-meity-goi-research-project-in-the-department-of-electronics-and-communication-engineering",
     "raw_text": "Advertisement for the post of Junior Research Fellow/Project Associate I (On contract basis) for the MeitY, GOI Research Project in the Department of Electronics and Communication Engineering (Dr. Dhanaraj K. J.)",
     "hash": "1d13228fb416d01b8ccbfac4c7a8e1812f2b1393167d48daf1fccf1607c3538d",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Calicut",
@@ -933,7 +933,20 @@
     "detail_url": "https://nitc.ac.in/recruitments/contract-adhoc-recruitment-project-staff/application-for-the-position-of---junior-research-fellow-on-a-contract-basis-for-a-research-project-in-the-department-of-mathematics-dr-pinka-dey",
     "raw_text": "Application for the position of Junior Research Fellow (on a contract basis) for a Research Project in the Department of Mathematics (Dr. Pinka Dey)",
     "hash": "55b8cfd0f751c34e1b45aa7a739c7366d0cc8ed2c5403689e75ddb6d39e9301f",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
+  },
+  {
+    "institute": "NIT Hamirpur",
+    "network": "NIT",
+    "department": "",
+    "eligibility": "",
+    "title": "List of Provisionally Eligible/Ineligible Candidates and Interview Schedule for the Post of Project Associate-I/Project Associate-II under ANRF (ARG) Sponsored Project",
+    "position_type": "project_associate",
+    "deadline": "26/11/2026",
+    "detail_url": "https://nith.ac.in/uploads/files/nov26/list-anrf-191126.pdf",
+    "raw_text": "List of Provisionally Eligible/Ineligible Candidates and Interview Schedule for the Post of Project Associate-I/Project Associate-II under ANRF (ARG) Sponsored Project 19-11-2026 26-11-2026",
+    "hash": "8477d582a20eee45b83c35f0cd6ece4fc224db0e83ac9ed6f14c1c0a7756ae82",
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Hamirpur",
@@ -946,7 +959,7 @@
     "detail_url": "https://nith.ac.in/uploads/files/oct26/ad-project.pdf",
     "raw_text": "Advertisement for Recruitment to the post of Project Assistant 28-10-2026 20-11-2026",
     "hash": "1cd960ebe0144f5fd7bd16ddd98b07152e6eb2e1ebfc130687e5cc5a4788aa74",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Silchar",
@@ -959,7 +972,7 @@
     "detail_url": "https://erp.nits.ac.in/ext/recruitement/extVerification",
     "raw_text": "Link of Admit Card for the post of Assistant Librarian",
     "hash": "c957afb06c137a80b676464834f10b7c6939f21be45ea10ecb27f86af4113abe",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Silchar",
@@ -972,7 +985,7 @@
     "detail_url": "https://www.nits.ac.in/storage/CareerDocument/Career_6af5bd9f25c3d.pdf",
     "raw_text": "Applications are invited for Junior Research Fellow in the Department of Electrical Engineering NIT Silchar",
     "hash": "ec354e410b1642843c723aedb7b85999cfee589340a500f380ceb9402ea76cf7",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Silchar",
@@ -985,7 +998,7 @@
     "detail_url": "https://www.nits.ac.in/storage/CareerDocument/Career_6af56b38c1856.pdf",
     "raw_text": "Applications are invited for Project Associate-I in the Department of Electrical Engineering NIT Silchar",
     "hash": "34c51e40c367f4f827ee452e0979bbbb4bf81e4652f641d2990e5ee5b8a886a4",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Silchar",
@@ -998,7 +1011,7 @@
     "detail_url": "https://www.nits.ac.in/storage/CareerDocument/Career_6af1caac147a8.pdf",
     "raw_text": "Scheme and Syllabus of Written Test & Skill Test for the post of Superintendent",
     "hash": "9c703de57454f7bdb332a7b0d132d828b70ae4019d714505b2d2d88686fd9b02",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Silchar",
@@ -1011,7 +1024,7 @@
     "detail_url": "https://www.nits.ac.in/storage/CareerDocument/Career_6aedf085b3d06.pdf",
     "raw_text": "Scheme and Syllabus of the Written Test for the Post of Assistant Librarian",
     "hash": "c4a7a3f4741c6d5ad10ee204eeeec2c4fe702afdb6b702de4c4c608b1b16ddd2",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Silchar",
@@ -1024,7 +1037,7 @@
     "detail_url": "https://www.nits.ac.in/storage/CareerDocument/Career_6aedc9f22018c.pdf",
     "raw_text": "Applications are invited for Project Intern in the Department of Mechanical Engineering",
     "hash": "f316a0f49dd7e80ce57cb9a07e217b0fcea1c431e3d1088cf8066254e343765d",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Silchar",
@@ -1037,7 +1050,7 @@
     "detail_url": "https://www.nits.ac.in/storage/CareerDocument/Career_6ae9eeb240e10.pdf",
     "raw_text": "Applications are invited for Project Associate-I in the Department of Mechanical Engineering",
     "hash": "3335b7bae8780da93014bdda0a6c84e0b5a12c090d38140649de458035e468ff",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Silchar",
@@ -1050,7 +1063,7 @@
     "detail_url": "https://erp.nits.ac.in/ext/recruitement/extVerification",
     "raw_text": "Link of Admit Card for the post of Executive Engineer and Technical Assistant",
     "hash": "d3eb3dd74ce189ce3700abda803c5511493c6409b80bddfdd3b317eb97bf5053",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Silchar",
@@ -1063,7 +1076,7 @@
     "detail_url": "https://www.nits.ac.in/storage/CareerDocument/Career_6ae8898b586a2.pdf",
     "raw_text": "Applications are invited for Junior Research Fellow (JRF) in the Department of Civil Engineering",
     "hash": "b77c14205b12940b8ba1539c284e8d478d3006293e18edb41ccdb99cdff9d36c",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Silchar",
@@ -1076,7 +1089,7 @@
     "detail_url": "https://erp.nits.ac.in/ext/recruitement/extVerification",
     "raw_text": "Download Admit Card for the Post of Senior Technician and Technician",
     "hash": "de5f46fd9c0fc9a5bfc2e6aebc3a8a05b45f26da0912f05efed9ce6ab86177ac",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Silchar",
@@ -1089,7 +1102,7 @@
     "detail_url": "https://erp.nits.ac.in/ext/recruitement/extVerification",
     "raw_text": "Download Admit Card for the Post of Senior Assistant And Junior Assistant",
     "hash": "43146905fe55de49f681f13e9a10445565ba2e6a0503fff8fab610482fa0bfbb",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Silchar",
@@ -1102,7 +1115,7 @@
     "detail_url": "https://erp.nits.ac.in/ext/recruitement/extVerification",
     "raw_text": "Download Admit Card for the Post of Assistant Registrar and Hindi Officer",
     "hash": "afb44d87971f205fff96454134daf90717ae06885e6ee13feeaf2e35e0e7d416",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Silchar",
@@ -1115,7 +1128,7 @@
     "detail_url": "https://recruitment.nits.ac.in/level11/",
     "raw_text": "Application Link for Faculty Advertisement - Recruitment of internal faculty members (Assistant Professor Grade-II) moving from Pay Level-10 to Pay Level-11",
     "hash": "37c30ad441df36a3383ae886742599dbd4688e73d3f96bed361e5c11f0b96a97",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Silchar",
@@ -1128,7 +1141,7 @@
     "detail_url": "https://erp.nits.ac.in/ext/recruitement/extVerification",
     "raw_text": "Link to download Admit Card of the written Test for the post of Technical Assistant",
     "hash": "8c91a7e9d362d157fee71bcc03b8668eab6b8a516558c04bc889c62562048753",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Silchar",
@@ -1141,7 +1154,7 @@
     "detail_url": "https://www.nits.ac.in/storage/CareerDocument/Career_6882f832a92a7.pdf",
     "raw_text": "Applications are invited from Indian citizens for Project Associate-I(PA-I)and Project Associate-II (PA-II) in the Department of Electronics & Communication Engineering",
     "hash": "9ed1d6110a031a7e053f74b045cea4b23aeb0799221fa31112a84844371562e8",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Silchar",
@@ -1154,7 +1167,7 @@
     "detail_url": "https://www.nits.ac.in/storage/CareerDocument/Career_685d0f0983ec0.pdf",
     "raw_text": "Applications are invited from aspiring candidates of Assam only for Graduate Apprentice (Engineering/Non-Engineering)/Technician Apprentice (Diploma) Training in various Disciplines for a period of 1 year at NIT Silchar",
     "hash": "980b520e781add1d6c25138ed76ab478d9a9fec8b6e11000cd1c57c1507ea6e4",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "NIT Silchar",
@@ -1167,46 +1180,7 @@
     "detail_url": "https://www.nits.ac.in/storage/CareerDocument/Senior_Assistant-compressed.pdf",
     "raw_text": "Results of candidates appeared in the CRENIT Examination 2023 conducted by NTA for the post of Senior Assistant",
     "hash": "aca17c6c1afb2ff4de2df0287bd371521a44273b32a2d17b58fc4dd87dd0e22f",
-    "scraped_at": "2026-11-18 15:19:01"
-  },
-  {
-    "institute": "MNNIT Allahabad",
-    "network": "NIT",
-    "department": "",
-    "eligibility": "",
-    "title": "Advertisement for the Post of Junior Research Fellow (JRF)/Project Associate-I (On Contract) in research project entitled \"Design and Implementation of Efficient Strategies for Accelerating Whole-Body Diffusion-Weighted MRI in Comprehensive Cancer Screening\" funded by Prime Minister Early Career Research Grant (PMECRG)-Anusandhan National Research Foundation (ANRF). [Last date for application: 04 December 2026]",
-    "position_type": "jrf",
-    "deadline": "04 December 2026",
-    "detail_url": "https://www.mnnit.ac.in/images/newstories/2026/Project_Project/advertisement_with_application_form.pdf",
-    "raw_text": "Advertisement for the Post of Junior Research Fellow (JRF)/Project Associate-I (On Contract) in research project entitled \"Design and Implementation of Efficient Strategies for Accelerating Whole-Body Diffusion-Weighted MRI in Comprehensive Cancer Screening\" funded by Prime Minister Early Career Research Grant (PMECRG)-Anusandhan National Research Foundation (ANRF). [Last date for application: 04 December 2026]",
-    "hash": "a4d68111906e2b67b896ea1fb603117dc31fc6346d589b48577aba04919aa862",
-    "scraped_at": "2026-11-18 15:19:01"
-  },
-  {
-    "institute": "MNNIT Allahabad",
-    "network": "NIT",
-    "department": "Department of Health Research (DHR",
-    "eligibility": "",
-    "title": "Advertisement for the Post of Junior Research Fellow (On Contract) in a research project entitled \"Developing Electronic Tattoo (e-tattoo) as an Electrically Conductive Dermal Patch for Diabetic Foot Ulcers: An Electrical Interface to Rejuvenate Skin-Nerve Crosstalk\" funded by the Department of Health Research (DHR: SUG-2026-1524) for 1 year.",
-    "position_type": "jrf",
-    "deadline": "",
-    "detail_url": "https://www.mnnit.ac.in/images/newstories/2026/Project_Project/DBT.pdf",
-    "raw_text": "Advertisement for the Post of Junior Research Fellow (On Contract) in a research project entitled \"Developing Electronic Tattoo (e-tattoo) as an Electrically Conductive Dermal Patch for Diabetic Foot Ulcers: An Electrical Interface to Rejuvenate Skin-Nerve Crosstalk\" funded by the Department of Health Research (DHR: SUG-2026-1524) for 1 year.",
-    "hash": "e02ab513fec5916a1f272cfbb185fa4fdf3bd65a66fd0933449253a2bbaa72fc",
-    "scraped_at": "2026-11-18 15:19:01"
-  },
-  {
-    "institute": "MNNIT Allahabad",
-    "network": "NIT",
-    "department": "",
-    "eligibility": "",
-    "title": "Advertisement for the Posts of Research Associate and Field Investigator project entitled \"Navigating Retirement Planning among Indian Female Professionals via NPS: Exploring the Interplay of Investment Drivers, Risk Tolerance, and Financial Wellbeing\".",
-    "position_type": "research_associate",
-    "deadline": "",
-    "detail_url": "https://www.mnnit.ac.in/images/newstories/2026/Project_Project/advertisementcomplete.pdf",
-    "raw_text": "Advertisement for the Posts of Research Associate and Field Investigator project entitled \"Navigating Retirement Planning among Indian Female Professionals via NPS: Exploring the Interplay of Investment Drivers, Risk Tolerance, and Financial Wellbeing\".",
-    "hash": "f3470e45a0a90670b1de4fa4e9c1fdc0d8046eba3e97653ad59f099f119c4e23",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIITDM Jabalpur",
@@ -1219,7 +1193,7 @@
     "detail_url": "https://forms.gle/qJjU7W1A4EowytKF8",
     "raw_text": "Applications are invited for the post of Junior Research Fellow (01 Post) to work purely on temporary basis on the ISRO RESPOND & AI sponsored research project, Sanction No.: DS 2B-13012(2)/26/2022-Sec.2 dtd July 14th, 2026, titled “Multi-Modal Satellite Image Registration”. Application form: https://forms.gle/qJjU7W1A4EowytKF8 Submission Deadline for Application Form: 23/11/2026 more details... 23 November 2026",
     "hash": "3f27ddc6fabe10bfec483deaa7db3f902a65ace9637badc6a7d91014e5704d59",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIITDM Jabalpur",
@@ -1232,7 +1206,7 @@
     "detail_url": "https://forms.gle/g9ofGDcmkLZSthdr9",
     "raw_text": "Applications are invited from interested candidates for written test and interview to work on the following one Project position at PDPM IIITDMJ for an Indian Council for Social Science Research (ICSSR) funded project entitled, \"The Role of Old Age Homes in Providing Social Security- A Study of Geriatric Care in India\" Application form: https://forms.gle/g9ofGDcmkLZSthdr9 Submission Deadline for Application Form: 27 th May, 2025 till 5 PM. more details... 27 th May, 2025",
     "hash": "357347aef952cf4f928bc313f6bcda44fb1824d2969f2926dc710857432c1bee",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIITDM Jabalpur",
@@ -1245,7 +1219,7 @@
     "detail_url": "https://docs.google.com/forms/d/e/1FAIpQLSfPSnWUVLpmbR_DGHKpBo3GBHF6EwUsccOLrafaeDKsksctIA/viewform?vc=0&c=0&w=1&flr=0",
     "raw_text": "Applications are invited from interested candidates for walk-in test/interview for the below mentioned position to work on a UGC DAE CSR funded research project titled \"Interface Investigation of β-(AlxGa1-x)2O3/Ga2O3 Heterojunctions for High Electron Mobility Transistor Applications\". Post: CRS Project Fellow Application form: https://forms.gle/QeSdJTzbs.../../ Date of Walk -in Test/ Interview: Tentatively, June 8-9, 2023 more details... June 8-9, 2023",
     "hash": "b74b4251ed8f645207e013947a3b031bca3f7013352a71bad5a097905c1167e9",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IIITDM Jabalpur",
@@ -1258,72 +1232,7 @@
     "detail_url": "https://www.iiitdmj.ac.in/jobs/download/JRF/Advertisement-DST-SERB-PS-24052023.pdf",
     "raw_text": "Applications are invited from interested candidates for walk-in test/interview for the below mentioned position to work on a DST-SERB funded research project titled \"Development of Li doped ZnO based electrolyte for low-temperature solid oxide fuel cell (SOFC)\". Date of Walk -in Test/ Interview: Tentatively, June 8-9, 2023 more details... June 8-9, 2023",
     "hash": "e02079851fd810a91ba66b7cd567a9d54d4ee4cd1e034c0765aa188d62a385b5",
-    "scraped_at": "2026-11-18 15:19:01"
-  },
-  {
-    "institute": "IIITDM Kurnool",
-    "network": "IIIT",
-    "department": "",
-    "eligibility": "",
-    "title": "Advertisement for Walk-in interview for the post of Psychological Counselor (Part-Time) on contractual basis (Advertisement No.IIITDMK/ counselor/contract/2026/01)",
-    "position_type": "other",
-    "deadline": "08/12/2026",
-    "detail_url": "https://files.iiitk.ac.in/uploads/recruitment/2026/Contract/Adv-Psychological_Counselor_2026.pdf",
-    "raw_text": "46 Advertisement for Walk-in interview for the post of Psychological Counselor (Part-Time) on contractual basis (Advertisement No.IIITDMK/ counselor/contract/2026/01) 08-12-2026",
-    "hash": "20e01813d7dae6d39039b0f6b05ff335ba274f76bdd11fa8565dd96252178f11",
-    "scraped_at": "2026-11-18 15:19:01"
-  },
-  {
-    "institute": "IIITDM Kurnool",
-    "network": "IIIT",
-    "department": "",
-    "eligibility": "",
-    "title": "Project Staff Vacancy Circular – Project Engineer, Project Associate & Junior Project Officer (Accounts) at PMU, under the project \"Capacity Building for Human Resource Development in Unmanned Aircraft Systems (Drone and Related Technology)\" – MeitY (Advt. No. IIITDMK/Project/Drones/PMU/2026/02) (purely temporary)",
-    "position_type": "project_associate",
-    "deadline": "25/11/2026",
-    "detail_url": "https://files.iiitk.ac.in/uploads/recruitment/2026/project/Drone_PMU-Adv-Nov2026.pdf",
-    "raw_text": "45 Project Staff Vacancy Circular – Project Engineer, Project Associate & Junior Project Officer (Accounts) at PMU, under the project \"Capacity Building for Human Resource Development in Unmanned Aircraft Systems (Drone and Related Technology)\" – MeitY (Advt. No. IIITDMK/Project/Drones/PMU/2026/02) (purely temporary) 25-11-2026",
-    "hash": "62bbc80092f9339069ccb4eab7073d2ed894068623589a071c2bb1b5e06e6734",
-    "scraped_at": "2026-11-18 15:19:01"
-  },
-  {
-    "institute": "IIITDM Kurnool",
-    "network": "IIIT",
-    "department": "",
-    "eligibility": "",
-    "title": "Applications invited for 6-Month Internship at PMU-IIITDM Kurnool – Project SwaYaan: Capacity Building for Human Resource Development in Unmanned Aircraft Systems (Diploma Students)",
-    "position_type": "other",
-    "deadline": "25/11/2026",
-    "detail_url": "https://files.iiitk.ac.in/uploads/recruitment/2026/project/PMU-Internship_notification%20-%20Diploma-v3.pdf",
-    "raw_text": "46 Applications invited for 6-Month Internship at PMU-IIITDM Kurnool – Project SwaYaan: Capacity Building for Human Resource Development in Unmanned Aircraft Systems (Diploma Students) 25-11-2026",
-    "hash": "9275f6a77c6aea671685cb25bcb311969d8c07c7d64f9a5f7f98bc5a67a66eff",
-    "scraped_at": "2026-11-18 15:19:01"
-  },
-  {
-    "institute": "IIITDM Kurnool",
-    "network": "IIIT",
-    "department": "",
-    "eligibility": "B.Tech / M.Tech",
-    "title": "Applications invited for 6-Month Internship at PMU-IIITDM Kurnool – Project SwaYaan: Capacity Building for Human Resource Development in Unmanned Aircraft Systems (B.Tech / M.Tech Students)",
-    "position_type": "other",
-    "deadline": "25/11/2026",
-    "detail_url": "https://files.iiitk.ac.in/uploads/recruitment/2026/project/PMU-Internship_notification%20-%20Graduate-v2.pdf",
-    "raw_text": "47 Applications invited for 6-Month Internship at PMU-IIITDM Kurnool – Project SwaYaan: Capacity Building for Human Resource Development in Unmanned Aircraft Systems (B.Tech / M.Tech Students) 25-11-2026",
-    "hash": "bff0647e5da820e2271e6033e1a52f162438f41d3797159483b97084df89314f",
-    "scraped_at": "2026-11-18 15:19:01"
-  },
-  {
-    "institute": "IIITDM Kurnool",
-    "network": "IIIT",
-    "department": "",
-    "eligibility": "",
-    "title": "Applications invited for 4-Month Internship at IIITDM Kurnool – Collaborative Research for Accelerated Development of Materials & Devices for Energy Harvesting and Conservation Technologies (CRADMET / ICMAP Project)",
-    "position_type": "other",
-    "deadline": "25/11/2026",
-    "detail_url": "https://files.iiitk.ac.in/uploads/recruitment/2026/project/ICMAP-Internship_notification%20-Graduate-v1.pdf",
-    "raw_text": "48 Applications invited for 4-Month Internship at IIITDM Kurnool – Collaborative Research for Accelerated Development of Materials & Devices for Energy Harvesting and Conservation Technologies (CRADMET / ICMAP Project) 25-11-2026",
-    "hash": "3dc42d788052df08cd24b4c848ec4ad7adf2ef5a78d175b012f616bd58aefc87",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IISER TVM",
@@ -1336,20 +1245,7 @@
     "detail_url": "https://www.iisertvm.ac.in/openings/read/openings-recruitment-for-the-post-of-ra-on-an-externally-funded-project-towards-eicks-conjecture-power-structure-in-p-groups-and-an-analogue-of-baers-theorem-for-profinite-groups",
     "raw_text": "Recruitment for the post of RA on an externally funded project \"Toward's Eick's Conjecture, Power structure in $p$-groups, and an analogue of Baer’s theorem for profinite groups\" Project 2026-11-12 2026-11-29",
     "hash": "72b7f259ee9218a67a99ce356387c9ac8a863839ea13866cdd4e85b7fc0b2956",
-    "scraped_at": "2026-11-18 15:19:01"
-  },
-  {
-    "institute": "IISER TVM",
-    "network": "IISER",
-    "department": "",
-    "eligibility": "",
-    "title": "Applications are invited for the non-teaching positions at Group B & C on regular basis",
-    "position_type": "other",
-    "deadline": "2026-11-18",
-    "detail_url": "https://www.iisertvm.ac.in/openings/read/openings-applications-are-invited-for-the-non-teaching-positions-at-group-b-c-on-regular-basis",
-    "raw_text": "Applications are invited for the non-teaching positions at Group B & C on regular basis Administration 2026-10-22 2026-11-18",
-    "hash": "c55d9b7acb071a54231c0fd5e49f99877d4c3df5e8aa4907bcb99c60a87305c1",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IISER TVM",
@@ -1362,7 +1258,7 @@
     "detail_url": "https://www.iisertvm.ac.in/openings/read/openings-recruitment-for-the-post-of-jrf-on-an-externally-funded-project-diophantine-approximation-with-prime-restriction",
     "raw_text": "Recruitment for the post of JRF on an externally funded project \"Diophantine approximation with prime restriction\" Project 2026-10-16 2026-11-30",
     "hash": "a1bd729b23eecdb9212d513c5fc76bd1e1bf5b63338f62b97a3e2c2719a31048",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IISER Tirupati",
@@ -1375,7 +1271,20 @@
     "detail_url": "https://www.iisertirupati.ac.in/jobs/advt_592026/",
     "raw_text": "1 Advt. No. 59/2026 – Recruitment for the post of Security Officer on a contract basis. November 24, 2026 Click Here",
     "hash": "b25e3372f01df27f7a9438326e794c431055dbe46af57522fafaa6b5de4013d3",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
+  },
+  {
+    "institute": "IISER Berhampur",
+    "network": "IISER",
+    "department": "",
+    "eligibility": "",
+    "title": "Junior Research Fellowship",
+    "position_type": "jrf",
+    "deadline": "Dec 01, 2026",
+    "detail_url": "https://www.iiserbpr.ac.in/webcontrol/uploads/job/IISERBPR_EES_BRNS_051026_3758_103_JRF                               Advertisement for Junior Research Fellow (JRF)-BRNS103_20261106104054_6804.pdf",
+    "raw_text": "1 Junior Research Fellowship Earth and Environmental Sciences Advertisement for Junior Research Fellow (JRF)-BRNS103 New Biodata New The last date for submission of application has been extended to Dec 01, 2026 New",
+    "hash": "eb1be5beaba432716951d535d1b12cce39a8eb393850bdc47b96e11e7303e6f2",
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IISER Berhampur",
@@ -1388,7 +1297,7 @@
     "detail_url": "https://www.iiserbpr.ac.in/webcontrol/uploads/job/IISERBPR_BIO_OD_S&T_261125_091_PDRF                                                 Advertisement for the position of Post-Doctoral Research Fellow(PDRF) in the Department of Chemical Sciences_20260819115310_6177.docx",
     "raw_text": "1 Post-Doctoral Research Fellow Chemical Sciences Advertisement for the position of Post-Doctoral Research Fellow(PDRF) in the Department of Chemical Sciences New Biodata New",
     "hash": "7bd386e1423e3c3d5acf914b66522ad3fe9f9228f16271d0dbeeb9fc85f5fea8",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IISER Berhampur",
@@ -1401,7 +1310,20 @@
     "detail_url": "https://www.iiserbpr.ac.in/webcontrol/uploads/job/IISERBPR_BIO_MOES_011024_067_Senior Project AssociateAdvertisement for Senior Project Associate-MoES 067_20260703173301_2536.pdf",
     "raw_text": "1 Senior Project Associate Biological Sciences Advertisement for Senior Project Associate-MoES 067 New Biodata_Senior Project Associate New",
     "hash": "2f6a76b7de79ace4bb370b1f1a9fe07441bf2a6dd5730b6784972c7beb83d864",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
+  },
+  {
+    "institute": "IISER Berhampur",
+    "network": "IISER",
+    "department": "",
+    "eligibility": "",
+    "title": "Research Associate-I",
+    "position_type": "research_associate",
+    "deadline": "",
+    "detail_url": "https://www.iiserbpr.ac.in/webcontrol/uploads/job/IISERBPR_BIO_DBT_220425_074_RA-I Advertisement for Research Associate-I-DBT 074_20260401173331_8868.pdf",
+    "raw_text": "1 Research Associate-I Biological Sciences Advertisement for Research Associate-I-DBT 074 New Biodata_Research Associate-I New",
+    "hash": "af00573012cce88aef358fab6d6ffdd21c7252e5876aabf06f8e41884da3f6df",
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IISER Berhampur",
@@ -1414,19 +1336,58 @@
     "detail_url": "https://www.iiserbpr.ac.in/webcontrol/uploads/job/NT-01_2025 (Contract)Advertisement for engagement of â€˜Consultantâ€™ on Contract Basis_20250311114233_6843.pdf",
     "raw_text": "1 Consultant on Contract Basis Registrar Office Advertisement for engagement of â€˜Consultantâ€™ on Contract Basis New Biodata for engagement of Consultant New",
     "hash": "46fac5fb6ab6cb13036b78b71889eae9e0120e36c4301d41a504c34d19cff51c",
-    "scraped_at": "2026-11-18 15:19:01"
+    "scraped_at": "2026-11-19 15:26:00"
   },
   {
     "institute": "IISER Berhampur",
     "network": "IISER",
     "department": "",
     "eligibility": "",
-    "title": "Project Engineer(s)",
-    "position_type": "project_engineer",
+    "title": "Junior Research Fellow (JRF)",
+    "position_type": "jrf",
     "deadline": "",
-    "detail_url": "https://www.iiserbpr.ac.in/webcontrol/uploads/job/Walk-In-Evaluation and Skill Test Advt. No. NT-04-2024 (Contract)Walk-In-Evaluation and Skill Test Advt.-Project Engineer(s)_20241217155938_6125.pdf",
-    "raw_text": "1 Project Engineer(s) Registrar Office Walk-In-Evaluation and Skill Test Advt.-Project Engineer(s) Biodata-Project Engineer(s) Final Result of Selection-Project Engineer(s)",
-    "hash": "8369faaa52fac1b8b3139c624aeda055bf4198c756b0929efffcb408a330ec54",
-    "scraped_at": "2026-11-18 15:19:01"
+    "detail_url": "https://www.iiserbpr.ac.in/webcontrol/uploads/job/SERB_EES_BPR_121013_047_JRFJRF_Advt. SERB 047_20241021175028_3335.pdf",
+    "raw_text": "1 Junior Research Fellow (JRF) Research and Development JRF_Advt. SERB 047 New Biodata_JRF New",
+    "hash": "d10b0ddf60438d349931620a8b840ee16fe4d349de0e822da0cdf810ed560b59",
+    "scraped_at": "2026-11-19 15:26:00"
+  },
+  {
+    "institute": "ISI Kolkata",
+    "network": "ISI",
+    "department": "",
+    "eligibility": "",
+    "title": "Recruitment to the post of Project linked person Indian Statistical Institute (ISI), Kolkata is inviting applications from highly motivated and eligible candidates for the recruitment of one (01) Project linked person purely on ...",
+    "position_type": "other",
+    "deadline": "29 Nov 2026",
+    "detail_url": "https://www.isical.ac.in/isical_web/public/jobs_view.php?id=94",
+    "raw_text": "Recruitment to the post of Project linked person Indian Statistical Institute (ISI), Kolkata is inviting applications from highly motivated and eligible candidates for the recruitment of one (01) Project linked person purely on ... No.PU/507/ADV/973 dated 13 November 2026 Temporary Professor-in-Charge 13 Nov 2026 29 Nov 2026 N/A N/A View",
+    "hash": "437e902746d1a24ed9e6e0a5d720b1ae81bcfd242a11fca7e40acbdba7849ea1",
+    "scraped_at": "2026-11-19 15:26:00"
+  },
+  {
+    "institute": "ISI Kolkata",
+    "network": "ISI",
+    "department": "",
+    "eligibility": "be",
+    "title": "Recruitment to the post of Project linked Junior Research Fellow - MIU An interview will be conducted on 19th November 2026 at 11:30 am at the Machine Intelligence Unit (MIU), 3rd floor of the Platinum Jubilee Academic ...",
+    "position_type": "jrf",
+    "deadline": "19 Nov 2026",
+    "detail_url": "https://www.isical.ac.in/isical_web/public/jobs_view.php?id=93",
+    "raw_text": "Recruitment to the post of Project linked Junior Research Fellow - MIU An interview will be conducted on 19th November 2026 at 11:30 am at the Machine Intelligence Unit (MIU), 3rd floor of the Platinum Jubilee Academic ... No.PU/507/ADV/956 dated 06 November 2026 Temporary Professor-in-Charge 06 Nov 2026 N/A 19 Nov 2026 N/A View",
+    "hash": "f7e542fde9979d0d0d7a8594614e1735f71c4577f75431196e08375e40d7ea82",
+    "scraped_at": "2026-11-19 15:26:00"
+  },
+  {
+    "institute": "ISI Kolkata",
+    "network": "ISI",
+    "department": "",
+    "eligibility": "",
+    "title": "Recruitment to the post of Project Associate-I - AERU, Kolkata Indian Statistical Institute (ISI) Kolkata is inviting applications from highly motivated and eligible candidates for the recruitment of one (01) Project Associate-I purely on temporary ...",
+    "position_type": "project_associate",
+    "deadline": "20 Nov 2026",
+    "detail_url": "https://www.isical.ac.in/isical_web/public/jobs_view.php?id=89",
+    "raw_text": "Recruitment to the post of Project Associate-I - AERU, Kolkata Indian Statistical Institute (ISI) Kolkata is inviting applications from highly motivated and eligible candidates for the recruitment of one (01) Project Associate-I purely on temporary ... No.PU/507/ADV/921 dated 28 October 2026 Temporary Professor-in-Charge 28 Oct 2026 20 Nov 2026 N/A N/A View",
+    "hash": "c81085c1731dc3ace3c25956e3b5326ba70051bd14f2a0e68c7a3892e327a525",
+    "scraped_at": "2026-11-19 15:26:00"
   }
 ]
